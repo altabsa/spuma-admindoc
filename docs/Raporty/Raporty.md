@@ -17,7 +17,6 @@ W systemie dostępne są **4 raporty standardowe**:
 **1. Oczekujące dokumenty**  
 **2. Lista dokumentów**  
 **3. Dokumenty klientów**   
-**4. [Zatwierdzenia dostępu](./zatwierdzenia-dostepu.md)**   
 
 
 Pierwsze trzy raporty mogą być **modyfikowane, ukrywane lub usuwane** z poziomu administratora. 

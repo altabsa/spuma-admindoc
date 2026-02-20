@@ -5,7 +5,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'Spuma - dokumentacja',
+  title: 'Spuma - przewodnik administratora',
   tagline: 'Elektroniczny obieg dokumentów',
   favicon: 'img/favicon.ico',  
 
@@ -58,7 +58,7 @@ const config: Config = {
           lastVersion: 'current',
           versions: {
             current: {
-              label: '7.4', 
+              label: '7.5', 
           },
         },
         },
