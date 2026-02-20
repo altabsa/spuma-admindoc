@@ -15,15 +15,15 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  url: 'https://spumadms.github.io',
+  url: 'https://altabsa.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/spuma-admindoc/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'spumadms', // Usually your GitHub org/user name.
-  projectName: 'spuma-doc', // Usually your repo name.
+  organizationName: 'altabsa', // Usually your GitHub org/user name.
+  projectName: 'spuma-admindoc', // Usually your repo name.
   deploymentBranch: "gh-pages",
 
   onBrokenLinks: 'throw',
