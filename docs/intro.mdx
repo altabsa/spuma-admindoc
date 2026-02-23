@@ -4,144 +4,19 @@ sidebar_position: 1
 
 # SPUMA - Przewodnik Administratora
 
-**Spuma** © to rozbudowany system klasy **DMS (Document Management System – System Zarządzania Dokumentami)**. Jego głównym zadaniem jest zarządzanie, przetwarzanie, porządkowanie i sterowanie przepływem dokumentacji w firmie. Obsługuje dokumenty w formie papierowej i elektronicznej, wspierając automatyzację pracy i cyfryzację procesów biurowych.
+## Wstęp
 
-Systemy klasy DMS to oprogramowanie wspomagające zarządzanie dokumentami tworzonymi i otrzymywanymi w organizacjach. Przetwarzanie dotyczy zarówno dokumentów:
+System **SPUMA** można skonfigurować na dwa główne sposoby, w zależności od potrzeb organizacji oraz przyjętego modelu administracji:
 
-- **wewnętrznych**, takich jak:
-  - zarządzenia,
-  - zapotrzebowania,
-  - dokumenty działu HR,
-  - polecenia wyjazdu służbowego i ich rozliczenia,
-  - atesty, polisy, instrukcje,
-- **zewnętrznych**:
-  - zamówienia od klientów,
-  - faktury przychodzące,
-  - korespondencja tradycyjna i elektroniczna.
+1. **Za pomocą aplikacji SPUMA-ADMIN** – jest to podstawowy i zalecany sposób konfiguracji, realizowany poprzez interfejs aplikacji.  
+2. **Za pomocą procedur i funkcji serwera SQL** *(opcjonalnie)* – tryb przeznaczony dla bardziej zaawansowanych scenariuszy, np. automatyzacji działań lub integracji z innymi mechanizmami administracyjnymi.
 
-Systemy DMS wspierają gromadzenie, klasyfikację i udostępnianie zasobów wiedzy w organizacji, a także zwiększają kontrolę nad obiegiem dokumentów.
-
-Nowoczesne aplikacje DMS, w tym SPUMA, wykorzystują technologie **OCR (Optical Character Recognition)** do przekształcania zeskanowanych dokumentów w postać tekstową, umożliwiającą ich indeksowanie, przeszukiwanie i analizę.
+Niezależnie od wybranej metody, docelowa konfiguracja systemu zapisywana jest w całości w bazie danych **SQL** w dedykowanej bazie **SPUMA**.
 
 ---
 
-## Główne funkcje systemu
+## Aplikacja SPUMA_ADMIN
 
-<div
-  style={{
-    display: 'grid',
-    gridTemplateColumns: 'repeat(3, 1fr)',
-    gap: '2rem',
-    maxWidth: '1200px',
-    margin: '2rem auto',
-  }}
->
+Aby rozpocząć konfigurację systemu przy użyciu aplikacji **SPUMA_ADMIN**, należy zalogować się na konto użytkownika posiadającego przypisaną rolę **administratora**.
 
-  <div style={{ textAlign: 'left' }}>
-    <p>
-      ![Digitalizacja dokumentów](/img/undraw_collaborative-writing_ir40.svg)
-    </p>
-    <h3>Digitalizacja dokumentów (OCR)</h3>
-    <ul>
-      <li>OCR podstawowy – rozpoznawanie i indeksowanie tekstu w całym dokumencie.</li>
-      <li>OCR zaawansowany – rozpoznawanie określonych pól (np. NIP, kwota, data).</li>
-    </ul>
-  </div>
-
-  <div style={{ textAlign: 'left' }}>
-    <p>
-      ![Przechowywanie i organizacja](/img/undraw_folder_8dxv.svg)
-    </p>
-    <h3>Przechowywanie i organizacja</h3>
-    <ul>
-      <li>Repozytorium dokumentów w formie katalogów.</li>
-      <li>Dane przechowywane w bazie danych z możliwością kategoryzacji i tagowania.</li>
-      <li>Definiowanie klas dokumentów i niestandardowych atrybutów.</li>
-    </ul>
-  </div>
-
-  <div style={{ textAlign: 'left' }}>
-    <p>
-      ![Digitalizacja dokumentów](/img/undraw_document-search_2o7x.svg)
-    </p>
-    <h3>Wyszukiwanie</h3>
-    <ul>
-      <li>Wyszukiwanie po atrybutach, słowach kluczowych i treści OCR.</li>
-      <li>Obsługa filtrów, sortowania i zaawansowanych zapytań.</li>
-    </ul>
-  </div>
-
-  <div style={{ textAlign: 'left' }}>
-    <p>
-      ![Digitalizacja dokumentów](/img/undraw_security_0ubl.svg)
-    </p>
-    <h3>Zabezpieczenia i dostęp</h3>
-    <ul>
-      <li>Tworzenie użytkowników i grup z przypisanymi rolami.</li>
-      <li>System uprawnień dostępu do dokumentów i funkcji.</li>
-      <li>Szyfrowanie danych w transmisji.</li>
-    </ul>
-  </div>
-
-  <div style={{ textAlign: 'left' }}>
-    <p>
-      ![Digitalizacja dokumentów](/img/undraw_annotation_rz2w.svg)
-    </p>
-    <h3>Opisywanie dokumentów</h3>
-    <ul>
-      <li>Możliwość dodawania atrybutów standardowych i własnych.</li>
-      <li>Opisywanie tabelaryczne (np. pozycje kosztowe).</li>
-      <li>Komentarze, wersjonowanie i powiązania między dokumentami.</li>
-    </ul>
-  </div>
-
-  <div style={{ textAlign: 'left' }}>
-    <p>
-      ![Digitalizacja dokumentów](/img/undraw_approve_jz6b.svg)
-    </p>
-    <h3>Zatwierdzanie dokumentów (workflow)</h3>
-    <ul>
-      <li>Predefiniowane i edytowalne schematy zatwierdzeń.</li>
-      <li>Procesy ad-hoc, zależne od warunków i użytkowników.</li>
-      <li>Automatyczne powiadomienia i poczta wewnętrzna.</li>
-    </ul>
-  </div>
-
-  <div style={{ textAlign: 'left' }}>
-    <p>
-      ![Digitalizacja dokumentów](/img/undraw_data-reports_l2u3.svg)
-    </p>
-    <h3>Raportowanie i analizy</h3>
-    <ul>
-      <li>Tworzenie raportów i zestawień.</li>
-      <li>Grupowanie i filtrowanie danych.</li>
-      <li>Generowanie alarmów i przypomnień.</li>
-    </ul>
-  </div>
-
-  <div style={{ textAlign: 'left' }}>
-    <p>
-      ![Digitalizacja dokumentów](/img/undraw_add-files_d04y.svg)
-    </p>
-    <h3>Tworzenie dokumentów</h3>
-    <ul>
-      <li>Edytor online do tworzenia dokumentów własnych.</li>
-      <li>Szablony dokumentów (np. wnioski urlopowe, delegacje).</li>
-    </ul>
-  </div>
-
-  <div style={{ textAlign: 'left' }}>
-    <p>
-      ![Digitalizacja dokumentów](/img/undraw_next-option_vr3u.svg)
-    </p>
-    <h3>Pozostałe funkcje</h3>
-    <ul>
-      <li>Dzienniki korespondencji z konfigurowalnymi atrybutami.</li>
-      <li>Operacje automatyczne (np. księgowanie do ERP).</li>
-      <li>Powiązania z systemem ERP (np. baza kontrahentów, podgląd dekretów).</li>
-      <li>Definiowanie zastępstw i reguł delegowania.</li>
-    </ul>
-  </div>
-
-</div>
-
+Po świeżej instalacji systemu domyślnie dostępny jest użytkownik: **admin**, który ma nadane wymagane uprawnienia administracyjne i umożliwia wykonanie pierwszej konfiguracji środowiska.
