@@ -5,7 +5,7 @@ title:  Ciąg połączenia
 ---
 
 # Tworzenie ciągu połączeniowego dla zapytań SQL
-## 1. Do czego służy to pole?
+
 
 W definicji zapytania SQL można wskazać własny ciąg połączeniowy do zewnętrznej bazy danych. Mechanizm ten pozwala uruchamiać zapytania zarówno na:
 

@@ -6,7 +6,6 @@ title:  Format nazwy
 
 # Format nazwy
 
-
 Pole **Format nazwy** służy do zdefiniowania **szablonu (algorytmu)** automatycznego generowania nazwy / identyfikatora dokumentu na podstawie:
 
 * klasy dokumentu,
@@ -15,7 +14,7 @@ Pole **Format nazwy** służy do zdefiniowania **szablonu (algorytmu)** automaty
 
 ---
 
-## 1) Ogólna zasada działania
+## Ogólna zasada działania
 
 Podczas tworzenia nazwy dokumentu system:
 
@@ -38,7 +37,7 @@ gdzie `DOCNUM` jest numerem dokumentu wpisanym przez użytkownika
 
 ---
 
-## 2) Składnia szablonu
+## Składnia szablonu
 
 Szablon to zwykły tekst, w którym możesz umieszczać **placeholdery** w nawiasach klamrowych:
 
@@ -58,7 +57,7 @@ Separatory, stałe prefiksy/sufiksy, myślniki, ukośniki itp. możesz dodawać 
 
 ---
 
-## 3) Dostępne placeholdery systemowe
+## Dostępne placeholdery systemowe
 
 Poniższa lista działa **zawsze** (o ile dana wartość istnieje w dokumencie).
 
@@ -70,7 +69,7 @@ Poniższa lista działa **zawsze** (o ile dana wartość istnieje w dokumencie).
 * `{CMPNAME}` – nazwa firmy (`Company`) **tylko jeśli** `company_id > 0`
 * `{USERNAME}` – nazwa użytkownika **tylko jeśli** `user_id > 0`
 
-## 4) Podstawianie atrybutów klasy (i klas bazowych)
+## Podstawianie atrybutów klasy (i klas bazowych)
 
 Jeżeli dokument ma klasę, system przechodzi po atrybutach klasy **oraz kolejnych klas bazowych** (dziedziczenie), i dla każdego atrybutu:
 
@@ -95,7 +94,7 @@ Jeżeli atrybut ma typ `TYPE_CUSTOM`, to jego wartość (niezależnie od nazwy) 
 *  klasa jest typu **Faktura* lub *Korekta** i pole  **Dostawca**  jest puste (system próbuje wtedy „wyciągnąć” CARDCODE z atrybutów).
 
 
-## 5) Placeholdery dat
+## Placeholdery dat
 
 System obsługuje trzy daty:
 
@@ -103,7 +102,7 @@ System obsługuje trzy daty:
 * data wprowadzenia (`m_enterdate`)
 * data utworzenia (`m_createdat`) — **zawsze** zakładana jako dostępna
 
-### 5.1 Data dokumentu
+### Data dokumentu
 
 Jeśli data **nie jest** podana → wszystkie poniższe placeholdery są zastąpione pustym tekstem:
 
@@ -115,7 +114,7 @@ Jeśli data **nie jest** podana → wszystkie poniższe placeholdery są zastąp
 
 Jeśli data istnieje → podstawienia są wykonywane wg powyższego formatu.
 
-### 5.2 Data wprowadzenia
+### Data wprowadzenia
 
 Jeśli data **nie jest** podana → wszystkie poniższe placeholdery są zastąpione pustym tekstem:
 
@@ -124,7 +123,7 @@ Jeśli data **nie jest** podana → wszystkie poniższe placeholdery są zastąp
 
 Jeśli data istnieje → podstawienia jak wyżej.
 
-### 5.3 Data utworzenia
+### Data utworzenia
 
 Dla `m_createdat` system **zawsze** podstawia:
 
@@ -133,7 +132,7 @@ Dla `m_createdat` system **zawsze** podstawia:
 
 ---
 
-## 6) Kolejność podstawiania (ważne!)
+## Kolejność podstawiania (ważne!)
 
 Kolejność ma znaczenie przy złożonych szablonach. W praktyce:
 
@@ -147,21 +146,21 @@ Kolejność ma znaczenie przy złożonych szablonach. W praktyce:
 
 ---
 
-## 7) Przykładowe formaty (do wklejenia)
+## Przykładowe formaty (do wklejenia)
 
-### 7.1 Prosty, czytelny format domyślny
+### Prosty, czytelny format domyślny
 
 ```text
 {CLASSNAME}_{DOCNUM}
 ```
 
-### 7.2 Faktura z rokiem i kodem kontrahenta
+### Faktura z rokiem i kodem kontrahenta
 
 ```text
 FV_{CARDCODE}_{DD_YYYY}_{DOCNUM}
 ```
 
-### 7.3 Nazwa z atrybutem działu i datą wprowadzenia
+### Nazwa z atrybutem działu i datą wprowadzenia
 
 *(w klasie istnieje atrybut `Department`)*
 
@@ -169,13 +168,13 @@ FV_{CARDCODE}_{DD_YYYY}_{DOCNUM}
 {CLASSNAME}_{DEPARTMENT}_{ED_YYYY}{ED_MM}{ED_DD}_{DOCNUM}
 ```
 
-### 7.4 Nazwa z datą utworzenia i użytkownikiem
+### Nazwa z datą utworzenia i użytkownikiem
 
 ```text
 {CLASSNAME}_{CD_YYYY}-{CD_MM}-{CD_DD}_{USERNAME}_{DOCNUM}
 ```
 
-### 7.5 Format z obsługą wartości `KOD<!>Opis`
+### Format z obsługą wartości `KOD<!>Opis`
 
 Jeśli atrybut `Project` ma wartość `PRJ01<!>Projekt Alfa`, to:
 
@@ -187,7 +186,7 @@ wygeneruje np. `Umowa_PRJ01_000123`
 
 ---
 
-## 8) Typowe problemy i ich przyczyny
+## Typowe problemy i ich przyczyny
 
 * **W nazwie zostaje `{DEPARTMENT}` zamiast wartości**
 
@@ -210,7 +209,7 @@ wygeneruje np. `Umowa_PRJ01_000123`
 
 ---
 
-## 9) Szybka tabela referencyjna placeholderów
+## Szybka tabela referencyjna placeholderów
 
 | Kategoria  | Placeholder                               | Opis / format               | Kiedy działa            |
 | ---------- | ----------------------------------------- | --------------------------- | ----------------------- |

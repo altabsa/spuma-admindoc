@@ -6,11 +6,6 @@ title:  Ścieżka domyślna
 
 # Ścieżka domyślna
 
----
-
-
-## 1. Do czego służy to pole?
-
 Pole **Ścieżka domyślna** pozwala zdefiniować **Szablon automatycznej ścieżki dokumentu**, do których system automatycznie zapisze plik dokumentu w repozytorium.
 
 Szablon może zawierać:
@@ -23,7 +18,7 @@ Na końcu system tworzy katalogi zgodnie z wyliczoną ścieżką i zapisuje w ni
 
 ---
 
-## 2. Przykład działania
+## Przykład działania
 
 ### Szablon
 ```text
@@ -37,7 +32,7 @@ księgowe\faktury\D-ACME\2026\03
 
 ---
 
-## 3. Separatory i struktura katalogów
+## Separatory i struktura katalogów
 
 - Separator katalogów to **backslash `\`**.
 - System na końcu rozbija wynikową ścieżkę po `\` i traktuje każdy element jako katalog.
@@ -52,7 +47,7 @@ A\B\C
 
 ---
 
-## 4. Zmienne w szablonie `{ ... }`
+## Zmienne w szablonie `{ ... }`
 
 Każdy fragment w `{}` jest analizowany i zastępowany wartością.
 
@@ -76,7 +71,7 @@ System:
 
 ---
 
-## 5. Dostępne zmienne (bez `_`)
+## Dostępne zmienne (bez `_`)
 
 Poniższe zmienne są wspierane przez kod i mogą być użyte w `{}`:
 
@@ -104,7 +99,7 @@ Daty można formatować (rozdział 6).
 
 ---
 
-## 6. Formatowanie dat
+## Formatowanie dat
 
 Dla zmiennych datowych możesz podać format po `|`, np.:
 
@@ -150,7 +145,7 @@ Możesz też dopisać locale po przecinku:
 
 ---
 
-## 7. Formatowanie pól słownikowych (USER/CLASS/COMPANY) oraz atrybutów  (`_...`)
+## Formatowanie pól słownikowych (USER/CLASS/COMPANY) oraz atrybutów  (`_...`)
 
 Dla pól typu słownikowego system ma zwykle dwie wartości:
 - `CODE` (np. `12`)
@@ -170,22 +165,22 @@ Aby uzyskac kod klienta (przechowywanego w atrybucie **PH**)  nalezy użyć skł
 ---
 
 
-## 8. Zasady i dobre praktyki
+## Zasady i dobre praktyki
 
-### 8.1. Unikaj znaków ryzykownych w nazwach katalogów
+### Unikaj znaków ryzykownych w nazwach katalogów
 Warto zadbać, aby wynik nie zawierał znaków, które bywają problematyczne w systemach plików:
 - `:` `*` `?` `"` `<` `>` `|`  
 oraz niepożądane końcówki spacji/kropki.
 
 
-### 8.2. Uważaj na puste wartości
+### Uważaj na puste wartości
 Jeśli dokument nie ma ustawionego np. `CompanyID`, `UserID`, `ClassID` lub daty, to wstawiona wartość może wyjść pusta (zależnie od danych i implementacji metod pomocniczych).
 
 Dobre podejście:
 - nie opieraj całej ścieżki na polu, które często bywa puste
 - testuj na kilku typach dokumentów
 
-### 8.3. Wielokrotne użycie zmiennej
+### Wielokrotne użycie zmiennej
 Możesz użyć tej samej zmiennej w kilku miejscach, np.:
 ```text
 {DOCDATE | yyyy}\{DOCDATE | MM}
@@ -194,7 +189,7 @@ Każde wystąpienie zostanie zastąpione osobno.
 
 ---
 
-## 9. Przykładowe gotowe szablony
+## Przykładowe gotowe szablony
 
 ### A) Księgowe → firma → rok → miesiąc
 ```text
