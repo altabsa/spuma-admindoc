@@ -117,6 +117,11 @@ const config: Config = {
           position: 'left',
           label: 'Dokumentacja',
         },
+        {
+          type: 'html',
+          position: 'left',
+          value: '<div class="pagination-nav__sublabel"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>Instrukcja w przygotowaniu. Zobacz <a href="https://altabsa.github.io/SPUMA_Inf/" target="_blank" rel="noopener noreferrer">dokumetacja v6</a></div>',
+        },
         // {to: '/blog', label: 'Blog', position: 'left'},
         // {
         //   href: 'https://github.com/facebook/docusaurus',
@@ -156,9 +161,10 @@ const config: Config = {
             {
               label: 'YouTube',
               href: 'https://www.youtube.com/user/AltabTV',
-            },
+            },            
           ],
         },
+
         {
           title: 'More',
           items: [
