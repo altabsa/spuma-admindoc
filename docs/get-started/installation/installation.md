@@ -10,13 +10,22 @@ description: Procedura instalacji systemu SPUMA.
 
 ## Krok 1 — utworzenie bazy danych
 
-Na serwerze bazy danych należy utworzyć nową bazę danych dla systemu SPUMA poprzez uruchomienie skryptu `SPUMA7_NEWDB.sql`
+Na serwerze bazy danych należy utworzyć nową bazę danych dla systemu SPUMA poprzez uruchomienie następujących skryptów
+ -  `SPUMA7_NEWDB.sql` - skrypt tworzący bazę
+ -  `SPUMA7_INITIALDATA.sql` - skrypt uzupełniający dane inicjalne
 
 #### Zalecenia
 
-- utworzyć bazę na docelowym serwerze SQL przed uruchomieniem usługi,
-- upewnić się, że konto używane przez SPUMA posiada odpowiednie uprawnienia do odczytu i zapisu w bazie,
-- zanotować nazwę serwera, nazwę bazy, login oraz hasło, które zostaną użyte w konfiguracji pliku `spuma.ini`.
+- Uruchamiać skrypt  `SPUMA7_NEWDB.sql` w trybie SQL CMD. Jeśli nie ma takiej możliwości należy:
+  - usunąć 1 linię skryptu
+
+  `:SETVAR DBName "SPUMA"`
+
+  - zamienić wszystkie wystapienia `$(DBName)` na swoją nazwę bazy (np `SPUMA`)
+  
+- Utworzyć bazę na docelowym serwerze SQL przed uruchomieniem usługi,
+- Upewnić się, że konto używane przez SPUMA posiada odpowiednie uprawnienia do odczytu i zapisu w bazie,
+- Zanotować nazwę serwera, nazwę bazy, login oraz hasło, które zostaną użyte w konfiguracji pliku `spuma.ini`.
 
 ---
 
@@ -71,7 +80,7 @@ Przykładowa zawartość:
 
 ```json
 {
-  "EndPointAddress": "4810",
+  "EndPointAddress": "4800",
   "UseRSA": true,
   "O365_SSO": {
     "Enabled": false,
@@ -94,7 +103,7 @@ Przykładowa zawartość:
 
 - port powinien być zgodny z konfiguracją serwera SPUMA DataService,
 :::tip 
-Po instalacji domyślne ustawienie portu to `4810`. Upewnij się, że ten port jest otwarty na firewall'u.
+Po instalacji domyślne ustawienie portu to `4800`. Upewnij się, że ten port jest otwarty na firewall'u.
 :::
   
 - plik `config.json` należy skonfigurować osobno w katalogu aplikacji klienckiej i administracyjnej,
@@ -132,6 +141,7 @@ Po uruchomieniu usługi należy sprawdzić:
 - czy usługa ma dostęp do bazy danych,
 - czy ewentualne reguły zapory systemowej umożliwiają dostęp do wskazanego portu.
 
+
 ## Krok 5 - Weryfikacja poprawności instalacji
 Po zakończeniu instalacji należy przeprowadzić test działania systemu.
 
@@ -152,10 +162,8 @@ http://domena:4810/admin/
 
 ### Dane logowania domyślnego
 
-```text
-login: admin
-hasło: admin
-```
+Po uruchomieniu automatycznie zakładany jest uzytkownik `admin`. Hasło tworzone jest automatycznie i można je znaleźć w pliku logu usługi (w katalogu `Logs`)
+
 
 ### Zakres testu
 
@@ -165,6 +173,11 @@ Należy potwierdzić, że:
 - aplikacja nawiązuje połączenie z usługą SPUMA DataService,
 - logowanie użytkownika `admin` działa poprawnie,
 - dane z bazy są odczytywane prawidłowo.
+
+:::warning
+Przed wykonaniem wstępnych prac konfiguracyjnych w administratorze nie wolno wprowadzać żadnych danych w aplikacji klienta. 
+:::
+
 
 ---
 
