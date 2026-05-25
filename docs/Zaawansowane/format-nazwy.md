@@ -1,6 +1,6 @@
 ---
 id: format-nazwy
-position: 1
+position: 2
 title:  Format nazwy
 ---
 
