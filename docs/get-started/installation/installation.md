@@ -185,6 +185,7 @@ Przed wykonaniem wstępnych prac konfiguracyjnych w administratorze nie wolno wp
 
 Po potwierdzeniu poprawności instalacji należy przejść do etapu wstępnej konfiguracji systemu, obejmującego między innymi:
 
+- nadanie licencji
 - konfigurację główną systemu,
 - konfigurację firm,
 - definiowanie użytkowników i grup,
