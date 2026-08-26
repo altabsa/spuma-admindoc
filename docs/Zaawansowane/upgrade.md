@@ -1,6 +1,6 @@
 ---
 id: upgrade-manual
-position: 4
+position: 5
 title:  Instrukcja upgrade’u
 ---
 ## 1. Cel dokumentu

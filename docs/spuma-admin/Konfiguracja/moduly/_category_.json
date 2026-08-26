@@ -1,0 +1,9 @@
+{
+  "label": "Moduły",
+  "position": 7,
+  "link": {
+    "type": "generated-index",
+    "slug": "/konfiguracja/moduly",
+    "description": "Sekcja Moduły zawiera konfigurację techniczną modułów wykorzystywanych przez SPUMA. W starszych wersjach systemu dostępnych było kilka modułów konfiguracyjnych. Aktualnie wykorzystywany jest moduł DATASERVICE."
+  }
+}

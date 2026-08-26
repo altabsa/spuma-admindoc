@@ -1,0 +1,8 @@
+{
+  "label": "Autoryzacje",
+  "position": 8,
+  "link": {
+    "type": "generated-index",
+    "description": "Sekcja zawiera konfigurację schematów i procesów autoryzacji dokumentów. Schematy definiują stałą ścieżkę zatwierdzania, a procesy umożliwiają budowanie dynamicznych ścieżek zależnych od warunków i danych dokumentu."
+  }
+}
