@@ -2,7 +2,7 @@
 sidebar_position: 5
 ---
 
-# Słowniki użytkownika
+# Słowniki Użytkownika
 
 **Słownik użytkownika** jest definiowany bezpośrednio w konfiguracji atrybutu klasy.
 
