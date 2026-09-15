@@ -140,7 +140,7 @@ sidebar_position: 6
 | 	objtype	 | 	int	 | 		 | 	Typ odbiorcy 	 | 	0 - Użytkownik, 1 - Grupa użytkowników, 2 - Schemat autoryzacji	 | 
 | 	order	 | 	int	 | 		 | 	Kolejność	 | 		 | 
 | 	id	 | 	int	 | 		 | 	Numer kolejny	 | 		 | 
-| 	marktodel	 | 	bit	 | 		 | 		 | 		 | 
+| 	marktodel	 | 	bit	 | 		 | 	Pole techniczne wykorzystywane przy transakcjach | 		 | 
 | 	addinfo	 | 	nvarchar(MAX)	 | 		 | 	Dodatkowe informacje	 | 		 | 
 
 
@@ -148,25 +148,25 @@ sidebar_position: 6
 
 **Opis:** Autoryzacje - Schematy oraz procesy autoryzacji.
 
-| 	Pole	 | 	Typ danych	 | 	Odwołanie	 | 	Opis	 | 	Ograniczenia	 | 	Wartość domyślna	 |
-| 	---	 | 	---	 | 	---	 | 	---	 | 	---	 | 	---	 |
-| 	id	 | 	int	 | 		 | 	Unikalny numer	 | 		 | 		 |
-| 	name	 | 	nvarchar(100)	 | 		 | 	Nazwa schematu	 | 		 | 		 |
-| 	description	 | 	ntext	 | 		 | 	Opis schematu	 | 		 | 		 |
-| 	authmethodtype	 | 	int	 | 		 | 	Typ schematu	 | 	0 - Wszyscy z, 1 - Jeden z, 2 - (n) z, 3 - Proces autoryzacji	 | 		 |
-| 	CreatedAt	 | 	datetime	 | 		 | 	Data utworzenia	 | 		 | 		 |
-| 	UpdatedAt	 | 	datetime	 | 		 | 	Data aktualizacji	 | 		 | 		 |
-| 	authusrlimit	 | 	int	 | 		 | 	Limit odbiorców dla typu schematu 2	 | 		 | 		 |
-| 	headereditmode	 | 	int	 | 		 | 	Tryb edycji nagłówka dokumentu	 | 		 | 		 |
-| 	lineseditmode	 | 	int	 | 		 | 	Tryb edycji linii dokumentu	 | 		 | 		 |
-| 	headereditmode1	 | 	int	 | 		 | 		 | 		 | 		 |
-| 	lineseditmode1	 | 	int	 | 		 | 		 | 		 | 		 |
-| 	headereditmode2	 | 	int	 | 		 | 		 | 		 | 		 |
-| 	lineseditmode2	 | 	int	 | 		 | 		 | 		 | 		 |
-| 	addinfo	 | 	nvarchar(MAX)	 | 		 | 	Dodatkowe informacje	 | 		 | 		 |
-| 	organizations_id	 | 	int	 | 	[ORGANIZATIONS](/docs/database/Tables/tables-descr.md#tabela-organizations) **id** 	 | 	ID Organizacji	 | 		 | 		 |
-| 	globalid	 | 	varchar(36)	 | 		 | 	Unikalny identyfikator	 | 		 | 		 |
-| 	usergroup_id	 | 	int	 | 	[USERGROUPS](/docs/database/Tables/tables-descr.md#tabela-usergroups) **id**	 | 	ID Grupy użytkowników (dla schematów utworzonych automatycznie na podstawie grupy)	 | 		 | 		 |
+| 	Pole	 | 	Typ danych	 | 	Odwołanie	 | 	Opis	 | 	Ograniczenia	 |
+| 	---	 | 	---	 | 	---	 | 	---	 | 	---	 |
+| 	id	 | 	int	 | 		 | 	Unikalny numer	 | 		 | 
+| 	name	 | 	nvarchar(100)	 | 		 | 	Nazwa schematu	 | 		 | 
+| 	description	 | 	ntext	 | 		 | 	Opis schematu	 | 		 | 
+| 	authmethodtype	 | 	int	 | 		 | 	Typ schematu	 | 	0 - Wszyscy z, 1 - Jeden z, 2 - (n) z, 3 - Proces autoryzacji	 | 
+| 	CreatedAt	 | 	datetime	 | 		 | 	Data utworzenia	 | 		 | 
+| 	UpdatedAt	 | 	datetime	 | 		 | 	Data aktualizacji	 | 		 | 
+| 	authusrlimit	 | 	int	 | 		 | 	Limit odbiorców dla typu schematu 2	 | 		 | 
+| 	headereditmode	 | 	int	 | 		 | 		Uprawnienie do edycji nagłówka dokumentu	 | 	0 - Blokada, 1 - Odblokowane | 
+| 	lineseditmode	 | 	int	 | 		 | 	Uprawnienie do edycji linii dokumentu	 | 	0 - Blokada, 1 - Odblokowane |
+| 	headereditmode1	 | 	int	 | 		 | Uprawnienie do edycji nagłówka1 dokumentu	 | 	0 - Blokada, 1 - Odblokowane | 	
+| 	lineseditmode1	 | 	int	 | 		 | Uprawnienie do edycji linii1 dokumentu	 | 	0 - Blokada, 1 - Odblokowane | 	
+| 	headereditmode2	 | 	int	 | 		 |Uprawnienie do edycji nagłówka2 dokumentu	 | 	0 - Blokada, 1 - Odblokowane | 	
+| 	lineseditmode2	 | 	int	 | 		 | Uprawnienie do edycji linii2 dokumentu	 | 	0 - Blokada, 1 - Odblokowane | 
+| 	addinfo	 | 	nvarchar(MAX)	 | 		 | 	Dodatkowe informacje	 | 		 |
+| 	organizations_id	 | 	int	 | 	[ORGANIZATIONS](/docs/database/Tables/tables-descr.md#tabela-organizations) **id** 	 | 	ID Organizacji	 | 		 |
+| 	globalid	 | 	varchar(36)	 | 		 | 	Globalny identyfikator obiektu, niezależny od bazy danych	 | 		 | 
+| 	usergroup_id	 | 	int	 | 	[USERGROUPS](/docs/database/Tables/tables-descr.md#tabela-usergroups) **id**	 | 	ID Grupy użytkowników (dla schematów utworzonych automatycznie na podstawie grupy)	 | 		 | 
 
 
 ## Tabela BPCONFIGS
@@ -282,7 +282,7 @@ sidebar_position: 6
 | 	description	 | 	ntext	 | 		 | 	Opis atrybutu	 | 		 |
 | 	regex	 | 	ntext	 | 		 | 	Format	 | 		 |
 | 	datatype	 | 	int	 | 		 | 	Typ danych	 | 	0 - int, 1 - float, 2 - tekst, 3 - DataCzas, 4 - partner handlowy, 5 - słownik systemowy, 6 - słownik użytkownika, 7 - słownik interaktywny, 8 - słownik statyczny, 9 - Długi tekst	 |
-| 	marktodel	 | 	bit	 | 		 | 		 | 		 |
+| 	marktodel	 | 	bit	 | 		 | Pole techniczne wykorzystywane przy transakcjach | 		 |
 | 	extensions_id	 | 	int	 | 		 | 	Powiązane rozszerzenie (nieużywane)	 | 		 |
 | 	order	 | 	int	 | 		 | 	Kolejność	 | 		 |
 | 	mandatory	 | 	int	 | 		 | 	Wymagany	 | 	1 - Tak, 0 - Nie |
@@ -320,7 +320,7 @@ sidebar_position: 6
 | 	authschemas_id	 | 	int	 | 	[AUTHSCHEMAS](/docs/database/Tables/tables-descr.md#tabela-authschemas) **id**	 | 	Schemat domyślny (Autoryzacje)  |  |
 | 	prmcpmthtype	 | 	int	 | 		 | 	Kopiowanie uprawnień (Ogólne)	 | 	0 - Nigdy, 1 - Zawsze, 2 - Zapytaj	 |
 | 	authmandatory	 | 	bit	 | 		 | 	Schemat jest wymagany (Autoryzacje) | 1 - Tak, 0 - Nie |
-| 	visibility	 | 	int	 | 		 | 	Widoczność | 	 0 - widoczna, 1 - ukryta	 |
+| 	visibility	 | 	int	 | 		 | 	Widoczność | 	 0 - Widoczna, 1 - Ukryta	 |
 | 	classes_id	 | 	int	 | 	[CLASSES](/docs/database/Tables/tables-descr.md#tabela-classes) **id**	 | 	ID klasy bazowej	 | 		 |
 | 	issys	 | 	bit	 | 		 | 	Czy klasa systemowa?	 | 1 - Tak, 0 - Nie |
 | 	uniqname	 | 	bit	 | 		 | 	Kontrola unikalności nazwy (Ogólne)	 | 	1 - Tak, 0 - Nie |
@@ -329,7 +329,7 @@ sidebar_position: 6
 | 	uniqnum	 | 	bit	 | 		 | 	Kotrola unikalności numeru (Ogólne)	 | 1 - Tak, 0 - Nie |
 | 	color	 | 	int	 | 		 | 	Kolor (Ogólne) | 		 |
 | 	organizations_id	 | 	int	 | 	[ORGANIZATIONS](/docs/database/Tables/tables-descr.md#tabela-organizations) **id**	 | 	ID Organizacji | 		 |
-| 	globalid	 | 	varchar(36)	 | 		 | 	Unikalny kod	 | 		 |
+| 	globalid	 | 	varchar(36)	 | 		 | 	Globalny identyfikator obiektu, niezależny od bazy danych	 | 		 |
 | 	autoaddrow	 | 	bit	 | 		 | 	Automatycznie dodaj linie (nieużywane)	 | 		 |
 | 	att_classes_id	 | 	int	 | 	[CLASSES](/docs/database/Tables/tables-descr.md#tabela-classes) **id**	 | 	Klasa załącznika (Ogólne)	 | 		 |
 | 	attsendtocr	 | 	bit	 | 		 | 	Załącznik do OCR (Ogólne) | 1 - Tak, 0 - Nie |
@@ -352,7 +352,7 @@ sidebar_position: 6
 | 	sortable	 | 	bit	 | 		 | 	Sortowanie	 | 0 - Nie, 1 - Tak |
 | 	target	 | 	int	 | 		 | 	Typ odnośnika	 | 	0 - Brak, 1 - Podraport, 2 - Dokument, 3 Wpis dziennika korespondencji, 4 - Wpis dostępu	 |
 | 	classes_id	 | 	int	 | 	[INTERACTIVEDICTS](/docs/database/Tables/tables-descr.md#tabela-interactivedicts) **id**, [DOCUMENTS](/docs/database/Tables/tables-descr.md#tabela-documents) **id**, [DAILYCORRESPONDENCE](/docs/database/Tables/tables-descr.md#tabela-dailycorrespondence) **id**, [DOCUMENTACCESS](/docs/database/Tables/tables-descr.md#tabela-documentaccess) **id**	 | 	Klasa odnośnika (obiekt zgodnie z typem)	 | 		 |
-| 	marktodel	 | 	bit	 | 		 | 		 | 		 |
+| 	marktodel	 | 	bit	 | 		 | Pole techniczne wykorzystywane przy transakcjach | 		 |
 | 	width	 | 	int	 | 		 | 	Szerokość	 | 		 |
 | 	group	 | 	int	 | 		 | 	Grupowanie	 | 	0 - Brak, >0 Kolejność grupowania	 |
 | 	groupasc	 | 	bit	 | 		 | 	Grupowanie	 | 	0 - Brak, >0 Kolejność grupowania	 |
@@ -385,7 +385,7 @@ sidebar_position: 6
 | 	entrynum	 | 	int	 | 		 | 	Kolejny numer wpisu (komentarz do komentarza)	 | 		 |
 | 	content	 | 	ntext	 | 		 | 	Treść komentarza	 | 		 |
 | 	createdat	 | 	datetime	 | 		 | 	Data utworzenia	 | 		 |
-| 	marktodel	 | 	bit	 | 		 | 		 | 		 |
+| 	marktodel	 | 	bit	 | 		 | Pole techniczne wykorzystywane przy transakcjach | 		 |
 
 
 ## Tabela COMPANIES
@@ -401,7 +401,7 @@ sidebar_position: 6
 | 	UpdatedAt	 | 	datetime	 | 		 | 	Data ostatniej aktualizacji	 | 		 |
 | 	directories_id	 | 	int	 | 		 | 	Katalog domyślny (Ogólne) | 		 |
 | 	organizations_id	 | 	int	 | 	[ORGANIZATIONS](/docs/database/Tables/tables-descr.md#tabela-organizations) **id**	 | 	Id organizacji	 | 		 |
-| 	globalid	 | 	varchar(36)	 | 		 | 	Unikalny kod firmy	 | 		 |
+| 	globalid	 | 	varchar(36)	 | 		 | 	Globalny identyfikator obiektu, niezależny od bazy danych	 | 		 |
 | 	taxid	 | 	varchar(32)	 | 		 | 	NIP firmy dla KSEF (Ogólne)	 | 		 |
 | 	sl_url	 | 	nvarchar(256)	 | 		 | Adres SL (Integracja SAP) | 		 |
 | 	sl_user	 | 	nvarchar(128)	 | 		 | 		Użytkownik (Integracja SAP) |  |
@@ -432,9 +432,9 @@ sidebar_position: 6
 | 	name	 | 	nvarchar(100)	 | 		 | 	nazwa słownika	 | 		 |
 | 	description	 | 	ntext	 | 		 | 	opis słownika	 | 		 |
 | 	regex	 | 	nvarchar(1024)	 | 		 | 	wzór	 | 		 |
-| 	marktodel	 | 	bit	 | 		 | 		 | 		 |
+| 	marktodel	 | 	bit	 | 		 | Pole techniczne wykorzystywane przy transakcjach | 		 |
 | 	displtips	 | 	bit	 | 		 | 	jako podpowiedź	 | 1 - tak, 0 - nie |
-| 	globalid	 | 	varchar(36)	 | 		 | 	unikalny kod firmy	 | 		 |
+| 	globalid	 | 	varchar(36)	 | 		 | 	Globalny identyfikator obiektu, niezależny od bazy danych	 | 		 |
 
 
 ## Tabela COMPANY_CLASSES
@@ -558,7 +558,7 @@ sidebar_position: 6
 | 	organizations_id	 | 	int	 | 	[ORGANIZATIONS](/docs/database/Tables/tables-descr.md#tabela-organizations) **id**	 | 	ID Organizacji	 | 		 |
 | 	CreatedAt	 | 	datetime	 | 		 | 	Data utworzenia	 | 		 |
 | 	UpdatedAt	 | 	datetime	 | 		 | 	Data ostatniej aktualizacji	 | 		 |
-| 	globalid	 | 	varchar(36)	 | 		 | 	Unikalny kod algorytmu	 | 		 |
+| 	globalid	 | 	varchar(36)	 | 		 | 	Globalny identyfikator obiektu, niezależny od bazy danych	 | 		 |
 
 
 ## Tabela DAILYCORR_PROPERTIES
@@ -598,7 +598,7 @@ sidebar_position: 6
 | 	reportctx	 | 	ntext	 | 		 | 	Raport SQL	 | 		 |
 | 	CreatedAt	 | 	datetime	 | 		 | 	Data utworzenia	 | 		 |
 | 	UpdatedAt	 | 	datetime	 | 		 | 	Data ostatniej aktualizacji	 | 		 |
-| 	globalid	 | 	varchar(36)	 | 		 | 	Unikalny indentyfikator	 | 		 |
+| 	globalid	 | 	varchar(36)	 | 		 | 	Globalny identyfikator obiektu, niezależny od bazy danych	 | 		 |
 | 	numpfx	 | 	varchar(2)	 | 		 | 	Prefix	 | 		 |
 | 	dcorrtype	 | 	int	 | 		 | 	Typ | 0 - Zwykły, 1 - Awizacja |
 
@@ -691,7 +691,7 @@ sidebar_position: 6
 | 	CreatedAt	 | 	datetime	 | 		 | 	Data utworzenia wpisu	 | 		 |
 | 	UpdatedAt	 | 	datetime	 | 		 | 	Data aktualizacji wpisu	 | 		 |
 | 	organizations_id	 | 	int	 | 	[ORGANIZATIONS](/docs/database/Tables/tables-descr.md#tabela-organizations) **id**	 | 	ID Organizacji	 | 		 |
-| 	globalid	 | 	varchar(36)	 | 		 | 	Unikalny kod wpisu dla słownika	 | 		 |
+| 	globalid	 | 	varchar(36)	 | 		 | 	Globalny identyfikator obiektu, niezależny od bazy danych	 | 		 |
 
 
 ## Tabela DICTVALUES
@@ -743,7 +743,7 @@ sidebar_position: 6
 | 	Pole	 | 	Typ danych	 | 	Odwołanie	 | 	Opis	 | 	Ograniczenia	 |
 | 	---	 | 	---	 | 	---	 | 	---	 | 	---	 |
 | 	documentaccess_id	 | 	int	 | 	[DOCUMENTACCESS](/docs/database/Tables/tables-descr.md#tabela-documentaccess) **id**	 | 	ID Prośby o dostęp do dokumentu | 		 |
-| 	int_id	 | 	int	 | 		 | 		 | 		 |
+| 	int_id	 | 	int	 | 		 | Kolejny numer wpisu dla danej prośby o dostęp. Przy zmianie decyzji tworzony jest nowy wpis | 		 |
 | 	users_id	 | 	int	 | 	[USERS](/docs/database/Tables/tables-descr.md#tabela-users) **id**	 | 	Id Użytkownika zatwierdzającago	 | 		 |
 | 	status	 | 	int	 | 		 | 	Status zatwierdzenia | 0 - Oczekuje, 1 - Potwierdzony, 2 - Zabroniony |
 | 	CreatedAt	 | 	datetime	 | 		 | 	Data utworzenia	 | 		 |
@@ -760,7 +760,7 @@ sidebar_position: 6
 | 	schemacode	 | 	nvarchar(100)	 | 	[DIRECTORIES](/docs/database/Tables/tables-descr.md#tabela-directories) **id**	 | 	ID Wybranego schematu rozpoznawania OCR	 | 		 |
 | 	title	 | 	nvarchar(255)	 | 		 | 	Tytuł przypisany z OCR	 | 		 |
 | 	comments	 | 	ntext	 | 		 | Uwagi | 		 |
-| 	marktodel	 | 	bit	 | 		 | 		 | 		 |
+| 	marktodel	 | 	bit	 | 		 | 	Pole techniczne wykorzystywane przy transakcjach | 		 |
 
 
 ## Tabela DOCUMENTPAGES
@@ -774,7 +774,7 @@ sidebar_position: 6
 | 	pagenum	 | 	int	 | 		 | 	Numer strony dokumentu	 | 		 |
 | 	resources_id	 | 	int	 | 	[RESOURCES](/docs/database/Tables/tables-descr.md#tabela-resources) **id**	 | 	ID Zasobu pliku	 | 		 |
 | 	resources_pagenum	 | 	int	 | 		 | 	Numer strony w przypisanym zasobie	 | 		 |
-| 	marktodel	 | 	bit	 | 		 | 		 | 		 |
+| 	marktodel	 | 	bit	 | 		 | 	Pole techniczne | 		 |
 | 	rotation	 | 	int	 | 		 | 	Obrót strony | 	np: 0 , 90, 180, 270 |
 
 
@@ -808,16 +808,16 @@ sidebar_position: 6
 | 	description	 | 	text	 | 		 | 	Opis dokumentu	 | 		 |
 | 	docdate	 | 	datetime	 | 		 | 	Data dokumentu	 | 		 |
 | 	docnum	 | 	nvarchar(100)	 | 		 | 	Numer dokumentu	 | 		 |
-| 	IDDoc	 | 	int	 | 		 | 		 | 		 |
+| 	IDDoc	 | 	int	 | 		 | 	Nieużywane | 		 |
 | 	CreatedAt	 | 	datetime	 | 		 | 	Data utworzenia wpisu	 | 		 |
 | 	UpdatedAt	 | 	datetime	 | 		 | 	Data aktualizacji wpisu	 | 		 |
 | 	authstatus	 | 	int	 | 		 | 	Status autoryzacji dokumentu	 | 	0 - Oczekuje, 1 - Zatwierdzony, 2 - Odrzucony	 |
 | 	directories_id	 | 	int	 | 	[DIRECTORIES](/docs/database/Tables/tables-descr.md#tabela-directories) **id**	 | 	ID Katalogu | 		 |
 | 	docstatus	 | 	int	 | 		 | 	Status dokumentu	 | 	0 - Wczytany (Przed OCR), 1 - Rozpoznawany (W OCR), 2 - Gotowy (Po OCR) , 3 - W repozytorium (szczegóły authstatus), 4 - Zapisany jako szablon	 |
-| 	reconschemas_code	 | 	varchar(100)	 | 		 | 		 | 		 |
+| 	reconschemas_code	 | 	varchar(100)	 | 		 | Nieużywane | 		 |
 | 	enterdate	 | 	datetime	 | 		 | 	Data wpływu	 | 		 |
 | 	templates_id	 | 	int	 | 	[DOCUMENTS](/docs/database/Tables/tables-descr.md#tabela-documents) **id**	 | 	Powiązanie z dokumentem typu szablon	 | 		 |
-| 	definition_code	 | 	varchar(100)	 | 		 | 		 | 		 |
+| 	definition_code	 | 	varchar(100)	 | 		 | Nieużywane | 		 |
 | 	ocr_code	 | 	varchar(100)	 | 		 | 	Unikalny kod wygenerowany przez usługe OCR dla dokumentu	 | 		 |
 | 	headereditmode	 | 	int	 | 		 | 	Uprawnienie do edycji nagłówka dokumentu	 | 	0 - Blokada, 1 - Odblokowane	 |
 | 	lineseditmode	 | 	int	 | 		 | 	Uprawnienie do edycji linii dokumentu	 | 	0 - Blokada, 1 - Odblokowane	 |
@@ -825,12 +825,12 @@ sidebar_position: 6
 | 	lineseditmode1	 | 	int	 | 		 | 	Uprawnienie do edycji linii1 dokumentu	 | 	0 - Blokada, 1 - Odblokowane	 |
 | 	headereditmode2	 | 	int	 | 		 | 	Uprawnienie do edycji nagłówka2 dokumentu	 | 	0 - Blokada, 1 - Odblokowane	 |
 | 	lineseditmode2	 | 	int	 | 		 | 	Uprawnienie do edycji linii2 dokumentu	 | 	0 - Blokada, 1 - Odblokowane	 |
-| 	canchgres	 | 	bit	 | 		 | 	Uprawnienie do zmiany zasobu dokumentu (zmiana wersji pliku)	 | 	0 - Blokada, 1 - Odblokowane	 |
+| 	canchgres	 | 	bit	 | 		 | 	Uprawnienie do zmiany zasobu dokumentu (zaktualizauj zawartość)	 | 	0 - Blokada, 1 - Odblokowane	 |
 | 	sysdocnum	 | 	int	 | 		 | 	Numer systemowy dokumentu nadany po wysłaniu dokumentu w obieg unikalny w obrębie firmy i klasy	 | 		 |
 | 	rm_users_id	 | 	int	 | 	[USERS](/docs/database/Tables/tables-descr.md#tabela-users) **id** | 	ID Użytkownika prznoszącego dokument do innego katalogu | 		 |
-| 	tmpwritemode	 | 	int	 | 		 | 	Uprawnienie do edycji dokumentu typu formularz	 | 	0 - Blokada, 1 - Odblokowane	 |
-| 	autopublish	 | 	bit	 | 		 | 		 | 		 |
-| 	grouping	 | 	varchar(MAX)	 | 		 | 		 | 		 |
+| 	tmpwritemode	 | 	int	 | 		 | 	Uprawnienie do edycji dokumentu typu formularz (Nieużywane)	 | 	0 - Blokada, 1 - Odblokowane	 |
+| 	autopublish	 | 	bit	 | 		 | Pole techniczne używane w automatyzacji KSeF do oznaczenia dokumentu do automatycznej publikacji | 		 |
+| 	grouping	 | 	varchar(MAX)	 | 		 | Nieużywane | 		 |
 | 	businesspartner	 | 	nvarchar(MAX)	 | 		 | Partner Handlowy | 		 |
 | 	duedate	 | 	datetime	 | 		 | Data płatności | 		 |
 | 	baseid	 | 	nvarchar(MAX)	 | 		 | 	Numer Dokumentu bazowego | 		 |
@@ -977,7 +977,7 @@ sidebar_position: 6
 | 	rbaselineid	 | 	int	 | 		 | 	Pozycja zamówienia | 		 |
 | 	rporderprice	 | 	numeric(19, 6)	 | 		 | 	Cena netto | 		 |
 | 	rporderqty	 | 	numeric(19, 6)	 | 		 | 	Ilość zamówienia | 		 |
-| 	rlineidref	 | 	int	 | 		 | 		 | 		 |
+| 	rlineidref	 | 	int	 | 		 | 	Numer linii korygowanej | 		 |
 | 	rnewqty	 | 	numeric(19, 6)	 | 		 | Ilość po korekcie | 		 |
 | 	rnetpricenew	 | 	numeric(19, 6)	 | 		 | 	Cena netto po korekcie | 		 |
 | 	rnettotalnew	 | 	numeric(19, 6)	 | 		 | 	Wartość netto po korekcie | 		 |
@@ -1090,7 +1090,7 @@ sidebar_position: 6
 | 	report	 | 	bit	 | 		 | 	Czy raport 	 | 	0 - Nie (słownik), 1 - Tak (raport)	 |
 | 	label	 | 	nvarchar(200)	 | 		 | 	Etykieta	 | 		 |
 | 	visible	 | 	bit	 | 		 | 	Widoczność	 | 	0 - Nie, 1 - Tak	 |
-| 	globalid	 | 	varchar(36)	 | 		 | 	Unikalny identyfikator	 | 		 |
+| 	globalid	 | 	varchar(36)	 | 		 | 	Globalny identyfikator obiektu, niezależny od bazy danych	 | 		 |
 | 	issys	 | 	bit	 | 		 | Czy jest systemowy | 0 - Nie, 1 - Tak |
 
 
@@ -1224,7 +1224,7 @@ sidebar_position: 6
 | 	updateat	 | 	datetime	 | 		 | 	Data aktualizacji wpisu	 | 		 |
 
 
-
+<!--
 ## Tabela OCRCONFIGS
 
 **Opis:** TODO
@@ -1237,7 +1237,7 @@ sidebar_position: 6
 | 	CreatedAt	 | 	datetime	 | 		 | 		 | 		 |
 | 	UpdatedAt	 | 	datetime	 | 		 | 		 | 		 |
 | 	cptolns_groupby	 | 	int	 | 		 | 		 | 		 |
-
+-->
 
 ## Tabela OCRFIELDS
 
@@ -1251,7 +1251,7 @@ sidebar_position: 6
 | 	type	 | 	int	 | 		 | 	Typ pola wartości	 | 	0 - Pole tekstowe, 1 - Liczba całkowita, 2 - Data, 3 - Liczba zmienno przecinkowa, 4 - Nazwa bloku z liniami dokumentu	 |
 | 	value	 | 	nvarchar(MAX)	 | 		 | 	Wartość odczytana przez OCR	 | 		 |
 | 	ocrfields_id	 | 	int	 | 	[DOCUMENTOCRRESULTS](/docs/database/Tables/tables-descr.md#tabela-documentocrresults) **id**	 | 	ID Pola OCR nadrzędnego dla bloku z liniami	 | 		 |
-| 	marktodel	 | 	bit	 | 		 | 		 | 		 |
+| 	marktodel	 | 	bit	 | 		 | Pole techniczne wykorzystywane przy transakcjach | 		 |
 
 
 ## Tabela OCRLINES
@@ -1304,7 +1304,7 @@ sidebar_position: 6
 | 	documentocrresults_id	 | 	int	 | 	[DOCUMENTOCRRESULTS](/docs/database/Tables/tables-descr.md#tabela-documentocrresults) **id**	 | 	id przypisanego schematu rozpoznawania dla dokumentu	 | 		 |
 | 	pagenum	 | 	int	 | 		 | 	Numer strony	 | 		 |
 | 	type	 | 	int	 | 		 | 	Typ pola	 | 	1 - Strona z liniami , 2 - Standardowa strona , 3 - Strona załącznika do faktury	 |
-| 	marktodel	 | 	bit	 | 		 | 		 | 		 |
+| 	marktodel	 | 	bit	 | 		 | Pole techniczne wykorzystywane przy transakcjach | 		 |
 | 	width	 | 	int	 | 		 | 	Szerokość strony	 | 		 |
 | 	height	 | 	int	 | 		 | 	Wysokość strony	 | 		 |
 
@@ -1334,7 +1334,7 @@ sidebar_position: 6
 | 	code	 | 	varchar(128)	 | 		 | 	Kod organizacji	 | 		 |
 | 	CreatedAt	 | 	datetime	 | 		 | 	Data utworzenia wpisu	 | 		 |
 | 	UpdatedAt	 | 	datetime	 | 		 | 	Data aktualizacji wpisu	 | 		 |
-| 	globalid	 | 	varchar(36)	 | 		 | 	Unikalny identyfikator	 | 		 |
+| 	globalid	 | 	varchar(36)	 | 		 | 	Globalny identyfikator obiektu, niezależny od bazy danych	 | 		 |
 -->
 
 ## Tabela PAGECOMMENTS
@@ -1351,7 +1351,7 @@ sidebar_position: 6
 | 	posy	 | 	float	 | 		 | 	Pozycja komentarza w osi y	 | 		 |
 | 	width	 | 	float	 | 		 | 	Szerokość komentarza	 | 		 |
 | 	height	 | 	float	 | 		 | 	Wysokość komentarza	 | 		 |
-| 	marktodel	 | 	bit	 | 		 | 		 | 		 |
+| 	marktodel	 | 	bit	 | 		 | Pole techniczne wykorzystywane przy transakcjach | 		 |
 
 
 ## Tabela PERMISSIONS
@@ -1362,13 +1362,13 @@ sidebar_position: 6
 | 	---	 | 	---	 | 	---	 | 	---	 | 	---	 |
 | 	id	 | 	int	 | 		 | 	Unikalny numer wpisu	 | 		 |
 | 	order	 | 	int	 | 		 | 	Kolejność | 		 |
-| 	dst_objtype	 | 	int	 | 		 | Typ obiektu, do którego przypisano uprawnienie| 0 - Uprawnienia firmy, 1 - Uprawnienia klasy dokumentu, 2 - , 3 - Uprawnienia dzienników , 4 - Uprawnienia raportów |
-| 	dst_objid	 | 	int	 | 	[COMPANIES](/docs/database/Tables/tables-descr.md#tabela-companies) **id**, [CLASSES](/docs/database/Tables/tables-descr.md#tabela-classes) **id**, [DAILYCORRCLASS](/docs/database/Tables/tables-descr.md#tabela-dailycorrclass) **id**, [INTERACTIVEDICTS](/docs/database/Tables/tables-descr.md#tabela-interactivedicts) **id**  | 	ID Obiektu, do którego przypisano uprawnienie | 		 |
+| 	dst_objtype	 | 	int	 | 		 | Typ obiektu, do którego przypisano uprawnienie| 0 - Uprawnienia firmy, 1 - Uprawnienia klasy dokumentu, 2 - Dokument, 3 - Uprawnienia dzienników , 4 - Uprawnienia raportów |
+| 	dst_objid	 | 	int	 | 	[COMPANIES](/docs/database/Tables/tables-descr.md#tabela-companies) **id**, [CLASSES](/docs/database/Tables/tables-descr.md#tabela-classes) **id**, [DOCUMENTS](/docs/database/Tables/tables-descr.md#tabela-documents) **id**, [DAILYCORRCLASS](/docs/database/Tables/tables-descr.md#tabela-dailycorrclass) **id**, [INTERACTIVEDICTS](/docs/database/Tables/tables-descr.md#tabela-interactivedicts) **id**  | 	ID Obiektu, do którego przypisano uprawnienie | 		 |
 | 	proptype	 | 	int	 | 		 | 	Typ uprawnienia | 	0 - Główne, 1 - Przenaszalność, 5 - Edycja obcych komentarzy, 6 - Edycja pola/kolumny, 7 - Edycja obcych linii, 8 - Dodanie wpisu dziennika, 9 - Usunięcie wpisu dziennika, 10 - Zmiana zasobów, 11 - Edycja referencji, 12 - Tworzenie dok. SAP   |
 | 	permtype	 | 	int	 | 		 | 	Typ edycji | 	0 - Pełne, 1 - Podgląd, 2 - Brak |
 | 	objtype	 | 	int	 | 	 | 	Typ odbiorcy uprawnienia | 0 - Użytkownik, 1 - Grupa użytkowników |
 | 	objid	 | 	int	 | 	[USERS](/docs/database/Tables/tables-descr.md#tabela-users) **id**, [USERGROUPS](/docs/database/Tables/tables-descr.md#tabela-usergroups) **id**  | 	ID Odbiorcy uprawnienia | 		 |
-| 	marktodel	 | 	bit	 | 		 | 		 | 		 |
+| 	marktodel	 | 	bit	 | 		 | Pole techniczne wykorzystywane przy transakcjach | 		 |
 | 	classattribs_id	 | 	int	 | 	[ATTRIBDICTS](/docs/database/Tables/tables-descr.md#tabela-attribdicts) **id** | 	Uprawnienie do atrybutu | 		 |
 | 	docstate	 | 	int	 | 		 | 	Status dokumentu wartości	 | 	0 - Zatwierdzony, 1 - Odrzucony, 2 - W sekretariacie, 3 - W autoryzacji	 |
 | 	authschemas_id	 | 	int	 | 	[AUTHSCHEMAS](/docs/database/Tables/tables-descr.md#tabela-authschemas) **id**	 | 	ID Powiązanego schematu autoryzacji	 | 		 |
@@ -1489,7 +1489,7 @@ sidebar_position: 6
 | 	UpdatedAt	 | 	datetime	 | 		 | 	Data aktualizacji wpisu	 | 		 |
 | 	grouprole	 | 	int	 | 		 | 	Rola dla grupy wartości	 | 	0 - Ogólna, 1 - Twórca, 2 - Administratorzy	 |
 | 	organizations_id	 | 	int	 | 	[ORGANIZATIONS](/docs/database/Tables/tables-descr.md#tabela-organizations) **id**	 | ID Organizacji | 		 |
-| 	globalid	 | 	varchar(36)	 | 		 | 	Unikalny identyfikator	 | 		 |
+| 	globalid	 | 	varchar(36)	 | 		 | 	Globalny identyfikator obiektu, niezależny od bazy danych	 | 		 |
 
 
 ## Tabela USERGROUPUSERS
@@ -1536,7 +1536,7 @@ sidebar_position: 6
 | 	organizations_id	 | 	int	 | 	[ORGANIZATIONS](/docs/database/Tables/tables-descr.md#tabela-organizations) **id**	 | 	ID Organizacji	 | 		 |
 | 	dailycorrclass_id	 | 	int	 | 	[DAILYCORRCLASS](/docs/database/Tables/tables-descr.md#tabela-dailycorrclass) **id**	 | 	Domyślny dziennik - ID (Ogólne)	 | 		 |
 | 	signature	 | 	image	 | 		 | 	Podpis	 | 		 |
-| 	globalid	 | 	varchar(36)	 | 		 | 	Unikalny identyfikator	 | 		 |
+| 	globalid	 | 	varchar(36)	 | 		 | 	Globalny identyfikator obiektu, niezależny od bazy danych	 | 		 |
 | 	lang	 | 	int	 | 		 | 	Język UI (Ogólne) | 	0 - Angielski, 1 - Polski |
 | 	imap_address	 | 	varchar(255)	 | 		 | 	IMAP - host (Email)	 | 		 |
 | 	imap_port	 | 	int	 | 		 | 	IMAP - port (Email)	 | 		 |

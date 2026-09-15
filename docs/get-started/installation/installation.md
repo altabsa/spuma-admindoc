@@ -150,13 +150,13 @@ Po zakończeniu instalacji należy przeprowadzić test działania systemu.
 Zgodnie z przekazanymi ustawieniami domyślny adres testowy aplikacji klienta to:
 
 ```text
-http://domena:4810/client/
+http://domena:4800/client/
 ```
 
 Domyślny adres testowy aplikacji administracyjnej to:
 
 ```text
-http://domena:4810/admin/
+http://domena:4800/admin/
 ```
 
 

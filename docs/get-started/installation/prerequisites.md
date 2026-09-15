@@ -32,7 +32,7 @@ Do instalacji wymagane są:
 
 SPUMA obsługuje następujące silniki bazodanowe:
 
-- Microsoft SQL Server — wersja co najmniej 2008 R2,
+- Microsoft SQL Server — wersja co najmniej 2017,
 - SAP HANA DB — wersja 2.0.
 
 Baza danych zakładana jest ręcznie na podstawie dostarczonego skryptu SQL.

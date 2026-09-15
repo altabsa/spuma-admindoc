@@ -34,11 +34,40 @@ Procedura zwraca listę operacji, które mają zostać wysłane do SAP. Na końc
 
 #### Przykład
 
-TODO
+##### Dodanie kontrahenta do SAP Business One
+
+Dla zasobu `BusinessPartners` do requestu dodawana jest seria numerowania o ID `84`, wykorzystywana podczas zakładania dostawcy.
+
+```sql
+IF @resource = 'BusinessPartners'
+BEGIN
+    SELECT @content = REPLACE(
+        CONVERT(NVARCHAR(MAX), @content),
+        '"BPAddresses"',
+        '"Series": 84,' + '"BPAddresses"'
+    );
+END
+```
+
+##### Dodanie dokumentu tymczasowego
+
+Dla zasobu `Drafts` pole `U_KSEF_DATA_DO` (**KSeF Data Do / Data dostawy / wykonania**) jest uzupełniane wartością z pola `VatDate`.
+
+```sql
+IF @resource = 'Drafts'
+BEGIN
+    SET @content = JSON_MODIFY(
+        CONVERT(NVARCHAR(MAX), @content),
+        '$.U_KSEF_DATA_DO',
+        JSON_VALUE(CONVERT(NVARCHAR(MAX), @content), '$.VatDate')
+    );
+END
+```
 
 #### Uwagi
 
-TODO
+Należy zachować poprawną strukturę requestu, w szczególności formatu JSON przekazywanego w `@content`.
+
 
 ## Procedura APR_BEFOREOCRFILL
 
