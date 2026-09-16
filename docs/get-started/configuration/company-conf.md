@@ -105,7 +105,7 @@ Dotyczy to w szczególności:
 - **Integracji SAP**,
 - **Konfiguracji BP**.
 
-Szczegółową konfigurację połączeń z systemami zewnętrznymi wykonaj zgodnie z instrukcją odpowiedniej integracji.
+Szczegółową konfigurację połączeń z systemami zewnętrznymi wykonaj zgodnie z instrukcją odpowiedniej [integracji](/docs/get-started/configuration/integrations-conf.md).
 
 ## 6. Weryfikacja
 

@@ -61,9 +61,9 @@ Aby utworzyć grupę użytkowników:
 Grupy warto tworzyć zgodnie z rolami lub zespołami występującymi w organizacji, np.:
 
 - księgowość,
-- osoby zatwierdzające,
-- właściciele dokumentów,
-- administratorzy procesu.
+- dział handlowy,
+- sekretariat,
+- zarząd.
 
 ## 4. Przypisanie użytkowników do grupy
 
