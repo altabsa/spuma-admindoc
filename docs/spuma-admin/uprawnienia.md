@@ -115,6 +115,11 @@ Pole `Typ` określa rodzaj uprawnienia. Dostępne wartości zależą od miejsca 
 
 - **Tworzenie dok. SAP**
   - **Opis:** określa możliwość tworzenia dokumentu SAP na podstawie dokumentu w SPUMA.
+  - **Obsługiwane statusy:** uprawnienie działa tylko dla dokumentów w statusach:
+    - **Zatwierdzony**,
+    - **W autoryzacji**.
+    
+    Pozostałe statusy nie są obsługiwane dla tego typu uprawnienia.
   - **Występowanie:** Firma, Klasa.
 
 - **Dodanie wpisu dziennika**

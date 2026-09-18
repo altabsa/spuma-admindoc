@@ -72,7 +72,16 @@ Nazwa musi być unikatowa w ramach procesu.
 
 > ***Przykład:*** *Etap wykorzystuje typ `Schemat zdefiniowany` i schemat `*DZIAL1`, wymagający decyzji wszystkich użytkowników działu. Jeżeli użytkownicy zatwierdzą dokument kolejno A, C, B, do zmiennej zostanie zapisany kod użytkownika B. Jeżeli użytkownik C odrzuci dokument, do zmiennej zostanie zapisany kod użytkownika C.*
 
-- `Auto zapis` - 
+- `Auto zapis` - automatycznie zapisuje dokument po zatwierdzeniu etapu autoryzacji.
+
+Jeżeli opcja jest wyłączona, po zatwierdzeniu użytkownik musi wykonać dodatkowo dwa kroki:
+
+1. potwierdzić komunikat o wstępnym zatwierdzeniu dokumentu,
+2. zapisać dokument standardową akcją zapisu.
+
+Dopiero po zapisaniu dokumentu autoryzacja zostaje wykonana.
+
+Jeżeli `Auto zapis` jest włączony, dokument zostaje zapisany automatycznie po zatwierdzeniu i nie wymaga dodatkowego potwierdzania oraz ręcznego zapisu.
 
 - `Dodatkowe informacje` - Tekst wyświetlany użytkownikowi w oknie zatwierdzania w aplikacji WWW.
 
@@ -167,7 +176,8 @@ Warunki definiują, czy autoryzacja przejdzie z jednego etapu do kolejnego. Są 
 Sposób prezentacji przejść:
 
 - linia ciągła - przejście bez warunku,
-- linia przerywana - przejście z przypisanym warunkiem.
+- linia przerywana - przejście z przypisanym warunkiem,
+- linia czerwona - przejście oznaczające warunek odrzucenia.
 
 Jeżeli warunek przypisany do przejścia jest spełniony, proces przechodzi do kolejnego etapu. Jeżeli warunek nie jest spełniony, przejście jest pomijane.
 

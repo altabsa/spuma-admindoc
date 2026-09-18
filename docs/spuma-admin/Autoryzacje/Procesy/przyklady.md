@@ -26,8 +26,8 @@ Proces kieruje dokument do użytkownika, który wybiera schemat odpowiedzialny z
 ```mermaid
 flowchart LR
     A((Start)) --> B[Etap_1<br/>Wybór schematu]
-    B -.->|SYS_TOTAL < 5000| C[Etap_2<br/>Autoryzacja wg schematu]
-    B -.->|SYS_TOTAL >= 5000| D[Etap_3<br/>Dyrektor Finansowy]
+    B -.->|Warunek 1 <br/>SYS_TOTAL < 5000| C[Etap_2<br/>Autoryzacja wg schematu]
+    B -.->|Warunek 2 <br/>SYS_TOTAL >= 5000| D[Etap_3<br/>Dyrektor Finansowy]
     D --> C
     C --> F[Etap_4<br/>Księgowość]
     F --> E((Zatwierdzenie))
