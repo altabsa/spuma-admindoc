@@ -43,11 +43,13 @@ flowchart LR
     class E green;
 ```
 
-### Start
+### Elementy procesu
+
+#### Start
 
 Punkt startu inicjuje proces autoryzacji.
 
-### Etap_1
+#### Etap_1
 
 Pierwszy etap jest wykonywany przez osobę inicjującą proces (owner). Podczas autoryzacji użytkownik wybiera schemat, który zostanie wykorzystany w dalszej części procesu.
 
@@ -77,7 +79,7 @@ Parametr:
 
 Wybrany schemat zostaje zapisany do zmiennej `ETAP_1.PSCH`.
 
-### Warunek 1
+#### Warunek 1
 
 Jeżeli wartość systemowego pola `SYS_TOTAL` jest mniejsza niż `5000`, proces przechodzi do `Etap_2`.
 
@@ -85,7 +87,7 @@ Jeżeli wartość systemowego pola `SYS_TOTAL` jest mniejsza niż `5000`, proces
 DOC.SYS_TOTAL < "5000"
 ```
 
-### Etap_2
+#### Etap_2
 
 Etap wykonuje autoryzację na podstawie schematu wybranego w `Etap_1`.
 
@@ -100,7 +102,7 @@ Etap wykonuje autoryzację na podstawie schematu wybranego w `Etap_1`.
 
 Po zakończeniu etapu proces przechodzi bezwarunkowo do `Etap_4`.
 
-### Warunek 2
+#### Warunek 2
 
 Jeżeli wartość systemowego pola `SYS_TOTAL` jest większa lub równa `5000`, proces przechodzi do `Etap_3`.
 
@@ -108,7 +110,7 @@ Jeżeli wartość systemowego pola `SYS_TOTAL` jest większa lub równa `5000`, 
 DOC.SYS_TOTAL >= "5000"
 ```
 
-### Etap_3
+#### Etap_3
 
 Etap wymusza dodatkową autoryzację dyrektora finansowego.
 
@@ -129,7 +131,7 @@ Takie rozwiązanie pozwala zmienić osobę pełniącą tę rolę bez modyfikowan
 
 Po zakończeniu etapu proces przechodzi bezwarunkowo do `Etap_2`.
 
-### Etap_4
+#### Etap_4
 
 Etap wykonuje autoryzację dokumentu przez księgowość.
 

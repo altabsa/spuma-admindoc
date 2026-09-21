@@ -46,12 +46,13 @@ flowchart LR
     class F green;
 ```
 
+### Elementy procesu
 
-### Click
+#### Click
 
 Punkt startu typu **Click** uruchamia algorytm po użyciu wyzwalacza.
 
-### Warunek 1
+#### Warunek 1
 
 Przejście do `Etap_1` posiada warunek:
 
@@ -61,7 +62,7 @@ EVENTARGS[ITEMCODE] = "GETPRICE_BT"
 
 Warunek powoduje wykonanie algorytmu tylko dla wyzwalacza `GETPRICE_BT`.
 
-### Etap_1
+#### Etap_1
 
 Instrukcja pobiera dane nagłówka dokumentu.
 
@@ -73,7 +74,7 @@ Instrukcja pobiera dane nagłówka dokumentu.
 
 Dane nagłówka są zapisywane do zmiennej tabelarycznej `HDR`.
 
-### Etap_2
+#### Etap_2
 
 Instrukcja pobiera linie dokumentu.
 
@@ -85,7 +86,7 @@ Instrukcja pobiera linie dokumentu.
 
 Dane linii są zapisywane do zmiennej tabelarycznej `LINES`.
 
-### Etap_3
+#### Etap_3
 
 Instrukcja pobiera cenę towaru z systemu ERP.
 
@@ -149,7 +150,7 @@ Wynik zapisany do zmiennej `SQL` zawiera:
 Przykładowy skrypt dotyczy integracji z SAP Business One.
 :::
 
-### Warunek 2
+#### Warunek 2
 
 Przejście do `Etap_4` posiada warunek:
 
@@ -159,7 +160,7 @@ SQL[SYS_LINEID] >= "0"
 
 Warunek powoduje wykonanie aktualizacji tylko wtedy, gdy zmienna `SQL` zawiera poprawne `SYS_LINEID`.
 
-### Etap_4
+#### Etap_4
 
 Instrukcja aktualizuje cenę w odpowiedniej linii dokumentu.
 
@@ -176,7 +177,7 @@ Zmienna `SQL` jest zmienną wejściową utworzoną w `Etap_3` i zawiera:
 
 ---
 
-### Punkt końca
+#### Punkt końca
 
 Punkt końca zamyka ścieżkę algorytmu po wykonaniu `Etap_4`.
 
