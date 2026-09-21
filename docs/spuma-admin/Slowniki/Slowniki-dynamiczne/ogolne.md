@@ -18,7 +18,7 @@ Zakładka **Ogólne** zawiera podstawowe ustawienia słownika dynamicznego oraz 
 
 - `DBName` - Nazwa bazy danych używanej przez zapytanie.
 
-- `Ciąg połączenia` - Opcjonalny ciąg połączeniowy do zewnętrznej bazy danych. Jeżeli pole jest puste, używane jest bieżące połączenie systemowe SPUMA. Szczegółowy opis znajduje się w sekcji [Ciąg połączenia](/docs/zaawansowane/ciag-polaczenia/).
+- `Ciąg połączenia` - Opcjonalny ciąg połączeniowy do zewnętrznej bazy danych. Jeżeli pole jest puste, używane jest bieżące połączenie systemowe SPUMA. Szczegółowy opis znajduje się w sekcji [Ciąg połączenia](/docs/Zaawansowane/ciag-polaczenia/).
 
 - `Skrypt` - Zapytanie SQL pobierające wartości słownika. Zapytanie powinno zwracać dwie kolumny:
     - `value` - wartość pozycji słownika,

@@ -40,6 +40,6 @@ Konfiguracja klasy jest podzielona na zakładki:
 - [**Ogólne**](./ogolne),
 - [**Autoryzacje**](./autoryzacje),
 - [**Atrybuty**](./atrybuty),
-- [**Wyzwalacze**](.//wyzwalacze),
+- [**Wyzwalacze**](./wyzwalacze),
 - [**Uprawnienia**](./uprawnienia),
 - [**Algorytmy**](./algorytmy).

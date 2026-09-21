@@ -90,7 +90,7 @@ Algorytmy mogą być wykorzystywane m.in. do:
 
 Konfiguruj algorytmy tylko wtedy, gdy są wymagane przez dany proces.
 
-Szczegółowy opis konfiguracji znajduje się w dokumentacji sekcji [**Algorytmy**](/docs/spuma-admin/Automatyzacja/Algorytmy/_category_.json).
+Szczegółowy opis konfiguracji znajduje się w dokumentacji sekcji [**Algorytmy**](/docs/spuma-admin/Automatyzacja/Algorytmy/).
 
 ## 6. Konfiguracja wyzwalaczy
 
