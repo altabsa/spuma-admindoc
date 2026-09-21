@@ -38,7 +38,12 @@ Po zweryfikowaniu bazy danych przejdź do zakładki **Integracja SAP**.
 1. otwórz sekcję **Firmy**,
 2. wybierz odpowiednią firmę,
 3. przejdź do zakładki **Integracja SAP**,
-4. uzupełnij wymagane pola zgodnie z opisem w dokumentacji:
+4. uzupełnij wymagane pola:
+   - `Adres sl`
+   - `Użytkownik`
+   - `Hasło` 
+
+   oraz pozostałe pola według potrzeb zgodnie z opisem w dokumentacji:
    [**SPUMA Admin → Firmy → Integracja SAP**](/docs/spuma-admin/Firmy/integracja-sap),
 5. zapisz zmiany.
 
