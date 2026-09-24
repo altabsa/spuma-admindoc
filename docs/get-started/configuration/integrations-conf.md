@@ -100,7 +100,7 @@ Uzupełnij pola:
 - `KSeF API` — adres usługi KSeF,
 - `KSeF Render API` — adres usługi generującej podgląd dokumentu KSeF w formacie PDF z XML.
 
-Pole `KSeF Render API` uzupełnij, jeżeli w środowisku wykorzystywany jest osobny serwer lub usługa do generowania wizualizacji dokumentów, np. `ALTKSEF_PDF`.
+Pole `KSeF Render API` uzupełnij, jeżeli w środowisku wykorzystywany jest osobny serwer lub usługa do generowania wizualizacji dokumentów, np. `ALTKSEF_PDF` (informacje dotyczące rozwiązania znajdują się na [**sapekspert.pl**](https://sapekspert.pl/do-pobrania/) **→ Do pobrania → KSeF**). 
 
 Jeżeli pole nie zostanie uzupełnione, wizualizacje będą generowane przy użyciu standardowego rozwiązania.
 

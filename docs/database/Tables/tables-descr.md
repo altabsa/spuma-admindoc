@@ -812,7 +812,7 @@ sidebar_position: 6
 | 	CreatedAt	 | 	datetime	 | 		 | 	Data utworzenia wpisu	 | 		 |
 | 	UpdatedAt	 | 	datetime	 | 		 | 	Data aktualizacji wpisu	 | 		 |
 | 	authstatus	 | 	int	 | 		 | 	Status autoryzacji dokumentu	 | 	0 - Oczekuje, 1 - Zatwierdzony, 2 - Odrzucony	 |
-| 	directories_id	 | 	int	 | 	[DIRECTORIES](/docs/database/Tables/tables-descr.md#tabela-directories) **id**	 | 	ID Katalogu | 		 |
+| 	directories_id	 | 	int	 | 	[DIRECTORIES](/docs/database/Tables/tables-descr.md#tabela-directories) **id**	 | 	ID Katalogu | -1 - Kosz, 0 - Katalog główny, >0 - Katalog zdefiniowany |
 | 	docstatus	 | 	int	 | 		 | 	Status dokumentu	 | 	0 - Wczytany (Przed OCR), 1 - Rozpoznawany (W OCR), 2 - Gotowy (Po OCR) , 3 - W repozytorium (szczegóły authstatus), 4 - Zapisany jako szablon	 |
 | 	reconschemas_code	 | 	varchar(100)	 | 		 | Nieużywane | 		 |
 | 	enterdate	 | 	datetime	 | 		 | 	Data wpływu	 | 		 |
