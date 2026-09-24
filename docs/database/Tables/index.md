@@ -37,6 +37,7 @@ Sekcja zawiera listę tabel systemowych wykorzystywanych przez SPUMA.
 | [**COMPANIESDICTS**](/docs/database/Tables/tables-descr.md#tabela-companiesdicts) | Firmy - Słowniki (systemowe) |
 | [**COMPANY_CLASSES**](/docs/database/Tables/tables-descr.md#tabela-company_classes) | Firmy - Klasy |
 | [**CONFIGURATION**](/docs/database/Tables/tables-descr.md#tabela-configuration) | Konfiguracja SPUMY |
+| [**CURRENCYRATES**](/docs/database/Tables/tables-descr.md#tabela-currencyrates) | Kursy walut dla poszczególnych dni |
 | [**CUSTOMPROCESS_DIALOGWND**](/docs/database/Tables/tables-descr.md#tabela-customprocess_dialogwnd) | Algorytmy - instrukcje typu komunikaty |
 | [**CUSTOMPROCESS_EXCALLOP**](/docs/database/Tables/tables-descr.md#tabela-customprocess_excallop) | Algorytmy - instrukcje typu wykonanie DLL |
 | [**CUSTOMPROCESS_LINEOP**](/docs/database/Tables/tables-descr.md#tabela-customprocess_lineop) | Algorytmy - instrukcje typu obsługa linii dokumentu |
@@ -90,6 +91,7 @@ Sekcja zawiera listę tabel systemowych wykorzystywanych przez SPUMA.
 | [**OCRTEXTREGIONS**](/docs/database/Tables/tables-descr.md#tabela-ocrtextregions) | OCR - rozpoznane regiony dla tekstu |
 | [**ORGANIZATIONS**](/docs/database/Tables/tables-descr.md#tabela-organizations) | Organizacje - definicja |
 | [**PAGECOMMENTS**](/docs/database/Tables/tables-descr.md#tabela-pagecomments) | Komentarze przypisane do strony |
+| [**PASSCHANGELOG**](/docs/database/Tables/tables-descr.md#tabela-passchangelog) | Historia oraz kolejka operacji związanych ze zmianą hasła użytkownika |
 | [**PERMISSIONS**](/docs/database/Tables/tables-descr.md#tabela-permissions) | Uprawnienia do dokumentów |
 | [**PROCESS_ACTIONS**](/docs/database/Tables/tables-descr.md#tabela-process_actions) | Proces Autoryzacji / Algorytmy - akcje |
 | [**PROCESS_CNDFUNCTS**](/docs/database/Tables/tables-descr.md#tabela-process_cndfuncts) | Proces Autoryzacji / Algorytmy - warunki |

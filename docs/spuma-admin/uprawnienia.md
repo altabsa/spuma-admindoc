@@ -134,6 +134,10 @@ Pole `Typ` określa rodzaj uprawnienia. Dostępne wartości zależą od miejsca 
   - **Opis:** określa możliwość edycji referencji powiązanych z wpisem dziennika.
   - **Występowanie:** Dziennik.
 
+- **Atrybut wymagany**
+  - **Opis:** określa, czy wskazany atrybut dokumentu jest wymagany na danym etapie autoryzacji.
+  - **Występowanie:** Schemat / Proces.
+
 
 ### Status
 
@@ -169,8 +173,15 @@ Pole `Obiekt` określa obiekt, którego dotyczy dane uprawnienie.
 
 Może wskazywać:
 
-- użytkownika,
-- grupę użytkowników,
+- użytkownika:
+  - konkretnego użytkownika,
+  - `(właściciel)` - właściciel dokumentu,
+- grupę użytkowników:
+  - utworzoną grupę użytkowników,
+  - grupy systemowe:
+    - `(wszyscy)` - wszyscy użytkownicy,
+    - `(zatwierdzający)` - użytkownicy zatwierdzający dokument,
+    - `(zatw.pominięci)` - użytkownicy przewidziani w procesie zatwierdzenia, którzy zostali pominięci, ponieważ dokument został zatwierdzony przez inną osobę,
 - w przypadku schematu lub procesu autoryzacji - konkretny etap schematu lub procesu.
 
 ### Edycja

@@ -15,7 +15,7 @@ Zestaw atrybutów jest definiowany osobno dla każdej klasy.
 
 Dla klasy typu **Inny** lista atrybutów jest pusta i wymaga ręcznej konfiguracji.
 
-Dla klas typu **Faktura** i **Korekta** system dodaje atrybuty systemowe. Do obu sekcji można również dodać własne atrybuty.
+Dla klas typu **Faktura**, **Korekta** i **Faktura zaliczkowa** system dodaje atrybuty systemowe. Do obu sekcji można również dodać własne atrybuty.
 
 ---
 

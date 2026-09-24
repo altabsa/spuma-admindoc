@@ -90,8 +90,8 @@ to do nazwy trafia **tylko część przed `<!>`**, czyli:
 ### Specjalna rola atrybutu typu `TYPE_CUSTOM`
 
 Jeżeli atrybut ma typ `TYPE_CUSTOM`, to jego wartość (niezależnie od nazwy) może zostać użyta jako **źródło CARDCODE**, ale tylko wtedy, gdy:
-*  klasa nie jest typu **Faktura* lub *Korekta*
-*  klasa jest typu **Faktura* lub *Korekta** i pole  **Dostawca**  jest puste (system próbuje wtedy „wyciągnąć” CARDCODE z atrybutów).
+*  klasa nie jest typu *Faktura*, *Korekta* lub *Faktura zaliczkowa*
+*  klasa jest typu **Faktura*, *Korekta* lub *Faktura zaliczkowa** i pole  **Dostawca**  jest puste (system próbuje wtedy „wyciągnąć” CARDCODE z atrybutów).
 
 
 ## Placeholdery dat
@@ -195,7 +195,7 @@ wygeneruje np. `Umowa_PRJ01_000123`
 
 * **`{CARDCODE}` jest puste**
 
-  * klasa jest typu `Faktura` lub `Korekta` i własność  `m_businesspartner` nie jest ustawiona
+  * klasa jest typu `Faktura`, `Korekta` lub `Faktura zaliczkowa` i własność  `m_businesspartner` nie jest ustawiona
   * klasa jest typu  `Inne`  i nie znaleziono atrybutu `TYPE_CUSTOM`,
   * wartość była pusta / null.
 

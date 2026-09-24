@@ -17,6 +17,7 @@ Nazwa musi być unikatowa w całej bazie danych.
 :::
 
 - `Nowe hasło`, `Nowe hasło 2` - Służą do ustawienia lub zmiany hasła użytkownika.
+  - ikona przy polach hasła - **Zażądaj zmiany hasła przy logowaniu**. Po jej włączeniu użytkownik będzie musiał zmienić hasło przy następnym logowaniu.
 
 - `Kolor komentarzy` - Kolor komentarzy użytkownika wyświetlanych przy dokumentach.
 

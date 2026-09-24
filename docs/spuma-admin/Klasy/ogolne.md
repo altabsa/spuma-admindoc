@@ -23,6 +23,7 @@ Uwaga: Kod musi być unikatowy w ramach całej bazy. Nie wolno stosować znaków
 | Inny | Klasa bez predefiniowanego zestawu atrybutów. |
 | Faktura | Typ systemowy z predefiniowanym zestawem atrybutów dla faktury kosztowej. |
 | Korekta | Typ systemowy z predefiniowanym zestawem atrybutów dla faktury korygującej. |
+| Faktura zaliczkowa | Typ systemowy z predefiniowanym zestawem atrybutów dla faktury zaliczkowej. |
 
 - `Opis` - Opis klasy - widoczny w panelu administracyjnym i w aplikacji WWW.
 
@@ -36,7 +37,13 @@ Uwaga: Kod musi być unikatowy w ramach całej bazy. Nie wolno stosować znaków
 
 > ***Przykład:*** *Klasa `faktura kosztowa` ma określone wyrażenie regularne `\bfaktura\b` w polu **Dopasowanie**. Każdy dokument, którego warstwa tekstowa po rozpoznaniu OCR zawiera słowo `faktura`, zostanie zakwalifikowany do klasy `faktura kosztowa`.*
 
-- `Klasa załącznika, załacznik do OCR` - Określenie klasy dla dokumentu rejestrowanego w aplikacji WWW jako załącznik. Umożliwia to dodawanie do istniejących dokumentów dodatkowych załączników, bezpośrednio z plików, bez konieczności rejestrowania ich w sekretariacie. Załączniki te zostaną zarejestrowane jako osobny dokument i będą automatycznie przypięte do źródła.
+- `Klasa załącznika` - Określa klasę dokumentów rejestrowanych w aplikacji WWW jako załączniki dokumentu głównego.
+
+    Użytkownik posiadający dostęp do dokumentu głównego ma co najmniej dostęp do podglądu załączników należących do wskazanej klasy. Jeżeli z pozostałych uprawnień wynika wyższy poziom dostępu do załącznika, stosowane są te uprawnienia.
+
+- `Załącznik do katalogu firmy` - Jeżeli opcja jest zaznaczona, załączniki należące do klasy wskazanej w polu `Klasa załącznika` są automatycznie wysyłane w obieg razem z dokumentem głównym, pod warunkiem że w momencie wysyłki znajdują się w **Sekretariacie**.
+
+    Załączniki są wysyłane w obieg zgodnie z domyślną autoryzacją skonfigurowaną dla klasy załącznika.
 
 - `Kopiowanie uprawnień` - Ustawienie historycznie wykorzystywane w mechanizmach opartych o własną autoryzację.
 

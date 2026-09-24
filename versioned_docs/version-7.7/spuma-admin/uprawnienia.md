@@ -169,8 +169,14 @@ Pole `Obiekt` określa obiekt, którego dotyczy dane uprawnienie.
 
 Może wskazywać:
 
-- użytkownika,
-- grupę użytkowników,
+- użytkownika:
+  - konkretnego użytkownika,
+  - `(właściciel)` - właściciel dokumentu,
+- grupę użytkowników:
+  - utworzoną grupę użytkowników,
+  - grupy systemowe:
+    - `(wszyscy)` - wszyscy użytkownicy,
+    - `(zatwierdzający)` - użytkownicy zatwierdzający dokument,
 - w przypadku schematu lub procesu autoryzacji - konkretny etap schematu lub procesu.
 
 ### Edycja

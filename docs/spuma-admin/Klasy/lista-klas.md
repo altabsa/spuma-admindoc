@@ -43,3 +43,26 @@ Konfiguracja klasy jest podzielona na zakładki:
 - [**Wyzwalacze**](./wyzwalacze),
 - [**Uprawnienia**](./uprawnienia),
 - [**Algorytmy**](./algorytmy).
+
+
+## Duplikowanie klasy
+
+Funkcja **Duplikuj** umożliwia utworzenie nowej klasy na podstawie konfiguracji istniejącej klasy. Pozwala uniknąć ręcznego odtwarzania ustawień lub korzystania z importu i eksportu.
+
+Aby zduplikować klasę:
+
+1. otwórz wybraną klasę,
+2. kliknij menu operacji po prawej stronie paska zakładek,
+3. wybierz **Duplikuj**,
+4. zmodyfikuj wymagane ustawienia,
+5. zapisz nową klasę.
+
+Nowa klasa otrzymuje konfigurację skopiowaną z klasy źródłowej. Jej kod jest generowany automatycznie z dopiskiem `_1`, `_2` itd., np.:
+
+`Faktura_kosztowa` → `Faktura_kosztowa_1`
+
+Kolejne kopie otrzymają odpowiednio `_2`, `_3` itd.
+
+:::note
+Duplikowanie dotyczy jednego aktualnie otwartego obiektu. Klasa źródłowa nie jest modyfikowana.
+:::

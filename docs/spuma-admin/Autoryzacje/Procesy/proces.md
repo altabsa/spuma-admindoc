@@ -72,7 +72,7 @@ Nazwa musi być unikatowa w ramach procesu.
 
 > ***Przykład:*** *Etap wykorzystuje typ `Schemat zdefiniowany` i schemat `*DZIAL1`, wymagający decyzji wszystkich użytkowników działu. Jeżeli użytkownicy zatwierdzą dokument kolejno A, C, B, do zmiennej zostanie zapisany kod użytkownika B. Jeżeli użytkownik C odrzuci dokument, do zmiennej zostanie zapisany kod użytkownika C.*
 
-- `Auto zapis` - automatycznie zapisuje dokument po zatwierdzeniu etapu autoryzacji.
+- `Auto zapis` - Automatycznie zapisuje dokument po zatwierdzeniu etapu autoryzacji.
 
 Jeżeli opcja jest wyłączona, po zatwierdzeniu użytkownik musi wykonać dodatkowo dwa kroki:
 
@@ -82,6 +82,8 @@ Jeżeli opcja jest wyłączona, po zatwierdzeniu użytkownik musi wykonać dodat
 Dopiero po zapisaniu dokumentu autoryzacja zostaje wykonana.
 
 Jeżeli `Auto zapis` jest włączony, dokument zostaje zapisany automatycznie po zatwierdzeniu i nie wymaga dodatkowego potwierdzania oraz ręcznego zapisu.
+
+- `Pilne` - Nadanie statusu pilnego dla etapu procesu.
 
 - `Dodatkowe informacje` - Tekst wyświetlany użytkownikowi w oknie zatwierdzania w aplikacji WWW.
 

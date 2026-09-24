@@ -18,6 +18,9 @@ Nie.
 
 Procedura zwraca listę operacji, które mają zostać wysłane do SAP. Na końcu zawsze zwracany jest pierwotny request przekazany w parametrach.
 
+Procedura może również wykonywać własne walidacje przed wysłaniem dokumentu do SAP Business One. Walidacja może wykorzystywać dane zarówno z systemu SPUMA, jak i SAP Business One. Jeżeli procedura zwróci niepustą wartość w kolumnie `errormsg`, wysyłka dokumentu do SAP zostanie przerwana, a zwrócona treść zostanie wyświetlona użytkownikowi jako komunikat.
+
+
 #### Parametry wejściowe
 
 - `@documents_id` - ID dokumentu SPUMA.
@@ -31,6 +34,7 @@ Procedura zwraca listę operacji, które mają zostać wysłane do SAP. Na końc
 - `method` - metoda operacji.
 - `resource` - zasób operacji.
 - `content` - treść operacji.
+- `errormsg` - opcjonalny komunikat walidacyjny.
 
 #### Przykład
 
@@ -63,6 +67,30 @@ BEGIN
     );
 END
 ```
+
+##### Walidacja dokumentu bazowego
+
+Dla zasobu `Drafts` sprawdzane jest, czy dokument posiada dokument bazowy typu PZ. Jeżeli nie, zwracany jest komunikat walidacyjny.
+
+```sql
+DECLARE @errormsg NVARCHAR(MAX)
+
+IF @resource = 'Drafts'
+   AND NOT EXISTS (
+       SELECT '*'
+       FROM DOCUMENTS
+       WHERE id = @documents_id
+         AND basetype = 1
+         AND COALESCE(baseid, '') <> ''
+   )
+BEGIN
+    SET @errormsg = N'Faktura magazynowa musi posiadać dokument PZ jako bazowy!'
+END
+```
+
+:::note
+Aby komunikat walidacyjny został obsłużony przez SPUMA, zmienną `@errormsg` należy zwrócić w wyniku procedury w kolumnie o nazwie dokładnie `errormsg`.
+:::
 
 #### Uwagi
 

@@ -96,6 +96,7 @@ sidebar_position: 6
 | 	addinfo	 | 	nvarchar(MAX)	 | 		 | 	Dodatkowe informacje	 | 		 | 
 | 	variable_id	 | 	int	 | [PROCESS_VARIABLES](/docs/database/Tables/tables-descr.md#tabela-process_variables) **intid** | ID Zmiennej w obrębie danego procesu autoryzacji | 		 | 
 | 	autosave	 | 	bit	 | 		 | Auto zapis | 		 | 
+| 	urgent	 | 	bit	 | 		 | 	Pilne	 | 	0 - Nie, 1 - Tak	 | 
 
 
 ## Tabela AUTHSCHEMA_PARVALUES
@@ -192,6 +193,7 @@ sidebar_position: 6
 | 	ksef_user_id	 | 	int	 | [USERS](/docs/database/Tables/tables-descr.md#tabela-users) **id** | Właściciel | 		 |
 | 	updatedat	 | 	datetime	 | 		 | Data aktualizacji | 		 |
 | 	createdat	 | 	datetime	 | 		 | 	Data utworzenia | 		 |
+| classtype | int |  | Dopasowanie | 0 - Ogólny, 1 - Fv. korekta, 2 - Zaliczka zakupu |
 
 
 ## Tabela CHATENTRIES
@@ -332,7 +334,7 @@ sidebar_position: 6
 | 	globalid	 | 	varchar(36)	 | 		 | 	Globalny identyfikator obiektu, niezależny od bazy danych	 | 		 |
 | 	autoaddrow	 | 	bit	 | 		 | 	Automatycznie dodaj linie (nieużywane)	 | 		 |
 | 	att_classes_id	 | 	int	 | 	[CLASSES](/docs/database/Tables/tables-descr.md#tabela-classes) **id**	 | 	Klasa załącznika (Ogólne)	 | 		 |
-| 	attsendtocr	 | 	bit	 | 		 | 	Załącznik do OCR (Ogólne) | 1 - Tak, 0 - Nie |
+| 	attsendtocr	 | 	bit	 | 		 | 	Załącznik do katalogu firmy (Ogólne) | 1 - Tak, 0 - Nie |
 | 	newdocpath	 | 	varchar(1024)	 | 		 | 	Ścieżka domyślna (Ogólne) | 		 |
 | 	classtype	 | 	int	 | 		 | 	Typ klasy (Ogólne) | 0 - Inny, 1 - Faktura, 2 - Korekta |
 | 	forcedraft	 | 	bit	 | 		 | 	Zawsze jako tymczasowy w SAP (Ogólne) | 1 - Tak, 0 - Nie |
@@ -477,6 +479,25 @@ sidebar_position: 6
 | 	authrpt_crontab	 | 	varchar(1024)	 | 		 | 	Harmonogram rap.oczekujących (Ogólne) | 		 |
 | 	ksef_renderapiurl	 | 	varchar(128)	 | 		 | 	KSeF Render API (Ogólne)	 | 		 |
 | 	doclist_psize	 | 	int	 | 		 | 	Il.wierszy na liście dokumentów (Ogólne)	 | 		 |
+| 	passp_expdays	 | 	int	 | 		 | 	Przedawnienie po (dni) (Bezpieczeństwo)	 | 		 |
+| 	passp_minlength	 | 	int	 | 		 | 	Min. długość (Bezpieczeństwo)	 | 		 |
+| 	passp_minuchars	 | 	int	 | 		 | 	Min. liczba wielkich liter (Bezpieczeństwo)	 | 		 |
+| 	passp_mindigits	 | 	int	 | 		 | 	Min. liczba cyfr (Bezpieczeństwo)	 | 		 |
+| 	passp_minnalpha	 | 	int	 | 		 | 	Min. liczba znaków niealfanumerycznych (Bezpieczeństwo)	 | 		 |
+| 	remindpassmins	 | 	int	 | 		 | 	Czas na przypomnienie hasła od mail (min) (Bezpieczeństwo)	 | 		 |
+
+
+## Tabela CURRENCYRATES
+
+**Opis:** Kursy walut dla poszczególnych dni.
+
+| 	Pole	 | 	Typ danych	 | 	Odwołanie	 | 	Opis	 | 	Ograniczenia	 |
+| 	---	 | 	---	 | 	---	 | 	---	 | 	---	 |
+| 	fname	 | 	varchar(32)	 | 		 | 	Identyfikator źródła	 | 		 |
+| 	curdate	 | 	datetime	 | 		 | 	Data obowiązywania kursu waluty	 | 		 |
+| 	currency	 | 	varchar(3)	 | 		 | 	Kod waluty	 | 		 |
+| 	rate	 | 	numeric(19, 6)	 | 		 | 	Kurs waluty	 | 		 |
+
 
 
 ## Tabela CUSTOMPROCESS_DIALOGWND
@@ -834,7 +855,6 @@ sidebar_position: 6
 | 	businesspartner	 | 	nvarchar(MAX)	 | 		 | Partner Handlowy | 		 |
 | 	duedate	 | 	datetime	 | 		 | Data płatności | 		 |
 | 	baseid	 | 	nvarchar(MAX)	 | 		 | 	Numer Dokumentu bazowego | 		 |
-| 	baseinvoiceid	 | 	nvarchar(MAX)	 | 		 | Numer faktury korygowanej | 		 |
 | 	total	 | 	numeric(19, 6)	 | 		 | Wartość brutto | 		 |
 | 	nettotal	 | 	numeric(19, 6)	 | 		 | 	Wartość netto | 		 |
 | 	paymentmth	 | 	nvarchar(MAX)	 | 		 | Metoda płatności | 		 |
@@ -848,6 +868,9 @@ sidebar_position: 6
 | 	saledate	 | 	datetime	 | 		 | 		 | Data sprzedaży |
 | 	authall_users_ids	 | 	varchar(MAX)	 | 		 | ID użytkowników, którzy w danym momencie mogą zatwierdzić dokument | 		 |
 | 	authvis_users_ids	 | 	varchar(MAX)	 | 		 | 	ID wszystkich użytkowników uczestniczących w procesie zatwierdzania dokumentu | 		 |
+| 	rate	 | 	numeric(19, 6)	 | 		 | 	Kurs	 | 		 |
+| 	systotal	 | 	numeric(19, 6)	 | 		 | 	Wartość sys.	 | 		 |
+| 	sysnettotal	 | 	numeric(19, 6)	 | 		 | 	Wartość netto sys.	 | 		 |
 
 
 ## Tabela DOCUMENTS_ATTACHMENTS
@@ -1195,6 +1218,8 @@ sidebar_position: 6
 | 	att_document_id	 | 	int	 | 	[DOCUMENTS](/docs/database/Tables/tables-descr.md#tabela-documents) **id**	 | 	ID Powiązania z dokumentem załącznika	 | 		 |
 | 	eventtype	 | 	int	 | 		 | 	Rodzaj powiadomienia 	 | 	0 - Wiadomość wewnętrzna, 1 - Prośba o autoryzację , 2 - Autoryzacja dokumentu, 3 - Odrzucenie dokumentu, 4 - Prośba o komentarz, 5 - Skomentowano, 6 - Zmiana na dokumencie obserwowanym, 7 - Zatwierdzenie finalne dokumentu	 |
 | 	dst_documents_authschemas_id	 | 	int	 | 	[DOCUMENTS_AUTHSCHEMA](/docs/database/Tables/tables-descr.md#tabela-documents_authschema) **id**	 | 	ID Schematu autoryzacji powiązanego z docelowym dokumentem	 | 		 |
+| 	dst_documents_authrecipients_int_id	 | 	int	 | 	[AUTHSCHEMA_INSTRUCTIONS](/docs/database/Tables/tables-descr#tabela-authschema_instructions) **intid**	 | 	ID źródłowej instancji schematu autoryzacji powiązanej z wiadomością	 | 		 |
+| 	signature	 | 	varchar(40)	 | 		 | 	Sygnatura wykorzystywana do utworzenia linku do resetu hasła	 | 		 |
 
 
 ## Tabela MODIFICATIONENTRY
@@ -1352,6 +1377,17 @@ sidebar_position: 6
 | 	width	 | 	float	 | 		 | 	Szerokość komentarza	 | 		 |
 | 	height	 | 	float	 | 		 | 	Wysokość komentarza	 | 		 |
 | 	marktodel	 | 	bit	 | 		 | Pole techniczne wykorzystywane przy transakcjach | 		 |
+
+## Tabela PASSCHANGELOG
+
+**Opis:** Historia oraz kolejka operacji związanych ze zmianą hasła użytkownika.
+
+| 	Pole	 | 	Typ danych	 | 	Odwołanie	 | 	Opis	 | 	Ograniczenia	 |
+| 	---	 | 	---	 | 	---	 | 	---	 | 	---	 |
+| 	users_id	 | 	int	 | 	[USERS](/docs/database/Tables/tables-descr.md#tabela-users) **id** | 	ID Użytkownika, którego dotyczy zmiana hasła	 | 		 |
+| 	old_pass_md5	 | 	varchar(32)	 | 		 | 	Zaszyfrowane aktualne hasło Użytkownika	 | 		 |
+| 	rq_users_id	 | 	int	 | 		 | 	Typ operacji związanej ze zmianą hasła | 0 - Hasło zmienione, 1 - Hasło do zmiany |
+| 	createdat	 | 	datetime	 | 		 | 	Data utworzenia wpisu	 | 		 |
 
 
 ## Tabela PERMISSIONS
