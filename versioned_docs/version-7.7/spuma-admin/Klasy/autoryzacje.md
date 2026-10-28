@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # Zakładka - Autoryzacje
 
-Zakładka **Autoryzacje** zawiera ustawienia [schematów](/docs/spuma-admin/Autoryzacje/Schematy/schematy.md)/[procesów](/docs/spuma-admin/Autoryzacje/Procesy/procesy.md) autoryzacji dostępnych dla dokumentów danej klasy.
+Zakładka **Autoryzacje** zawiera ustawienia [schematów](/versioned_docs/version-7.7/spuma-admin/Autoryzacje/Schematy/schematy.md)/[procesów](/versioned_docs/version-7.7/spuma-admin/Autoryzacje/Procesy/procesy.md) autoryzacji dostępnych dla dokumentów danej klasy.
 
 ---
 

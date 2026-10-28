@@ -1,0 +1,186 @@
+{
+  "version.label": {
+    "message": "7.7",
+    "description": "The label for version 7.7"
+  },
+
+  "sidebar.tutorialSidebar.category.Pierwsze kroki": {
+    "message": "Getting Started",
+    "description": "The label for category 'Pierwsze kroki' in sidebar 'tutorialSidebar'"
+  },
+
+  "sidebar.tutorialSidebar.category.Pierwsze kroki.link.generated-index.description": {
+    "message": "The Getting Started section describes the basic steps required to start working with the SPUMA system. It includes information about installation, configuration, and launching the environment to ensure that the system is properly set up and ready for further administrative work.",
+    "description": "The generated-index page description for category 'Pierwsze kroki' in sidebar 'tutorialSidebar'"
+  },
+
+  "sidebar.tutorialSidebar.category.Procedura instalacji": {
+    "message": "Installation Procedure",
+    "description": "The label for category 'Procedura instalacji' in sidebar 'tutorialSidebar'"
+  },
+
+  "sidebar.tutorialSidebar.category.Wstępna konfiguracja": {
+    "message": "Initial Configuration",
+    "description": "The label for category 'Wstępna konfiguracja' in sidebar 'tutorialSidebar'"
+  },
+
+  "sidebar.tutorialSidebar.category.users-a": {
+    "message": "SPUMA ADMIN Application",
+    "description": "The label for category 'Aplikacja SPUMA ADMIN' in sidebar 'tutorialSidebar'"
+  },
+
+  "sidebar.tutorialSidebar.category.Klasy": {
+    "message": "Classes",
+    "description": "The label for category 'Klasy' in sidebar 'tutorialSidebar'"
+  },
+
+  "sidebar.tutorialSidebar.category.Firmy": {
+    "message": "Companies",
+    "description": "The label for category 'Firmy' in sidebar 'tutorialSidebar'"
+  },
+
+  "sidebar.tutorialSidebar.category.Słowniki": {
+    "message": "Dictionaries",
+    "description": "The label for category 'Słowniki' in sidebar 'tutorialSidebar'"
+  },
+
+  "sidebar.tutorialSidebar.category.Słowniki Statyczne": {
+    "message": "Static Dictionaries",
+    "description": "The label for category 'Słowniki Statyczne' in sidebar 'tutorialSidebar'"
+  },
+
+  "sidebar.tutorialSidebar.category.Słowniki Dynamiczne": {
+    "message": "Interactive Dictionaries",
+    "description": "The label for category 'Słowniki Dynamiczne' in sidebar 'tutorialSidebar'"
+  },
+
+  "sidebar.tutorialSidebar.category.Słowniki Systemowe": {
+    "message": "System Dictionaries",
+    "description": "The label for category 'Słowniki Systemowe' in sidebar 'tutorialSidebar'"
+  },
+
+  "sidebar.tutorialSidebar.category.users-b": {
+    "message": "Users",
+    "description": "The label for category 'Użytkownicy' in sidebar 'tutorialSidebar'"
+  },
+
+  "sidebar.tutorialSidebar.category.Użytkownicy": {
+    "message": "Users",
+    "description": "The label for category 'Użytkownicy' in sidebar 'tutorialSidebar'"
+  },
+
+  "sidebar.tutorialSidebar.category.Grupy": {
+    "message": "Groups",
+    "description": "The label for category 'Grupy' in sidebar 'tutorialSidebar'"
+  },
+
+  "sidebar.tutorialSidebar.category.Autoryzacje": {
+    "message": "Authorizations",
+    "description": "The label for category 'Autoryzacje' in sidebar 'tutorialSidebar'"
+  },
+
+  "sidebar.tutorialSidebar.category.Autoryzacje.link.generated-index.description": {
+    "message": "This section contains the configuration of document authorization schemas and processes. Schemas define a fixed approval path, while processes allow dynamic paths to be created based on conditions and document data.",
+    "description": "The generated-index page description for category 'Autoryzacje' in sidebar 'tutorialSidebar'"
+  },
+
+  "sidebar.tutorialSidebar.category.Schematy": {
+    "message": "Schemas",
+    "description": "The label for category 'Schematy' in sidebar 'tutorialSidebar'"
+  },
+
+  "sidebar.tutorialSidebar.category.Procesy": {
+    "message": "Processes",
+    "description": "The label for category 'Procesy' in sidebar 'tutorialSidebar'"
+  },
+
+  "sidebar.tutorialSidebar.category.Listy": {
+    "message": "Lists",
+    "description": "The label for category 'Listy' in sidebar 'tutorialSidebar'"
+  },
+
+  "sidebar.tutorialSidebar.category.Listy.link.generated-index.description": {
+    "message": "The Lists section contains the configuration of Correspondence Logs and Reports used to register, present, and analyze data in SPUMA.",
+    "description": "The generated-index page description for category 'Listy' in sidebar 'tutorialSidebar'"
+  },
+
+  "sidebar.tutorialSidebar.category.Dzienniki": {
+    "message": "Correspondence Logs",
+    "description": "The label for category 'Dzienniki' in sidebar 'tutorialSidebar'"
+  },
+
+  "sidebar.tutorialSidebar.category.Raporty": {
+    "message": "Reports",
+    "description": "The label for category 'Raporty' in sidebar 'tutorialSidebar'"
+  },
+
+  "sidebar.tutorialSidebar.category.Automatyzacja": {
+    "message": "Automation",
+    "description": "The label for category 'Automatyzacja' in sidebar 'tutorialSidebar'"
+  },
+
+  "sidebar.tutorialSidebar.category.Algorytmy": {
+    "message": "Algorithms",
+    "description": "The label for category 'Algorytmy' in sidebar 'tutorialSidebar'"
+  },
+
+  "sidebar.tutorialSidebar.category.Konfiguracja": {
+    "message": "Configuration",
+    "description": "The label for category 'Konfiguracja' in sidebar 'tutorialSidebar'"
+  },
+
+  "sidebar.tutorialSidebar.category.Moduły": {
+    "message": "Modules",
+    "description": "The label for category 'Moduły' in sidebar 'tutorialSidebar'"
+  },
+
+  "sidebar.tutorialSidebar.category.Moduły.link.generated-index.description": {
+    "message": "The Modules section contains the technical configuration of modules used by SPUMA. Older versions of the system included several configuration modules. Currently, the DATASERVICE module is used.",
+    "description": "The generated-index page description for category 'Moduły' in sidebar 'tutorialSidebar'"
+  },
+
+  "sidebar.tutorialSidebar.category.Profile OCR": {
+    "message": "OCR Profiles",
+    "description": "The label for category 'Profile OCR' in sidebar 'tutorialSidebar'"
+  },
+
+  "sidebar.tutorialSidebar.category.Baza danych": {
+    "message": "Database",
+    "description": "The label for category 'Baza danych' in sidebar 'tutorialSidebar'"
+  },
+
+  "sidebar.tutorialSidebar.category.Tabele systemowe": {
+    "message": "System Tables",
+    "description": "The label for category 'Tabele systemowe' in sidebar 'tutorialSidebar'"
+  },
+
+  "sidebar.tutorialSidebar.category.Procedury": {
+    "message": "Procedures",
+    "description": "The label for category 'Procedury' in sidebar 'tutorialSidebar'"
+  },
+
+  "sidebar.tutorialSidebar.category.Funkcje": {
+    "message": "Functions",
+    "description": "The label for category 'Funkcje' in sidebar 'tutorialSidebar'"
+  },
+
+  "sidebar.tutorialSidebar.category.Zaawansowane": {
+    "message": "Advanced",
+    "description": "The label for category 'Zaawansowane' in sidebar 'tutorialSidebar'"
+  },
+
+  "sidebar.tutorialSidebar.category.Zaawansowane.link.generated-index.description": {
+    "message": "Advanced Configurations",
+    "description": "The generated-index page description for category 'Zaawansowane' in sidebar 'tutorialSidebar'"
+  },
+
+  "sidebar.tutorialSidebar.category.Najczęściej zadawane pytania": {
+    "message": "Frequently Asked Questions",
+    "description": "The label for category 'Najczęściej zadawane pytania' in sidebar 'tutorialSidebar'"
+  },
+
+  "sidebar.tutorialSidebar.category.Najczęściej zadawane pytania.link.generated-index.description": {
+    "message": "Here you will find solutions to the most frequently reported problems.",
+    "description": "The generated-index page description for category 'Najczęściej zadawane pytania' in sidebar 'tutorialSidebar'"
+  }
+}

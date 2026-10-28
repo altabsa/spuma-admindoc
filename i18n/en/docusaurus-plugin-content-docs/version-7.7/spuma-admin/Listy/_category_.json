@@ -1,0 +1,8 @@
+{
+  "label": "Listy",
+  "position": 9,
+  "link": {
+    "type": "generated-index",
+    "description": "Sekcja Listy zawiera konfigurację dzienników i raportów wykorzystywanych do rejestracji, prezentacji i analizy danych w SPUMA."
+  }
+}

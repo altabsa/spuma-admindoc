@@ -44,7 +44,7 @@ Po zweryfikowaniu bazy danych przejdź do zakładki **Integracja SAP**.
    - `Hasło` 
 
    oraz pozostałe pola według potrzeb zgodnie z opisem w dokumentacji:
-   [**SPUMA Admin → Firmy → Integracja SAP**](/docs/spuma-admin/Firmy/integracja-sap),
+   [**SPUMA Admin → Firmy → Integracja SAP**](/versioned_docs/version-7.7/spuma-admin/Firmy/integracja-sap),
 5. zapisz zmiany.
 
 ### 1.3. Konfiguracja klasy do księgowania w SAP

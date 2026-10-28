@@ -108,7 +108,7 @@ Najczęściej używane pola linii:
   ```js
   'Wprowadził : ' + USERNAME;
 
-- `Typ` - Typ danych przechowywanych w atrybucie. Szczegółowy opis dostępnych typów znajduje się w sekcji [**Typy danych**](/docs/spuma-admin/typy-danych.md).
+- `Typ` - Typ danych przechowywanych w atrybucie. Szczegółowy opis dostępnych typów znajduje się w sekcji [**Typy danych**](/versioned_docs/version-7.7/spuma-admin/typy-danych.md).
 
     Dla wybranych typów dostępne są dodatkowe właściwości:
 
@@ -126,10 +126,10 @@ Najczęściej używane pola linii:
 | Tekst (Text) | Pole przechowuje tekst. |
 | Czas (DateTime)| Pole przechowuje datę. Dostępny jest kalendarz do jej wyboru. |
 | Partner handlowy | Pole udostępnia listę partnerów handlowych pobranych z SAP Business One. Dla typu dostępne jest pole `Filtrowanie PH`:<ul><li>Wszyscy aktywni PH</li><li>Wszyscy aktywni dostawcy</li><li>Wszyscy aktywni odbiorcy</li><li>Wszyscy aktywni prospekci</li></ul> |
-| Słownik systemowy | Pole typu lista rozwijana. Dane są pobierane ze słownika systemowego zdefiniowanego dla firmy. Po wybraniu typu użyj opcji `Przypisz`, aby wskazać słownik. (szczegóły patrz [Słowniki systemowe](/docs/spuma-admin/Slowniki/Slowniki-systemowe/systemowe.md)) |
+| Słownik systemowy | Pole typu lista rozwijana. Dane są pobierane ze słownika systemowego zdefiniowanego dla firmy. Po wybraniu typu użyj opcji `Przypisz`, aby wskazać słownik. (szczegóły patrz [Słowniki systemowe](/versioned_docs/version-7.7/spuma-admin/Slowniki/Slowniki-systemowe/systemowe.md)) |
 | Słownik użytkownika | Pole typu lista rozwijana. Pole pobiera wartości ze słownika zdefiniowanego bezpośrednio w konfiguracji atrybutu. Po wybraniu typu użyj opcji `Definiuj`, aby otworzyć konfigurację słownika. Dla każdej pozycji wpisz `Wartość` oraz `Opis`. |
-| Słownik interaktywny | Pole typu lista rozwijana. Dane są pobierane ze wskazanego słownika interaktywnego. (szczegóły patrz [Słowniki dynamiczne](/docs/spuma-admin/Slowniki/Slowniki-dynamiczne/dynamiczne.md))|
-| Słownik stały | Pole typu lista rozwijana. Dane są pobierane ze wskazanego słownika statycznego. (szczegóły patrz [Słowniki statyczne](/docs/spuma-admin/Slowniki/Slowniki-statystyczne/statyczne.md))|
+| Słownik interaktywny | Pole typu lista rozwijana. Dane są pobierane ze wskazanego słownika interaktywnego. (szczegóły patrz [Słowniki dynamiczne](/versioned_docs/version-7.7/spuma-admin/Slowniki/Slowniki-dynamiczne/dynamiczne.md))|
+| Słownik stały | Pole typu lista rozwijana. Dane są pobierane ze wskazanego słownika statycznego. (szczegóły patrz [Słowniki statyczne](/versioned_docs/version-7.7/spuma-admin/Slowniki/Slowniki-statystyczne/statyczne.md))|
 | Długi tekst | Pole typu memo. Umożliwia wprowadzenie długiego tekstu. W aplikacji WWW otwiera osobne okno do edycji i podglądu zawartości. |
 
 ---

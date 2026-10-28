@@ -47,8 +47,9 @@ Szablon to zwykły tekst, w którym możesz umieszczać **placeholdery** w nawia
 * Placeholdery atrybutów klasy mają postać:
 
   * `{NAZWA_ATRYBUTU}` 
-> [!WARNING]  Uwaga
-Atrybut jest wyszukiwany po nazwie a podstawienie robi się po wersji UPPERCASE**, np. atrybut `Department` podstawia się do `{DEPARTMENT}`.
+:::warning  
+Atrybut jest wyszukiwany po nazwie a podstawienie robi się po wersji **UPPERCASE**, np. atrybut `Department` podstawia się do `{DEPARTMENT}`.
+:::
 
 Separatory, stałe prefiksy/sufiksy, myślniki, ukośniki itp. możesz dodawać dowolnie, np.:
 

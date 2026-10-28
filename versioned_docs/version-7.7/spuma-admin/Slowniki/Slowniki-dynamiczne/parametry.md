@@ -24,7 +24,7 @@ W zapytaniu SQL parametr jest używany w postaci:
 
 - `Widoczność` - Określa, czy parametr jest widoczny.
 
-- `Typ` - Określa typ danych parametru. Szczegółowy opis dostępnych typów znajduje się w sekcji [**Typy danych**](/docs/spuma-admin/typy-danych.md).
+- `Typ` - Określa typ danych parametru. Szczegółowy opis dostępnych typów znajduje się w sekcji [**Typy danych**](/versioned_docs/version-7.7/spuma-admin/typy-danych.md).
 
 - `Format` - Wyrażenie regularne określające poprawny format wartości parametru. Pole opcjonalne.
 

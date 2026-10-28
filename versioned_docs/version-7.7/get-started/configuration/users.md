@@ -30,7 +30,7 @@ Po uzupełnieniu danych zapisz użytkownika.
 
 Szczegółowy opis pól dostępnych w zakładce **Ogólne** znajduje się w dokumentacji:
 
-[**SPUMA Admin → Użytkownicy → Ogólne**](/docs/spuma-admin/Uzytkownicy/Uzytkownicy/ogolne)
+[**SPUMA Admin → Użytkownicy → Ogólne**](/versioned_docs/version-7.7/spuma-admin/Uzytkownicy/Uzytkownicy/ogolne)
 
 ## 2. Nadanie dostępu do firmy
 

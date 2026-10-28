@@ -13,6 +13,6 @@ Konfiguracja jest podzielona na zakładki:
 - [**Automatyzacja**](./automatyzacja),
 - [**Bezpieczeństwo**](./bezpieczenstwo),
 - [**Funkcje JS**](./funkcje-js),
-- [**Moduły**](/docs/spuma-admin/Konfiguracja/moduly/dataservise.md).
+- [**Moduły**](/versioned_docs/version-7.7/spuma-admin/Konfiguracja/moduly/dataservise.md).
 
 Ustawienia w tej sekcji dotyczą całej instalacji SPUMA i mogą wpływać m.in. na integracje z usługami zewnętrznymi, mechanizmy OCR, automatyzację oraz dostępne moduły systemu.

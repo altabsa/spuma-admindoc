@@ -5,6 +5,7 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import Heading from '@theme/Heading';
+import Translate, {translate} from '@docusaurus/Translate';
 
 import styles from './index.module.css';
 
@@ -21,7 +22,7 @@ function HomepageHeader() {
           <Link
             className="button button--secondary button--lg"
             to="/docs/intro">
-            Przejdź do dokumentacji ➡️
+            <Translate>Przejdź do dokumentacji ➡️</Translate>
           </Link>
         </div>
       </div>

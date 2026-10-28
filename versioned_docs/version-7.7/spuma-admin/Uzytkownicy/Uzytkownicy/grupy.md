@@ -4,7 +4,7 @@ sidebar_position: 8
 
 # Zakładka - Grupy
 
-Zakładka **Grupy** zawiera [listę grup](/docs/spuma-admin/Uzytkownicy/Grupy/grupy.md), do których przypisany jest użytkownik.
+Zakładka **Grupy** zawiera [listę grup](/versioned_docs/version-7.7/spuma-admin/Uzytkownicy/Grupy/grupy.md), do których przypisany jest użytkownik.
 
 Lista jest uzupełniana na podstawie konfiguracji grup użytkowników.
 

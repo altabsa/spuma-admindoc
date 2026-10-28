@@ -81,7 +81,7 @@ Nie.
 
 #### Opis
 
-Po przetworzeniu dokumentu przez OCR system analizuje rozpoznane pola i na podstawie konfiguracji [atrybutów klasy](/docs/spuma-admin/Klasy/atrybuty.md) przepisuje wartości do odpowiednich pól dokumentu.
+Po przetworzeniu dokumentu przez OCR system analizuje rozpoznane pola i na podstawie konfiguracji [atrybutów klasy](/versioned_docs/version-7.7/spuma-admin/Klasy/atrybuty.md) przepisuje wartości do odpowiednich pól dokumentu.
 
 Przed wykonaniem tego mapowania uruchamiana jest procedura `APR_BEFOREOCRFILL`, która umożliwia zmianę wartości rozpoznanych przez OCR przed zapisaniem ich do atrybutów dokumentu.
 
@@ -159,7 +159,7 @@ Dane są pobierane przez wywołanie procedury `APR_DICTIONARYVALUES` osobno dla 
 
 #### Parametry wejściowe
 
-- `@companiesdicts_id` - ID słownika systemowego z tabeli [COMPANIESDICTS](/docs/database/Tables/tables-descr.md#tabela-companiesdicts).
+- `@companiesdicts_id` - ID słownika systemowego z tabeli [COMPANIESDICTS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-companiesdicts).
 
 #### Oczekiwane wyjście
 

@@ -16,7 +16,7 @@ Domyślnie aplikacja WWW SPUMA działa na porcie:
 ```text
 4800
 ```
-
+ 
 Sprawdź, czy port `4800`:
 
 - jest dostępny na serwerze,
@@ -263,7 +263,7 @@ Wartość `100` oznacza najwyższą jakość podglądu.
 
 Zmniejsz wartość tylko wtedy, gdy wymagane jest ograniczenie rozmiaru przesyłanych danych.
 
-## 2. Weryfikacja konfiguracji
+## 5. Weryfikacja konfiguracji
 
 Po zapisaniu konfiguracji należy sprawdzić:
 

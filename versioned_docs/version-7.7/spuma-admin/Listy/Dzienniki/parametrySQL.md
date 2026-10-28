@@ -22,7 +22,7 @@ Zakładka **Parametry SQL** służy do definiowania parametrów przekazywanych d
 
 - `Widoczność` - Określa, czy parametr jest widoczny w aplikacji WWW.
 
-- `Typ` - Typ danych parametru. Szczegółowy opis dostępnych typów znajduje się w sekcji [**Typy danych**](/docs/spuma-admin/typy-danych.md).
+- `Typ` - Typ danych parametru. Szczegółowy opis dostępnych typów znajduje się w sekcji [**Typy danych**](/versioned_docs/version-7.7/spuma-admin/typy-danych.md).
 
   Dla wybranych typów dostępne są dodatkowe właściwości:
 

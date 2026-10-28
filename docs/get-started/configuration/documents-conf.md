@@ -128,7 +128,7 @@ Po przeładowaniu aplikacji WWW SPUMA klasa będzie widoczna dla danej firmy.
 Klasa, która nie została przypisana do firmy, nie będzie widoczna w aplikacji WWW SPUMA dla tej firmy.
 :::
 
-## 10. Weryfikacja
+## 8. Weryfikacja
 
 Po zakończeniu konfiguracji sprawdź, czy:
 

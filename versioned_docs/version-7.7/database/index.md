@@ -10,9 +10,9 @@ Sekcja zawiera techniczny opis bazy danych SPUMA.
 
 Dokumentacja obejmuje:
 
-- [**Tabele**](/docs/database/Tables/index.md),
-- [**Procedury**](/docs/database/Procedures/index.md),
-- [**Funkcje**](/docs/database/Functions/index.md).
+- [**Tabele**](/versioned_docs/version-7.7/database/Tables/index.md),
+- [**Procedury**](/versioned_docs/version-7.7/database/Procedures/index.md),
+- [**Funkcje**](/versioned_docs/version-7.7/database/Functions/index.md).
 
 Każdy obszar został opisany w osobnej sekcji.
 

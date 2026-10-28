@@ -22,4 +22,4 @@ Z poziomu zakładki możesz dodawać, edytować i usuwać słowniki przypisane d
 
     >W poprzedniej wersji mechanizm działał podczas edycji pól tekstowych dokumentu. Po wpisaniu wartości zdefiniowanej w polu `Wzór`, np. `Projekt`, system otwierał listę wartości z przypisanego słownika i umożliwiał wybór wartości do aktualnie edytowanego pola.
 
-Szczegółowy opis działania słowników systemowych znajduje się w sekcji [**Słowniki systemowe**](/docs/spuma-admin/Slowniki/Slowniki-systemowe/systemowe.md).
+Szczegółowy opis działania słowników systemowych znajduje się w sekcji [**Słowniki systemowe**](/versioned_docs/version-7.7/spuma-admin/Slowniki/Slowniki-systemowe/systemowe.md).

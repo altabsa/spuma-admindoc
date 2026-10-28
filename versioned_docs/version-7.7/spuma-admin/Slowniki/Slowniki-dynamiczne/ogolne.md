@@ -18,14 +18,14 @@ Zakładka **Ogólne** zawiera podstawowe ustawienia słownika dynamicznego oraz 
 
 - `DBName` - Nazwa bazy danych używanej przez zapytanie.
 
-- `Ciąg połączenia` - Opcjonalny ciąg połączeniowy do zewnętrznej bazy danych. Jeżeli pole jest puste, używane jest bieżące połączenie systemowe SPUMA. Szczegółowy opis znajduje się w sekcji [Ciąg połączenia](/docs/Zaawansowane/ciag-polaczenia/).
+- `Ciąg połączenia` - Opcjonalny ciąg połączeniowy do zewnętrznej bazy danych. Jeżeli pole jest puste, używane jest bieżące połączenie systemowe SPUMA. Szczegółowy opis znajduje się w sekcji [Ciąg połączenia](/versioned_docs/version-7.7/Zaawansowane/ciag-polaczenia/).
 
 - `Skrypt` - Zapytanie SQL pobierające wartości słownika. Zapytanie powinno zwracać dwie kolumny:
     - `value` - wartość pozycji słownika,
     - `descr` - opis pozycji słownika.
 
   W skrypcie można używać:
-  - parametrów zdefiniowanych w zakładce [**Parametry**](/docs/spuma-admin/Slowniki/Slowniki-dynamiczne/parametry.md),
+  - parametrów zdefiniowanych w zakładce [**Parametry**](/versioned_docs/version-7.7/spuma-admin/Slowniki/Slowniki-dynamiczne/parametry.md),
   - zmiennych systemowych związanych z aktualnym kontekstem użytkownika i firmy.
 
   Dostępne zmienne systemowe:
@@ -33,7 +33,7 @@ Zakładka **Ogólne** zawiera podstawowe ustawienia słownika dynamicznego oraz 
   - `@user_id` - identyfikator aktualnie zalogowanego użytkownika,
   - `@company_id` - identyfikator firmy aktualnie wybranej w SPUMA.
 
-  Zmienne systemowe są dostępne bez definiowania ich w zakładce **Parametry**].
+  Zmienne systemowe są dostępne bez definiowania ich w zakładce **Parametry**.
 
   > ***Przykład:*** *Użycie zmiennych systemowych w zapytaniu SQL.*
 

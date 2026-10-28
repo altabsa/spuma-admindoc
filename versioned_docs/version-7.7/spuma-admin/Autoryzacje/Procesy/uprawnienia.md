@@ -11,6 +11,6 @@ Uprawnienia są podzielone na:
 - **Uprawnienia dla nagłówka** - dotyczą pól i operacji na poziomie dokumentu,
 - **Uprawnienia dla linii** - dotyczą pól i operacji na poziomie linii dokumentu.
 
-Szczegółowy opis mechanizmu uprawnień znajduje się w sekcji [**Uprawnienia**](/docs/spuma-admin/uprawnienia.md).
+Szczegółowy opis mechanizmu uprawnień znajduje się w sekcji [**Uprawnienia**](/versioned_docs/version-7.7/spuma-admin/uprawnienia.md).
 
 <!-- TODO: Uzupełnić docelową ścieżkę do sekcji Uprawnienia. -->

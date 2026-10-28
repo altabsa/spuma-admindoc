@@ -2,6 +2,7 @@ import type {ReactNode} from 'react';
 import clsx from 'clsx';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
+import Translate, {translate} from '@docusaurus/Translate';
 
 type FeatureItem = {
   title: string;
@@ -15,8 +16,8 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/undraw_photocopy_k0g7.svg').default,
     description: (
       <>
-      <p className="subtitle"><strong>Zeskanuj. Rozpoznaj. Działaj.</strong></p>
-      <p>Dodaj dokument ze skanera, e-maila lub integracji – SPUMA rozpoznaje treść (OCR) i przygotowuje go do dalszej pracy.</p>
+      <p className="subtitle"><strong><Translate>Zeskanuj. Rozpoznaj. Działaj.</Translate></strong></p>
+      <p><Translate>Dodaj dokument ze skanera, e-maila lub integracji – SPUMA rozpoznaje treść (OCR) i przygotowuje go do dalszej pracy.</Translate></p>
       </>
     ),
   },
@@ -25,8 +26,8 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/undraw_publish-post_7g2z.svg').default,
     description: (
       <>
-        <p className="subtitle"><strong>Zatwierdzaj. Deleguj. Kontroluj.</strong></p>
-      <p>Obsługuj procesy obiegu dokumentów – opisuj, deleguj i zatwierdzaj zgodnie z ustalonymi schematami.</p>
+        <p className="subtitle"><strong><Translate>Zatwierdzaj. Deleguj. Kontroluj.</Translate></strong></p>
+      <p><Translate>Obsługuj procesy obiegu dokumentów – opisuj, deleguj i zatwierdzaj zgodnie z ustalonymi schematami.</Translate></p>
       </>
     ),
   },
@@ -35,8 +36,8 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/undraw_file-manager_yics.svg').default,
     description: (
       <>
-        <p className="subtitle"><strong>Znajdź. Komentuj. Raportuj.</strong></p>
-      <p>Wyszukuj dokumenty po treści i atrybutach, dodawaj komentarze i twórz raporty zapewniające pełną kontrolę.</p>
+        <p className="subtitle"><strong><Translate>Znajdź. Komentuj. Raportuj.</Translate></strong></p>
+      <p><Translate>Wyszukuj dokumenty po treści i atrybutach, dodawaj komentarze i twórz raporty zapewniające pełną kontrolę.</Translate></p>
       </>
     ),
   },

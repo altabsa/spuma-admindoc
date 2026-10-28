@@ -27,7 +27,7 @@ Przejdź do sekcji **Katalogi** i dodaj wymagane katalogi.
 
 Utworzone katalogi mogą być później przypisywane do klas dokumentów.
 
-Szczegółowy opis konfiguracji znajduje się w dokumentacji [**SPUMA Admin → Katalogi**](/docs/spuma-admin/Katalogi.md).
+Szczegółowy opis konfiguracji znajduje się w dokumentacji [**SPUMA Admin → Katalogi**](/versioned_docs/version-7.7/spuma-admin/Katalogi.md).
 
 ## 2. Utworzenie klas dokumentu
 
@@ -37,7 +37,7 @@ W zakładce **Ogólne** uzupełnij podstawowe dane klasy wymagane dla danego typ
 
 Po uzupełnieniu danych zapisz klasę.
 
-Szczegółowy opis konfiguracji znajduje się w dokumentacji [**SPUMA Admin → Klasy**](/docs/spuma-admin/Klasy/lista-klas.md).
+Szczegółowy opis konfiguracji znajduje się w dokumentacji [**SPUMA Admin → Klasy**](/versioned_docs/version-7.7/spuma-admin/Klasy/lista-klas.md).
 
 
 ## 3. Konfiguracja schematów i procesów autoryzacji
@@ -60,7 +60,7 @@ Szczegółowy opis konfiguracji znajduje się w dokumentacji odpowiednich sekcji
 
 Utwórz odpowiednie procesy i schematy autoryzacji.
 
-Szczegółowe informacje oraz przykłady konfiguracji znajdują się w **SPUMA Admin → Autoryzacje →** [**Schematy**](/docs/spuma-admin/Autoryzacje/Schematy/schematy.md) [**/ Procesy**](/docs/spuma-admin/Autoryzacje/Procesy/procesy.md)
+Szczegółowe informacje oraz przykłady konfiguracji znajdują się w **SPUMA Admin → Autoryzacje →** [**Schematy**](/versioned_docs/version-7.7/spuma-admin/Autoryzacje/Schematy/schematy.md) [**/ Procesy**](/versioned_docs/version-7.7/spuma-admin/Autoryzacje/Procesy/procesy.md)
 
 Po utworzeniu schematów i procesów przypisz wybrane elementy do odpowiednich klas dokumentów.
 
@@ -90,7 +90,7 @@ Algorytmy mogą być wykorzystywane m.in. do:
 
 Konfiguruj algorytmy tylko wtedy, gdy są wymagane przez dany proces.
 
-Szczegółowy opis konfiguracji znajduje się w dokumentacji sekcji [**Algorytmy**](/docs/spuma-admin/Automatyzacja/Algorytmy/).
+Szczegółowy opis konfiguracji znajduje się w dokumentacji sekcji [**Algorytmy**](/versioned_docs/version-7.7/spuma-admin/Automatyzacja/Algorytmy/).
 
 ## 6. Konfiguracja wyzwalaczy
 
@@ -128,7 +128,7 @@ Po przeładowaniu aplikacji WWW SPUMA klasa będzie widoczna dla danej firmy.
 Klasa, która nie została przypisana do firmy, nie będzie widoczna w aplikacji WWW SPUMA dla tej firmy.
 :::
 
-## 10. Weryfikacja
+## 8. Weryfikacja
 
 Po zakończeniu konfiguracji sprawdź, czy:
 

@@ -33,7 +33,7 @@ Zakładka **Ogólne** zawiera podstawowe ustawienia słownika dynamicznego oraz 
   - `@user_id` - identyfikator aktualnie zalogowanego użytkownika,
   - `@company_id` - identyfikator firmy aktualnie wybranej w SPUMA.
 
-  Zmienne systemowe są dostępne bez definiowania ich w zakładce **Parametry**].
+  Zmienne systemowe są dostępne bez definiowania ich w zakładce **Parametry**.
 
   > ***Przykład:*** *Użycie zmiennych systemowych w zapytaniu SQL.*
 

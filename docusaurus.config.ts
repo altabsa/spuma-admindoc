@@ -5,8 +5,15 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'Spuma - przewodnik administratora',
-  tagline: 'Elektroniczny obieg dokumentów',
+  title:
+  process.env.DOCUSAURUS_CURRENT_LOCALE === 'en'
+    ? "Spuma - Administrator's Guide"
+    : 'Spuma - przewodnik administratora',
+
+  tagline:
+  process.env.DOCUSAURUS_CURRENT_LOCALE === 'en'
+    ? 'Electronic Document Workflow'
+    : 'Elektroniczny obieg dokumentów',
   favicon: 'img/favicon.ico',  
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -136,6 +143,10 @@ const config: Config = {
             type: 'docsVersionDropdown',
             position: 'right',
              dropdownActiveClassDisabled: true,
+         },
+         {
+            type: "localeDropdown",
+            position: 'right'
          },
       ],
     },

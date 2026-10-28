@@ -85,7 +85,7 @@ FROM COMPANIESDICTS
 
 Szczegółowy opis procedury znajduje się w dokumentacji:
 
-[**APR_DICTIONARYVALUES**](/docs/database/Procedures/procedures-descr.md#procedura-apr_dictionaryvalues)
+[**APR_DICTIONARYVALUES**](/versioned_docs/version-7.7/database/Procedures/procedures-descr.md#procedura-apr_dictionaryvalues)
 
 :::note
 Słownik systemowy jest poprawnie skonfigurowany, gdy:
@@ -105,7 +105,7 @@ Dotyczy to w szczególności:
 - **Integracji SAP**,
 - **Konfiguracji BP**.
 
-Szczegółową konfigurację połączeń z systemami zewnętrznymi wykonaj zgodnie z instrukcją odpowiedniej [integracji](/docs/get-started/configuration/integrations-conf.md).
+Szczegółową konfigurację połączeń z systemami zewnętrznymi wykonaj zgodnie z instrukcją odpowiedniej [integracji](/versioned_docs/version-7.7/get-started/configuration/integrations-conf.md).
 
 ## 6. Weryfikacja
 

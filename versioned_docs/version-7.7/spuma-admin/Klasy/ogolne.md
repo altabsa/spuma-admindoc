@@ -26,7 +26,7 @@ Uwaga: Kod musi być unikatowy w ramach całej bazy. Nie wolno stosować znaków
 
 - `Opis` - Opis klasy - widoczny w panelu administracyjnym i w aplikacji WWW.
 
-- `Scieżka domyślna` - Własność służy do zdefiniowania ścieżki katalogów repozytorium do jakiej trafi dokument tej klasy po wyjściu z sekretariatu. Szczegółowy opis znajduje się w sekcji [Ścieżka domyślna](/docs/Zaawansowane/sciezka-domyslna).
+- `Scieżka domyślna` - Własność służy do zdefiniowania ścieżki katalogów repozytorium do jakiej trafi dokument tej klasy po wyjściu z sekretariatu. Szczegółowy opis znajduje się w sekcji [Ścieżka domyślna](/versioned_docs/version-7.7/Zaawansowane/sciezka-domyslna).
 
 - `Dopasowanie` - Wyrażenie regularne (regex) sprawdzane dla warstwy tekstowej rozpoznanego dokumentu. Jeśli jest spełnione, dokument zmieniając status Rozpoznawany na Do sprawdzenia automatycznie określa się tą klasą.
 
@@ -46,7 +46,7 @@ W obecnej wersji systemu opcja `Kopiowanie uprawnień` nie jest wykorzystywana.
 
 - `Kolor` - Określenie koloru klasy . Używane do wyróżnienia dokumentów na liście w aplikacji WWW.
 
-- `Format nazwy` - Ciąg znaków określających jak tworzone będzie nazewnictwo (numer kancelaryjny) dokumentu danej klasy. Szczegółowy opis znajduje się w sekcji [Format nazwy](/docs/Zaawansowane/format-nazwy).
+- `Format nazwy` - Ciąg znaków określających jak tworzone będzie nazewnictwo (numer kancelaryjny) dokumentu danej klasy. Szczegółowy opis znajduje się w sekcji [Format nazwy](/versioned_docs/version-7.7/Zaawansowane/format-nazwy).
 
 - `Kontrola nazwy` - Jak generowana jest nazwa dokumentu: 
 

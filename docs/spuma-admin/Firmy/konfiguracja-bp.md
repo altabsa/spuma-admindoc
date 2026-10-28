@@ -44,6 +44,8 @@ Dla profilu partnera handlowego dostępne są dodatkowe właściwości:
 
 - `Profil OCR` - Profil OCR używany dla dokumentów danego partnera.
 
+- `Dopasowanie` - Określa pole używane do identyfikacji typu klasy.
+
 - `Klasa` - Klasa przypisywana do dokumentów danego partnera.
 
 - `Grupowanie linii` - Określa sposób grupowania linii dokumentu.

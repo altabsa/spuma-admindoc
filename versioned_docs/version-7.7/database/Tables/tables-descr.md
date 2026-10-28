@@ -11,9 +11,9 @@ sidebar_position: 6
 | 	Pole	 | 	Typ danych	 | 	Odwołanie	 | 	Opis	 | 	Ograniczenia	 | 	
 | 	---	 | 	---	 | 	---	 | 	---	 | 	---	 | 	
 | 	type	 | 	int	 | 		 | 	Typ alarmu | 		 | 
-| 	user_id	 | 	int	 | 	[USERS](/docs/database/Tables/tables-descr.md#tabela-users) **id** | ID użytkownika, którego dotyczy wykluczenie | 		 |
+| 	user_id	 | 	int	 | 	[USERS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-users) **id** | ID użytkownika, którego dotyczy wykluczenie | 		 |
 | 	key	 | 	nvarchar(256)	 | 		 | 		Klucz identyfikujący alarm lub grupę wyników | 		 |
-| 	objid	 | 	varchar(128)	 |  [DOCUMENTS](/docs/database/Tables/tables-descr.md#tabela-documents) **id** | ID dokumentu wykluczonego z wyników alarmu | 		 |
+| 	objid	 | 	varchar(128)	 |  [DOCUMENTS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-documents) **id** | ID dokumentu wykluczonego z wyników alarmu | 		 |
 | 	CreatedAt	 | 	datetime	 | 		 | 	Data utworzenia wpisu | 		 |
 
 
@@ -23,9 +23,9 @@ sidebar_position: 6
 
 | 	Pole	 | 	Typ danych	 | 	Odwołanie	 | 	Opis	 | 	Ograniczenia	 |
 | 	---	 | 	---	 | 	---	 | 	---	 | 	---	 |
-| 	documents_id	 | 	int	 | 	[DOCUMENTS](/docs/database/Tables/tables-descr.md#tabela-documents) **id**	 | 	Numer dokumentu	 | 		 |
+| 	documents_id	 | 	int	 | 	[DOCUMENTS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-documents) **id**	 | 	Numer dokumentu	 | 		 |
 | 	marktorebuild	 | 	bit	 | 		 | Czy przebudować uprawnienie | 0 - Nie, 1 - Tak |
-| 	users_ids	 | 	varchar(MAX)	 | 	[USERS](/docs/database/Tables/tables-descr.md#tabela-users) **id**	 | 	Kody użytkówników wypisane po przecinku	 | 		 |
+| 	users_ids	 | 	varchar(MAX)	 | 	[USERS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-users) **id**	 | 	Kody użytkówników wypisane po przecinku	 | 		 |
 
 
 ## Tabela ALLOWEDUSERS
@@ -34,8 +34,8 @@ sidebar_position: 6
 
 | 	Pole	 | 	Typ danych	 | 	Odwołanie	 | 	Opis	 | 	Ograniczenia	 | 
 | 	---	 | 	---	 | 	---	 | 	---	 | 	---	 | 
-| 	documents_id	 | 	int	 | 	[DOCUMENTS](/docs/database/Tables/tables-descr.md#tabela-documents) **id**	 | 	Numer dokumentu	 | 		 | 
-| 	users_id	 | 	int	 | 	[USERS](/docs/database/Tables/tables-descr.md#tabela-users) **id**	 | 	Kod użytkównika	 | 		 | 
+| 	documents_id	 | 	int	 | 	[DOCUMENTS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-documents) **id**	 | 	Numer dokumentu	 | 		 | 
+| 	users_id	 | 	int	 | 	[USERS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-users) **id**	 | 	Kod użytkównika	 | 		 | 
 
 
 ## Tabela APB_DEBUG
@@ -46,7 +46,7 @@ sidebar_position: 6
 | 	---	 | 	---	 | 	---	 | 	---	 | 	---	 | 
 | 	id	 | 	int	 | 		 | 	Unikalny numer wpisu | 		 | 
 | 	optype	 | 	varchar(2)	 | 		 | Rodzaj wykonywanej operacji | 		 | 
-| 	users_id	 | 	int	 | 	[USERS](/docs/database/Tables/tables-descr.md#tabela-users) **id**	 | ID Użytkownika wykonującego operację | 		 | 
+| 	users_id	 | 	int	 | 	[USERS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-users) **id**	 | ID Użytkownika wykonującego operację | 		 | 
 | 	objecttype	 | 	varchar(128)	 | 		 |  Nazwa obiektu, którego dotyczy operacja | 		 | 
 | 	objectid	 | 	int	 | 		 | 	ID Obiektu, którego dotyczy operacja | 		 | 
 
@@ -57,9 +57,9 @@ sidebar_position: 6
 
 | 	Pole	 | 	Typ danych	 | 	Odwołanie	 | 	Opis	 | 	Ograniczenia	 | 
 | 	---	 | 	---	 | 	---	 | 	---	 | 	---	 | 
-| 	classattribs_id	 | 	int	 | 	[CLASSATTRIBS](/docs/database/Tables/tables-descr.md#tabela-classattribs) **id**	 | 	Numer atrybutu	 | 		 | 
-| 	companies_id	 | 	int	 | 	[COMPANIES](/docs/database/Tables/tables-descr.md#tabela-companies) **id**	 | 	Numer firmy	 | 		 | 
-| 	companiesdicts_id	 | 	int	 | 	[COMPANIESDICTS](/docs/database/Tables/tables-descr.md#tabela-companiesdicts) **id**	 | 	Kod słownika systemowego firmy | 		 | 
+| 	classattribs_id	 | 	int	 | 	[CLASSATTRIBS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-classattribs) **id**	 | 	Numer atrybutu	 | 		 | 
+| 	companies_id	 | 	int	 | 	[COMPANIES](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-companies) **id**	 | 	Numer firmy	 | 		 | 
+| 	companiesdicts_id	 | 	int	 | 	[COMPANIESDICTS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-companiesdicts) **id**	 | 	Kod słownika systemowego firmy | 		 | 
 
 
 ## Tabela AUTHSCHEMA_INSPARAMETERS
@@ -68,16 +68,16 @@ sidebar_position: 6
 
 | 	Pole	 | 	Typ danych	 | 	Odwołanie	 | 	Opis	 | 	Ograniczenia	 | 
 | 	---	 | 	---	 | 	---	 | 	---	 | 	---	 | 
-| 	authschemas_id	 | 	int	 | 	[AUTHSCHEMAS](/docs/database/Tables/tables-descr.md#tabela-authschemas) **id**	 | 	ID Procesu autoryzacji	 | 		 | 
-| 	insintid	 | 	int	 | [AUTHSCHEMA_INSTRUCTIONS](/docs/database/Tables/tables-descr.md#tabela-authschema_instructions) **intid** | ID Etapu danego schematu | 		 | 
+| 	authschemas_id	 | 	int	 | 	[AUTHSCHEMAS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-authschemas) **id**	 | 	ID Procesu autoryzacji	 | 		 | 
+| 	insintid	 | 	int	 | [AUTHSCHEMA_INSTRUCTIONS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-authschema_instructions) **intid** | ID Etapu danego schematu | 		 | 
 | 	intid	 | 	int	 | 		 | Numer kolejny parametru w obrębie danego etapu procesu | 		 | 
 | 	name	 | 	varchar(100)	 | 		 | 	Nazwa parametru wejściowego	 | 		 | 
 | 	description	 | 	ntext	 | 		 | 	Opis parametru wejściowego	 | 		 | 
 | 	type	 | 	int	 | 		 | 	Typ	parametru | 0 - Text, 1 - Int, 2 - Float, 3 - Słownik użytkownika, 4 - Wybór użytkownika, 5 - Schemat, 6 - Wybór schematu | 
 | 	allownull	 | 	bit	 | 		 | 	Zezwalaj null (pustą wartość) | 0 - Nie, 1 - Tak | 
-| 	variable_id	 | 	int	 | 	[PROCESS_VARIABLES](/docs/database/Tables/tables-descr.md#tabela-process_variables) **intid** | 	ID Zmiennej	w obrębie danego procesu autoryzacji | 		 | 
+| 	variable_id	 | 	int	 | 	[PROCESS_VARIABLES](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-process_variables) **intid** | 	ID Zmiennej	w obrębie danego procesu autoryzacji | 		 | 
 | 	objtype	 | 	int	 | 		 | 	Typ obiektu (parametru)	 | 	0 - Wszyscy, 1 - Grupa zdefiniowana, 2 Grupa własna	 | 
-| 	objid	 | 	int	 | 	[USERGROUPS](/docs/database/Tables/tables-descr.md#tabela-usergroups) **id**	 | 	ID Obiektu powiązanego	 | 		 | 
+| 	objid	 | 	int	 | 	[USERGROUPS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-usergroups) **id**	 | 	ID Obiektu powiązanego	 | 		 | 
 
 
 ## Tabela AUTHSCHEMA_INSTRUCTIONS
@@ -86,15 +86,15 @@ sidebar_position: 6
 
 | 	Pole	 | 	Typ danych	 | 	Odwołanie	 | 	Opis	 | 	Ograniczenia	 | 
 | 	---	 | 	---	 | 	---	 | 	---	 | 	---	 | 
-| 	authschemas_id	 | 	int	 | [AUTHSCHEMAS](/docs/database/Tables/tables-descr.md#tabela-authschemas) **id**	 | 	ID Procesu autoryzacji	 | 		 | 
+| 	authschemas_id	 | 	int	 | [AUTHSCHEMAS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-authschemas) **id**	 | 	ID Procesu autoryzacji	 | 		 | 
 | 	intid	 | 	int	 | 		 | 	Numer kolejnej instrukcji w obrębie danego procesu autoryzacji	 | 		 | 
 | 	name	 | 	nvarchar(100)	 | 		 | 	Nazwa instrukcji	 | 		 | 
 | 	description	 | 	ntext	 | 		 | 	Opis instrukcji	 | 		 | 
 | 	type	 | 	int	 | 		 | 	Rodzaj instrukcji 	 | 	0 - Autoryzacja podstawowa 1 - Autoryzacja parametryzowana	 | 
-| 	objid	 | 	int	 | 	[USERS](/docs/database/Tables/tables-descr.md#tabela-users) **id**, [AUTHSCHEMAS](/docs/database/Tables/tables-descr.md#tabela-authschemas) **id**, [PROCESS_VARIABLES](/docs/database/Tables/tables-descr.md#tabela-process_variables) **intid**	 | 	ID Powiązanego obiektu	 | 		 | 
+| 	objid	 | 	int	 | 	[USERS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-users) **id**, [AUTHSCHEMAS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-authschemas) **id**, [PROCESS_VARIABLES](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-process_variables) **intid**	 | 	ID Powiązanego obiektu	 | 		 | 
 | 	objtype	 | 	int	 | 		 | 	Typ obiektu	 | 	0 - Użytkownik zdefiniowany 1 - Schemat zdefiniowany 2 - Użytkownik (przekazana zmienna), 3 - Schemat własny, 4 - Schemat	 | 
 | 	addinfo	 | 	nvarchar(MAX)	 | 		 | 	Dodatkowe informacje	 | 		 | 
-| 	variable_id	 | 	int	 | [PROCESS_VARIABLES](/docs/database/Tables/tables-descr.md#tabela-process_variables) **intid** | ID Zmiennej w obrębie danego procesu autoryzacji | 		 | 
+| 	variable_id	 | 	int	 | [PROCESS_VARIABLES](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-process_variables) **intid** | ID Zmiennej w obrębie danego procesu autoryzacji | 		 | 
 | 	autosave	 | 	bit	 | 		 | Auto zapis | 		 | 
 
 
@@ -104,10 +104,10 @@ sidebar_position: 6
 
 | 	Pole	 | 	Typ danych	 | 	Odwołanie	 | 	Opis	 | 	Ograniczenia	 | 
 | 	---	 | 	---	 | 	---	 | 	---	 | 	---	 | 
-| 	authschemas_id	 | 	int	 | 	[AUTHSCHEMAS](/docs/database/Tables/tables-descr.md#tabela-authschemas) **id**	 | 	ID Procesu autoryzacji	 | 		 | 
-| 	insintid	 | 	int	 | 	[AUTHSCHEMA_INSTRUCTIONS](/docs/database/Tables/tables-descr.md#tabela-authschema_instructions) **intid** | 	ID Etapu w obrębie danego procesu autoryzacji | 		 | 
-| 	prmintid	 | 	int	 | [AUTHSCHEMA_INSPARAMETERS](/docs/database/Tables/tables-descr.md#tabela-authschema_insparameters) **insintid** | ID Numeru parametru na danym etapie | 		 | 
-| 	value	 | 	nvarchar(255)	 | [AUTHSCHEMAS](/docs/database/Tables/tables-descr.md#tabela-authschemas) **id** | 	ID Schematu	ujętego w parametrze | 		 | 
+| 	authschemas_id	 | 	int	 | 	[AUTHSCHEMAS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-authschemas) **id**	 | 	ID Procesu autoryzacji	 | 		 | 
+| 	insintid	 | 	int	 | 	[AUTHSCHEMA_INSTRUCTIONS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-authschema_instructions) **intid** | 	ID Etapu w obrębie danego procesu autoryzacji | 		 | 
+| 	prmintid	 | 	int	 | [AUTHSCHEMA_INSPARAMETERS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-authschema_insparameters) **insintid** | ID Numeru parametru na danym etapie | 		 | 
+| 	value	 | 	nvarchar(255)	 | [AUTHSCHEMAS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-authschemas) **id** | 	ID Schematu	ujętego w parametrze | 		 | 
 | 	description	 | 	nvarchar(512)	 | 		 | 	Nazwa schematu | 		 | 
 
 
@@ -117,11 +117,11 @@ sidebar_position: 6
 
 | 	Pole	 | 	Typ danych	 | 	Odwołanie	 | 	Opis	 | 	Ograniczenia	 | 
 | 	---	 | 	---	 | 	---	 | 	---	 | 	---	 | 
-| 	authschemas_id	 | 	int	 | 	[AUTHSCHEMAS](/docs/database/Tables/tables-descr.md#tabela-authschemas) **id**	 | 	ID Schematu lub procesu autoryzacji	 | 		 | 
-| 	documents_id	 | 	int	 | 	[DOCUMENTS](/docs/database/Tables/tables-descr.md#tabela-documents) **id**	 | 	ID Dokumentu (Nieużywane) | 		 | 
-| 	attribs_id	 | 	int	 | 	[ATTRIBDICTS](/docs/database/Tables/tables-descr.md#tabela-attribdicts) **id**	 | 	Pole - ID Atrybutu klasy / Pola systemowego  | 	-1 Nazwa, -2 Opis, -3 Numer, -4 Klasa, -5 Schemat zatwierdzania, -6 Data dokumentu -7 Data wejscia, > 0	Atrybuty klasy | 
+| 	authschemas_id	 | 	int	 | 	[AUTHSCHEMAS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-authschemas) **id**	 | 	ID Schematu lub procesu autoryzacji	 | 		 | 
+| 	documents_id	 | 	int	 | 	[DOCUMENTS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-documents) **id**	 | 	ID Dokumentu (Nieużywane) | 		 | 
+| 	attribs_id	 | 	int	 | 	[ATTRIBDICTS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-attribdicts) **id**	 | 	Pole - ID Atrybutu klasy / Pola systemowego  | 	-1 Nazwa, -2 Opis, -3 Numer, -4 Klasa, -5 Schemat zatwierdzania, -6 Data dokumentu -7 Data wejscia, > 0	Atrybuty klasy | 
 | 	allow	 | 	bit	 | 		 | Edycja | 	0 - Zablokuj, 1 - Zezwól	 | 
-| 	objid	 | 	int	 | 	[USERS](/docs/database/Tables/tables-descr.md#tabela-users) **id**, [USERGROUPS](/docs/database/Tables/tables-descr.md#tabela-usergroups) **id**, [AUTHSCHEMAS](/docs/database/Tables/tables-descr.md#tabela-authschemas) **id**	 | 	ID Powiązanego obiektu	 | 		 | 
+| 	objid	 | 	int	 | 	[USERS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-users) **id**, [USERGROUPS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-usergroups) **id**, [AUTHSCHEMAS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-authschemas) **id**	 | 	ID Powiązanego obiektu	 | 		 | 
 | 	objtype	 | 	int	 | 		 | 	Typ obiektu	 | 	0 - Użytkownik, 1 - Grupa użytkowników, 2 - Schemat autoryzacji 3 - Numer etapu autoryzacji	 | 
 | 	authmode	 | 	int	 | 		 | Uprawnienia dla | 	0 - Nagłówek, 1 - Linie	 | 
 | 	authseq	 | 	int	 | 		 | Nieużywane | 		 | 
@@ -135,8 +135,8 @@ sidebar_position: 6
 
 | 	Pole	 | 	Typ danych	 | 	Odwołanie	 | 	Opis	 | 	Ograniczenia	 | 
 | 	---	 | 	---	 | 	---	 | 	---	 | 	---	 | 
-| 	authschemas_id	 | 	int	 | 	[AUTHSCHEMAS](/docs/database/Tables/tables-descr.md#tabela-authschemas) **id**	 | 	ID Schematu autoryzacji	 | 		 | 
-| 	objid	 | 	int	 | 	[USERS](/docs/database/Tables/tables-descr.md#tabela-users) **id**, [USERGROUPS](/docs/database/Tables/tables-descr.md#tabela-usergroups) **id**, [AUTHSCHEMAS](/docs/database/Tables/tables-descr.md#tabela-authschemas) **id**	 | 	Odbiorca - ID Powiązanego obiektu	 | 		 | 
+| 	authschemas_id	 | 	int	 | 	[AUTHSCHEMAS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-authschemas) **id**	 | 	ID Schematu autoryzacji	 | 		 | 
+| 	objid	 | 	int	 | 	[USERS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-users) **id**, [USERGROUPS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-usergroups) **id**, [AUTHSCHEMAS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-authschemas) **id**	 | 	Odbiorca - ID Powiązanego obiektu	 | 		 | 
 | 	objtype	 | 	int	 | 		 | 	Typ odbiorcy 	 | 	0 - Użytkownik, 1 - Grupa użytkowników, 2 - Schemat autoryzacji	 | 
 | 	order	 | 	int	 | 		 | 	Kolejność	 | 		 | 
 | 	id	 | 	int	 | 		 | 	Numer kolejny	 | 		 | 
@@ -164,9 +164,9 @@ sidebar_position: 6
 | 	headereditmode2	 | 	int	 | 		 |Uprawnienie do edycji nagłówka2 dokumentu	 | 	0 - Blokada, 1 - Odblokowane | 	
 | 	lineseditmode2	 | 	int	 | 		 | Uprawnienie do edycji linii2 dokumentu	 | 	0 - Blokada, 1 - Odblokowane | 
 | 	addinfo	 | 	nvarchar(MAX)	 | 		 | 	Dodatkowe informacje	 | 		 |
-| 	organizations_id	 | 	int	 | 	[ORGANIZATIONS](/docs/database/Tables/tables-descr.md#tabela-organizations) **id** 	 | 	ID Organizacji	 | 		 |
+| 	organizations_id	 | 	int	 | 	[ORGANIZATIONS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-organizations) **id** 	 | 	ID Organizacji	 | 		 |
 | 	globalid	 | 	varchar(36)	 | 		 | 	Globalny identyfikator obiektu, niezależny od bazy danych	 | 		 | 
-| 	usergroup_id	 | 	int	 | 	[USERGROUPS](/docs/database/Tables/tables-descr.md#tabela-usergroups) **id**	 | 	ID Grupy użytkowników (dla schematów utworzonych automatycznie na podstawie grupy)	 | 		 | 
+| 	usergroup_id	 | 	int	 | 	[USERGROUPS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-usergroups) **id**	 | 	ID Grupy użytkowników (dla schematów utworzonych automatycznie na podstawie grupy)	 | 		 | 
 
 
 ## Tabela BPCONFIGS
@@ -176,20 +176,20 @@ sidebar_position: 6
 | 	Pole	 | 	Typ danych	 | 	Odwołanie	 | 	Opis	 | 	Ograniczenia	 |
 | 	---	 | 	---	 | 	---	 | 	---	 | 	---  |
 | 	id	 | 	int	 | 		 | 	Unikalny numer |  |
-| 	companies_id	 | 	int	 | 	[COMPANIES](/docs/database/Tables/tables-descr.md#tabela-companies) **id**	 | 	ID Firmy	 | 		 |
+| 	companies_id	 | 	int	 | 	[COMPANIES](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-companies) **id**	 | 	ID Firmy	 | 		 |
 | 	order	 | 	int	 | 		 | Kolejność | 		 |
 | 	match	 | 	int	 | 		 | 	Dopasowanie | 0 - Kod PH, 1 - Charakterystyka |
 | 	value	 | 	nvarchar(100)	 | 		 | 	Kod/Wartość | 		 |
 | 	ocrprofiles_id	 | 	int	 | 		 | Profil OCR | 		 |
-| 	classes_id	 | 	int	 | 	[CLASSES](/docs/database/Tables/tables-descr.md#tabela-classes) **id**	 | 	ID Klasy	 | 		 |
+| 	classes_id	 | 	int	 | 	[CLASSES](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-classes) **id**	 | 	ID Klasy	 | 		 |
 | 	cptolns_groupby	 | 	int	 | 		 | Grupowanie linii | 0 - Brak, 1 - Wszystko do jednej  |
 | 	gpt_model	 | 	varchar(128)	 | 		 | Model GPT | 		 |
 | 	gpt_prompt	 | 	nvarchar(1024)	 | 		 | 	Zapytanie GPT | 		 |
 | 	itmcoderx	 | 	nvarchar(128)	 | 		 | Filtr indeksów SAP | 		 |
 | 	qrygrprx	 | 	nvarchar(128)	 | 		 | Filtr charakterystyk SAP | 		 |
 | 	ksef_autosend	 | 	bit	 | 		 | Automatyczne dodanie z KSeF | 0 - Nie, 1 - Tak |
-| 	ksef_authschema_id	 | 	int	 | [AUTHSCHEMAS](/docs/database/Tables/tables-descr.md#tabela-authschemas) **id** | Schemat autoryzacji | 		 |
-| 	ksef_user_id	 | 	int	 | [USERS](/docs/database/Tables/tables-descr.md#tabela-users) **id** | Właściciel | 		 |
+| 	ksef_authschema_id	 | 	int	 | [AUTHSCHEMAS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-authschemas) **id** | Schemat autoryzacji | 		 |
+| 	ksef_user_id	 | 	int	 | [USERS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-users) **id** | Właściciel | 		 |
 | 	updatedat	 | 	datetime	 | 		 | Data aktualizacji | 		 |
 | 	createdat	 | 	datetime	 | 		 | 	Data utworzenia | 		 |
 
@@ -200,9 +200,9 @@ sidebar_position: 6
 
 | 	Pole	 | 	Typ danych	 | 	Odwołanie	 | 	Opis	 | 	Ograniczenia	 |
 | 	---	 | 	---	 | 	---	 | 	---	 | 	---	 |
-| 	chats_id	 | 	int	 | 	[CHATS](/docs/database/Tables/tables-descr.md#tabela-chats) **id**	 | 	Id Czatu	 | 		 |
+| 	chats_id	 | 	int	 | 	[CHATS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-chats) **id**	 | 	Id Czatu	 | 		 |
 | 	int_id	 | 	int	 | 		 | Unikalny numer waidomości w obebie danego czatu | 		 |
-| 	users_id	 | 	int	 | 	[USERS](/docs/database/Tables/tables-descr.md#tabela-users) **id**	 | 	Id Użytkownika	 | 		 |
+| 	users_id	 | 	int	 | 	[USERS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-users) **id**	 | 	Id Użytkownika	 | 		 |
 | 	content	 | 	nvarchar(MAX)	 | 		 | 	Treść wiadomości | 		 |
 | 	CreatedAt	 | 	datetime	 | 		 | 	Data utworzenia	 | 		 |
 
@@ -214,7 +214,7 @@ sidebar_position: 6
 | 	Pole	 | 	Typ danych	 | 	Odwołanie	 | 	Opis	 | 	Ograniczenia	 |
 | 	---	 | 	---	 | 	---	 | 	---	 | 	---	 |
 | 	id	 | 	int	 | 		 | 	Unikalny numer czatu	 | 		 |
-| 	organizations_id	 | 	int	 | 	[ORGANIZATIONS](/docs/database/Tables/tables-descr.md#tabela-organizations) **id**	 | 	ID Oragnizacji	 | 		 |
+| 	organizations_id	 | 	int	 | 	[ORGANIZATIONS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-organizations) **id**	 | 	ID Oragnizacji	 | 		 |
 | 	CreatedAt	 | 	datetime	 | 		 | 	Data utworzenia	 | 		 |
 | 	UpdatedAt	 | 	datetime	 | 		 | 	Data aktualizacji	 | 		 |
 
@@ -225,10 +225,10 @@ sidebar_position: 6
 
 | 	Pole	 | 	Typ danych	 | 	Odwołanie	 | 	Opis	 | 	Ograniczenia	 |
 | 	---	 | 	---	 | 	---	 | 	---	 | 	---	 |
-| 	chats_id	 | 	int	 | 	[CHATS](/docs/database/Tables/tables-descr.md#tabela-chats) **id**	 | 	Id Czatu	 | 		 |
-| 	users_id	 | 	int	 | 	[USERS](/docs/database/Tables/tables-descr.md#tabela-users) **id**	 | 	Id Użytkownika	 | 		 |
+| 	chats_id	 | 	int	 | 	[CHATS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-chats) **id**	 | 	Id Czatu	 | 		 |
+| 	users_id	 | 	int	 | 	[USERS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-users) **id**	 | 	Id Użytkownika	 | 		 |
 | 	user_role	 | 	int	 | 		 | 	Rola użytkownika | 	0 - Uczestk czatu, 1 - Założyciel / Uczestnik czatu |
-| 	read_int_id	 | 	int	 | 	[CHATENTRIES](/docs/database/Tables/tables-descr.md#tabela-chatentries) **int_id** | 	ID Ostatniej odczytanej wiadomości | 		 |
+| 	read_int_id	 | 	int	 | 	[CHATENTRIES](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-chatentries) **int_id** | 	ID Ostatniej odczytanej wiadomości | 		 |
 
 
 ## Tabela CLASS_SCHEMAS
@@ -237,8 +237,8 @@ sidebar_position: 6
 
 | 	Pole	 | 	Typ danych	 | 	Odwołanie	 | 	Opis	 | 	Ograniczenia	 |
 | 	---	 | 	---	 | 	---	 | 	---	 | 	---	 |
-| 	classes_id	 | 	int	 | 	[CLASSES](/docs/database/Tables/tables-descr.md#tabela-classes) **id**	 | 	ID Klasy	 | 		 |
-| 	authschemas_id	 | 	int	 | 	[AUTHSCHEMAS](/docs/database/Tables/tables-descr.md#tabela-authschemas) **id**	 | 	ID Schematu / Procesu autoryzacji | 		 |
+| 	classes_id	 | 	int	 | 	[CLASSES](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-classes) **id**	 | 	ID Klasy	 | 		 |
+| 	authschemas_id	 | 	int	 | 	[AUTHSCHEMAS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-authschemas) **id**	 | 	ID Schematu / Procesu autoryzacji | 		 |
 
 
 ## Tabela CLASS_SYSATTRIBSCFG
@@ -248,7 +248,7 @@ sidebar_position: 6
 | 	Pole	 | 	Typ danych	 | 	Odwołanie	 | 	Opis	 | 	Ograniczenia	 |
 | 	---	 | 	---	 | 	---	 | 	---	 | 	---	 |
 | 	id	 | 	int	 | 		 | 	ID Atrybutu | 		 |
-| 	classes_id	 | 	int	 | 	[CLASSES](/docs/database/Tables/tables-descr.md#tabela-classes) **id**	 | 	ID Klasy	 | 		 |
+| 	classes_id	 | 	int	 | 	[CLASSES](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-classes) **id**	 | 	ID Klasy	 | 		 |
 | 	description	 | 	ntext	 | 		 | Opis | 		 |
 | 	label	 | 	nvarchar(MAX)	 | 		 | Etykieta | 		 |
 | 	visorder	 | 	int	 | 		 | Kolejność | 		 |
@@ -263,12 +263,12 @@ sidebar_position: 6
 
 | 	Pole	 | 	Typ danych	 | 	Odwołanie	 | 	Opis	 | 	Ograniczenia	 |
 | 	---	 | 	---	 | 	---	 | 	---	 | 	---	 |
-| 	classes_id	 | 	int	 | 	[CLASSES](/docs/database/Tables/tables-descr.md#tabela-classes) **id**	 | 	ID Klasy	 | 		 |
+| 	classes_id	 | 	int	 | 	[CLASSES](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-classes) **id**	 | 	ID Klasy	 | 		 |
 | 	name	 | 	varchar(100)	 | 		 | 	Nazwa wyzwalacza	 | 		 |
 | 	description	 | 	ntext	 | 		 | 	Opis	 | 		 |
 | 	label	 | 	nvarchar(MAX)	 | 		 | 	Etykieta wyświetlana na formatce	 | 		 |
 | 	order	 | 	int	 | 		 | 	Kolejność	 | 		 |
-| 	classattribs_id	 | 	int	 | 	[ATTRIBDICTS](/docs/database/Tables/tables-descr.md#tabela-attribdicts) **id**	 | 	ID Atrybutu połączonego	 | 	 -2 - nagłówek, -1 - linie	 |
+| 	classattribs_id	 | 	int	 | 	[ATTRIBDICTS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-attribdicts) **id**	 | 	ID Atrybutu połączonego	 | 	 -2 - nagłówek, -1 - linie	 |
 | 	linktoctrl	 | 	bit	 | 		 | 	Połącz | 1 - Tak, 0 - Nie |
 
 
@@ -291,13 +291,13 @@ sidebar_position: 6
 | 	iscolumn	 | 	bit	 | 		 | 	Pole w nagłówku, czy linii	 | 0 - Nagłówek, 1 - Linia		 |
 | 	evalctx	 | 	varchar(1024)	 | 		 | 	Algorytm	 | 		 |
 | 	allowcustomval	 | 	bit	 | 		 | 	Dowolne wartości	 | 	0 - Nie, 1 - Tak |
-| 	interactivedicts_id	 | 	int	 | 	[INTERACTIVEDICTS](/docs/database/Tables/tables-descr.md#tabela-interactivedicts) **id**	 | 	ID Słownika dynamicznego (interaktywnego)	 | 		 |
+| 	interactivedicts_id	 | 	int	 | 	[INTERACTIVEDICTS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-interactivedicts) **id**	 | 	ID Słownika dynamicznego (interaktywnego)	 | 		 |
 | 	label	 | 	nvarchar(MAX)	 | 		 | 	Etykieta	 | 		 |
 | 	visorder	 | 	int	 | 		 | 	Kolejność wyświetlania na formatce	 | 		 |
 | 	defwidth	 | 	int	 | 		 | 	Szerokość (atrybuty linii)	 | 		 |
 | 	adder	 | 	bit	 | 		 | 		 | 		 |
 | 	objtype	 | 	int	 | 		 | 	Typ obiektu 	 | 	0 - Klasa dokumentu, 1 - Dziennik korespondencji, 2 - Raport	 |
-| 	objid	 | 	int	 | 	[CLASSES](/docs/database/Tables/tables-descr.md#tabela-classes) **id**, [DAILYCORRCLASS](/docs/database/Tables/tables-descr.md#tabela-dailycorrclass) **id**, [INTERACTIVEDICTS](/docs/database/Tables/tables-descr.md#tabela-interactivedicts) **id**	 | 	ID Powiązanego obiektu	 | 		 |
+| 	objid	 | 	int	 | 	[CLASSES](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-classes) **id**, [DAILYCORRCLASS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-dailycorrclass) **id**, [INTERACTIVEDICTS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-interactivedicts) **id**	 | 	ID Powiązanego obiektu	 | 		 |
 | 	cmp_classattribs_id	 | 	int	 | 		 | 	Pole porównawcze - ID Atrybutu 	 | 		 |
 | 	allowgroup	 | 	bit	 | 		 | 	Grupowanie (nieużywane)	 | 		 |
 | 	dictlisttype	 | 	int	 | 		 | 	Widok listy | 0 - Auto, 1 - Lista rozwijana, 2 - Lista interaktywna |
@@ -317,21 +317,21 @@ sidebar_position: 6
 | 	CreatedAt	 | 	datetime	 | 		 | 	Data utworzenia	 | 		 |
 | 	UpdatedAt	 | 	datetime	 | 		 | 	Data aktualizacji	 | 		 |
 | 	nameformat	 | 	nvarchar(255)	 | 		 | 	Format nazwy (Ogólne) | 		 |
-| 	authschemas_id	 | 	int	 | 	[AUTHSCHEMAS](/docs/database/Tables/tables-descr.md#tabela-authschemas) **id**	 | 	Schemat domyślny (Autoryzacje)  |  |
+| 	authschemas_id	 | 	int	 | 	[AUTHSCHEMAS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-authschemas) **id**	 | 	Schemat domyślny (Autoryzacje)  |  |
 | 	prmcpmthtype	 | 	int	 | 		 | 	Kopiowanie uprawnień (Ogólne)	 | 	0 - Nigdy, 1 - Zawsze, 2 - Zapytaj	 |
 | 	authmandatory	 | 	bit	 | 		 | 	Schemat jest wymagany (Autoryzacje) | 1 - Tak, 0 - Nie |
 | 	visibility	 | 	int	 | 		 | 	Widoczność | 	 0 - Widoczna, 1 - Ukryta	 |
-| 	classes_id	 | 	int	 | 	[CLASSES](/docs/database/Tables/tables-descr.md#tabela-classes) **id**	 | 	ID klasy bazowej	 | 		 |
+| 	classes_id	 | 	int	 | 	[CLASSES](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-classes) **id**	 | 	ID klasy bazowej	 | 		 |
 | 	issys	 | 	bit	 | 		 | 	Czy klasa systemowa?	 | 1 - Tak, 0 - Nie |
 | 	uniqname	 | 	bit	 | 		 | 	Kontrola unikalności nazwy (Ogólne)	 | 	1 - Tak, 0 - Nie |
 | 	checkformat	 | 	int	 | 		 | 	Kontrola formatu nazwy	 | 	0 - Nie sprawdzaj, 1 - Pozwól edytować, 2 Automatycznie	 |
 | 	numrrequired	 | 	bit	 | 		 | 	Numer wymagany (Ogólne)	 | 1 - Tak, 0 - Nie |
 | 	uniqnum	 | 	bit	 | 		 | 	Kotrola unikalności numeru (Ogólne)	 | 1 - Tak, 0 - Nie |
 | 	color	 | 	int	 | 		 | 	Kolor (Ogólne) | 		 |
-| 	organizations_id	 | 	int	 | 	[ORGANIZATIONS](/docs/database/Tables/tables-descr.md#tabela-organizations) **id**	 | 	ID Organizacji | 		 |
+| 	organizations_id	 | 	int	 | 	[ORGANIZATIONS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-organizations) **id**	 | 	ID Organizacji | 		 |
 | 	globalid	 | 	varchar(36)	 | 		 | 	Globalny identyfikator obiektu, niezależny od bazy danych	 | 		 |
 | 	autoaddrow	 | 	bit	 | 		 | 	Automatycznie dodaj linie (nieużywane)	 | 		 |
-| 	att_classes_id	 | 	int	 | 	[CLASSES](/docs/database/Tables/tables-descr.md#tabela-classes) **id**	 | 	Klasa załącznika (Ogólne)	 | 		 |
+| 	att_classes_id	 | 	int	 | 	[CLASSES](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-classes) **id**	 | 	Klasa załącznika (Ogólne)	 | 		 |
 | 	attsendtocr	 | 	bit	 | 		 | 	Załącznik do OCR (Ogólne) | 1 - Tak, 0 - Nie |
 | 	newdocpath	 | 	varchar(1024)	 | 		 | 	Ścieżka domyślna (Ogólne) | 		 |
 | 	classtype	 | 	int	 | 		 | 	Typ klasy (Ogólne) | 0 - Inny, 1 - Faktura, 2 - Korekta |
@@ -346,12 +346,12 @@ sidebar_position: 6
 | 	---	 | 	---	 | 	---	 | 	---	 | 	---	 |
 | 	id	 | 	int	 | 		 | 	Numer unikalny	 | 		 |
 | 	objtype	 | 	int	 | 		 | 	Typ obiektu 	 | 	1 - Raport, 0 - Dziennik korespondencji	 |
-| 	objid	 | 	int	 | 	[INTERACTIVEDICTS](/docs/database/Tables/tables-descr.md#tabela-interactivedicts) **id**, [DAILYCORRCLASS](/docs/database/Tables/tables-descr.md#tabela-dailycorrclass) **id**	 | 	Odwołanie do powiązanego obiektu	 | 		 |
+| 	objid	 | 	int	 | 	[INTERACTIVEDICTS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-interactivedicts) **id**, [DAILYCORRCLASS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-dailycorrclass) **id**	 | 	Odwołanie do powiązanego obiektu	 | 		 |
 | 	column	 | 	varchar(100)	 | 		 | 	Nazwa kolumny	 | 		 |
 | 	label	 | 	varchar(254)	 | 		 | 	Etykieta kolumny	 | 		 |
 | 	sortable	 | 	bit	 | 		 | 	Sortowanie	 | 0 - Nie, 1 - Tak |
 | 	target	 | 	int	 | 		 | 	Typ odnośnika	 | 	0 - Brak, 1 - Podraport, 2 - Dokument, 3 Wpis dziennika korespondencji, 4 - Wpis dostępu	 |
-| 	classes_id	 | 	int	 | 	[INTERACTIVEDICTS](/docs/database/Tables/tables-descr.md#tabela-interactivedicts) **id**, [DOCUMENTS](/docs/database/Tables/tables-descr.md#tabela-documents) **id**, [DAILYCORRESPONDENCE](/docs/database/Tables/tables-descr.md#tabela-dailycorrespondence) **id**, [DOCUMENTACCESS](/docs/database/Tables/tables-descr.md#tabela-documentaccess) **id**	 | 	Klasa odnośnika (obiekt zgodnie z typem)	 | 		 |
+| 	classes_id	 | 	int	 | 	[INTERACTIVEDICTS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-interactivedicts) **id**, [DOCUMENTS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-documents) **id**, [DAILYCORRESPONDENCE](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-dailycorrespondence) **id**, [DOCUMENTACCESS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-documentaccess) **id**	 | 	Klasa odnośnika (obiekt zgodnie z typem)	 | 		 |
 | 	marktodel	 | 	bit	 | 		 | Pole techniczne wykorzystywane przy transakcjach | 		 |
 | 	width	 | 	int	 | 		 | 	Szerokość	 | 		 |
 | 	group	 | 	int	 | 		 | 	Grupowanie	 | 	0 - Brak, >0 Kolejność grupowania	 |
@@ -368,7 +368,7 @@ sidebar_position: 6
 
 | 	Pole	 | 	Typ danych	 | 	Odwołanie	 | 	Opis	 | 	Ograniczenia	 |
 | 	---	 | 	---	 | 	---	 | 	---	 | 	---	 |
-| 	columnsformats_id	 | 	int	 | 	[COLUMNSFORMATS](/docs/database/Tables/tables-descr.md#tabela-columnsformats) **id**	 | Odwołanie do ustawienia formatu kolumny	 | 		 |
+| 	columnsformats_id	 | 	int	 | 	[COLUMNSFORMATS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-columnsformats) **id**	 | Odwołanie do ustawienia formatu kolumny	 | 		 |
 | 	from	 | 	varchar(100)	 | 		 | 	Parametr z	 | 		 |
 | 	to	 | 	varchar(100)	 | 		 | 	Parametr do	 | 		 |
 
@@ -380,8 +380,8 @@ sidebar_position: 6
 | 	Pole	 | 	Typ danych	 | 	Odwołanie	 | 	Opis	 | 	Ograniczenia	 |
 | 	---	 | 	---	 | 	---	 | 	---	 | 	---	 |
 | 	id	 | 	int	 | 		 | 	Unikalny numer komentarza 	 | 		 |
-| 	pagecomments_id	 | 	int	 | 	[PAGECOMMENTS](/docs/database/Tables/tables-descr.md#tabela-pagecomments) **id**	 | 	ID Komentarza przypisanego do strony | 		 |
-| 	users_id	 | 	int	 | 	[USERS](/docs/database/Tables/tables-descr.md#tabela-users) **id**	 | 	ID Użytkownika tworzącego wpis	 | 		 |
+| 	pagecomments_id	 | 	int	 | 	[PAGECOMMENTS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-pagecomments) **id**	 | 	ID Komentarza przypisanego do strony | 		 |
+| 	users_id	 | 	int	 | 	[USERS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-users) **id**	 | 	ID Użytkownika tworzącego wpis	 | 		 |
 | 	entrynum	 | 	int	 | 		 | 	Kolejny numer wpisu (komentarz do komentarza)	 | 		 |
 | 	content	 | 	ntext	 | 		 | 	Treść komentarza	 | 		 |
 | 	createdat	 | 	datetime	 | 		 | 	Data utworzenia	 | 		 |
@@ -400,7 +400,7 @@ sidebar_position: 6
 | 	CreatedAt	 | 	datetime	 | 		 | 	Data utworzenia	 | 		 |
 | 	UpdatedAt	 | 	datetime	 | 		 | 	Data ostatniej aktualizacji	 | 		 |
 | 	directories_id	 | 	int	 | 		 | 	Katalog domyślny (Ogólne) | 		 |
-| 	organizations_id	 | 	int	 | 	[ORGANIZATIONS](/docs/database/Tables/tables-descr.md#tabela-organizations) **id**	 | 	Id organizacji	 | 		 |
+| 	organizations_id	 | 	int	 | 	[ORGANIZATIONS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-organizations) **id**	 | 	Id organizacji	 | 		 |
 | 	globalid	 | 	varchar(36)	 | 		 | 	Globalny identyfikator obiektu, niezależny od bazy danych	 | 		 |
 | 	taxid	 | 	varchar(32)	 | 		 | 	NIP firmy dla KSEF (Ogólne)	 | 		 |
 | 	sl_url	 | 	nvarchar(256)	 | 		 | Adres SL (Integracja SAP) | 		 |
@@ -410,8 +410,8 @@ sidebar_position: 6
 | 	dummy_rindex	 | 	nvarchar(128)	 | 		 | 	Domyślny indeks (Integracja SAP) | 		 |
 | 	rbplid	 | 	int	 | 		 | ID oddziału (Integracja SAP) | 		 |
 | 	def_currency	 | 	nvarchar(MAX)	 | 		 | Waluta (Ogólne) | 		 |
-| 	def_ocrprofiles_id	 | 	int	 | [OCRPROFILES](/docs/database/Tables/tables-descr.md#tabela-ocrprofiles) **id** | Profil OCR (Konfiguracja BP) | 0 - Automatyczna, > 0 - Id profilu OCR |
-| 	def_classes_id	 | 	int	 | [CLASSES](/docs/database/Tables/tables-descr.md#tabela-classes) **id** | 	Klasa (Konfiguracja BP) | 0 - Automatyczna, > 0 - Id klasy |
+| 	def_ocrprofiles_id	 | 	int	 | [OCRPROFILES](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-ocrprofiles) **id** | Profil OCR (Konfiguracja BP) | 0 - Automatyczna, > 0 - Id profilu OCR |
+| 	def_classes_id	 | 	int	 | [CLASSES](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-classes) **id** | 	Klasa (Konfiguracja BP) | 0 - Automatyczna, > 0 - Id klasy |
 | 	def_gpt_model	 | 	varchar(128)	 | 		 | Model GPT (Konfiguracja BP) | 		 |
 | 	def_gpt_prompt	 | 	nvarchar(1024)	 | 		 | 	Zapytanie GPT (Konfiguracja BP) | 		 |
 | 	def_itmcoderx	 | 	nvarchar(128)	 | 		 | 	Filtr indeksów SAP (Konfiguracja BP) | 		 |
@@ -428,7 +428,7 @@ sidebar_position: 6
 | 	Pole	 | 	Typ danych	 | 	Odwołanie	 | 	Opis	 | 	Ograniczenia	 |
 | 	---	 | 	---	 | 	---	 | 	---	 | 	---	 |
 | 	id	 | 	int	 | 		 | 	numer unikalny	 | 		 |
-| 	companies_id	 | 	int	 | 	[COMPANIES](/docs/database/Tables/tables-descr.md#tabela-companies) **id**	 | 	id firmy	 | 		 |
+| 	companies_id	 | 	int	 | 	[COMPANIES](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-companies) **id**	 | 	id firmy	 | 		 |
 | 	name	 | 	nvarchar(100)	 | 		 | 	nazwa słownika	 | 		 |
 | 	description	 | 	ntext	 | 		 | 	opis słownika	 | 		 |
 | 	regex	 | 	nvarchar(1024)	 | 		 | 	wzór	 | 		 |
@@ -443,8 +443,8 @@ sidebar_position: 6
 
 | 	Pole	 | 	Typ danych	 | 	Odwołanie	 | 	Opis	 | 	Ograniczenia	 |
 | 	---	 | 	---	 | 	---	 | 	---	 | 	---	 |
-| 	companies_id	 | 	int	 | 	[COMPANIES](/docs/database/Tables/tables-descr.md#tabela-companies) **id**	 | 	Id firmy	 | 		 |
-| 	classes_id	 | 	int	 | 	[CLASSES](/docs/database/Tables/tables-descr.md#tabela-classes) **id**	 | 	Id klasy	 | 		 |
+| 	companies_id	 | 	int	 | 	[COMPANIES](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-companies) **id**	 | 	Id firmy	 | 		 |
+| 	classes_id	 | 	int	 | 	[CLASSES](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-classes) **id**	 | 	Id klasy	 | 		 |
 
 
 
@@ -472,7 +472,7 @@ sidebar_position: 6
 | 	gpt_apikey	 | 	varchar(2048)	 | 		 | 	GPT ApiKey (Ogólne)	 | 	 |
 | 	ocreglevel	 | 	int	 | 		 | 	Poziom regionów OCR (OCR)	 | 		 |
 | 	printfooter	 | 	nvarchar(128)	 | 		 | 	Stopka wydruków (Ogólne)	 | 		 |
-| 	docacc_usergroups_id	 | 	int	 | 	[USERGROUPS](/docs/database/Tables/tables-descr.md#tabela-usergroups) **id** | 	Przełożeni (Ogólne)	 | 		 |
+| 	docacc_usergroups_id	 | 	int	 | 	[USERGROUPS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-usergroups) **id** | 	Przełożeni (Ogólne)	 | 		 |
 | 	inocrtout	 | 	int	 | 		 | 	Max. czas w ocrservice (min) (OCR)	 | 		 |
 | 	authrpt_crontab	 | 	varchar(1024)	 | 		 | 	Harmonogram rap.oczekujących (Ogólne) | 		 |
 | 	ksef_renderapiurl	 | 	varchar(128)	 | 		 | 	KSeF Render API (Ogólne)	 | 		 |
@@ -485,7 +485,7 @@ sidebar_position: 6
 
 | 	Pole	 | 	Typ danych	 | 	Odwołanie	 | 	Opis	 | 	Ograniczenia	 |
 | 	---	 | 	---	 | 	---	 | 	---	 | 	---	 |
-| 	customprocesses_id	 | 	int	 | 	[CUSTOMPROCESSES](/docs/database/Tables/tables-descr.md#tabela-customprocesses) **id**	 | 	ID Algorytmu | 		 |
+| 	customprocesses_id	 | 	int	 | 	[CUSTOMPROCESSES](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-customprocesses) **id**	 | 	ID Algorytmu | 		 |
 | 	intid	 | 	int	 | 		 | 	Kolejny numer instrukcji	 | 		 |
 | 	name	 | 	nvarchar(100)	 | 		 | 	Nazwa instrukcji	 | 		 |
 | 	description	 | 	ntext	 | 		 | 	Opis instrukcji	 |	 |
@@ -493,7 +493,7 @@ sidebar_position: 6
 | 	btn1	 | 	nvarchar(100)	 | 		 | 	Tekst przycisku 1	 | 		 |
 | 	btn2	 | 	nvarchar(100)	 | 		 | 	Tekst przycisku 2	 | 		 |
 | 	btn3	 | 	nvarchar(100)	 | 		 | 	Tekst przycisku 3	 | 		 |
-| 	variable_id	 | 	int	 | [PROCESS_VARIABLES](/docs/database/Tables/tables-descr.md#tabela-process_variables) **intid** | 	ID Zmiennej wyjścia	 | 		 |
+| 	variable_id	 | 	int	 | [PROCESS_VARIABLES](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-process_variables) **intid** | 	ID Zmiennej wyjścia	 | 		 |
 
 
 ## Tabela CUSTOMPROCESS_EXCALLOP
@@ -502,7 +502,7 @@ sidebar_position: 6
 
 | 	Pole	 | 	Typ danych	 | 	Odwołanie	 | 	Opis	 | 	Ograniczenia	 |
 | 	---	 | 	---	 | 	---	 | 	---	 | 	---	 |
-| 	customprocesses_id	 | 	int	 | 	[CUSTOMPROCESSES](/docs/database/Tables/tables-descr.md#tabela-customprocesses) **id**	 | 	ID Algorytmu | 		 |
+| 	customprocesses_id	 | 	int	 | 	[CUSTOMPROCESSES](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-customprocesses) **id**	 | 	ID Algorytmu | 		 |
 | 	intid	 | 	int	 | 		 | 	Kolejny numer instrukcji	 | 		 |
 | 	name	 | 	nvarchar(100)	 | 		 | 	Nazwa instrukcji	 | 		 |
 | 	description	 | 	ntext	 | 		 | 	Opis instrukcji	 | 		 |
@@ -514,7 +514,7 @@ sidebar_position: 6
 | 	arg1	 | 	nvarchar(MAX)	 | 		 | 	Argument 2	 | 		 |
 | 	arg2	 | 	nvarchar(MAX)	 | 		 | 	Argument 3	 | 		 |
 | 	arg3	 | 	nvarchar(MAX)	 | 		 | 	Argument 4	 | 		 |
-| 	variable_id	 | 	int	 | [PROCESS_VARIABLES](/docs/database/Tables/tables-descr.md#tabela-process_variables) **intid** | 	ID Zmiennej wyjścia / wejścia	 | 		 |
+| 	variable_id	 | 	int	 | [PROCESS_VARIABLES](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-process_variables) **intid** | 	ID Zmiennej wyjścia / wejścia	 | 		 |
 
 
 ## Tabela CUSTOMPROCESS_LINEOP
@@ -523,12 +523,12 @@ sidebar_position: 6
 
 | 	Pole	 | 	Typ danych	 | 	Odwołanie	 | 	Opis	 | 	Ograniczenia	 |
 | 	---	 | 	---	 | 	---	 | 	---	 | 	---	 |
-| 	customprocesses_id	 | 	int	 | 	[CUSTOMPROCESSES](/docs/database/Tables/tables-descr.md#tabela-customprocesses) **id**	 | 	ID Algorytmu	 | 		 |
+| 	customprocesses_id	 | 	int	 | 	[CUSTOMPROCESSES](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-customprocesses) **id**	 | 	ID Algorytmu	 | 		 |
 | 	intid	 | 	int	 | 		 | 	Kolejny numer instrukcji	 | 		 |
 | 	name	 | 	nvarchar(100)	 | 		 | 	Nazwa instrukcji	 | 		 |
 | 	description	 | 	ntext	 | 		 | 	Opis instrukcji	 | 		 |
 | 	type	 | 	int	 | 		 | 	Typ instrukcji	 | 	0 - Pobranie linii , 1 - Aktualizacja linii , 2 - Czyszczenie linii, 3 - Dodanie linii, 4 - Kasowanie linii, 5 - Pobranie nagłówka, 6 - Aktualizacja nagłówka, 7 - Zapisz dokument, 8 - Pobranie referencji, 9 - Aktualizacja referencji, 10 - Czyszczenie referencji, 11 - Dodanie referencji, 12 - Kasowanie referencji	 |
-| 	variable_id	 | 	int	 | 	[PROCESS_VARIABLES](/docs/database/Tables/tables-descr.md#tabela-process_variables) **intid** | 	ID Zmiennej wyjścia / wejścia	 | 		 |
+| 	variable_id	 | 	int	 | 	[PROCESS_VARIABLES](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-process_variables) **intid** | 	ID Zmiennej wyjścia / wejścia	 | 		 |
 
 
 ## Tabela CUSTOMPROCESS_SCRIPTOP
@@ -537,13 +537,13 @@ sidebar_position: 6
 
 | 	Pole	 | 	Typ danych	 | 	Odwołanie	 | 	Opis	 | 	Ograniczenia	 |
 | 	---	 | 	---	 | 	---	 | 	---	 | 	---	 |
-| 	customprocesses_id	 | 	int	 | 	[CUSTOMPROCESSES](/docs/database/Tables/tables-descr.md#tabela-customprocesses) **id**	 | 	ID Algorytmu | 		 |
+| 	customprocesses_id	 | 	int	 | 	[CUSTOMPROCESSES](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-customprocesses) **id**	 | 	ID Algorytmu | 		 |
 | 	intid	 | 	int	 | 		 | 	Kolejny numer instrukcji	 | 		 |
 | 	name	 | 	nvarchar(100)	 | 		 | 	Nazwa instrukcji	 | 		 |
 | 	description	 | 	ntext	 | 		 | 	Opis instrukcji	 | 		 |
 | 	type	 | 	int	 | 		 | 	Typ instrukcji	 | 	0 - MsSQL/HANA	 |
 | 	content	 | 	ntext	 | 		 | 	Treść zapytania	 | 		 |
-| 	variable_id	 | 	int	 | [PROCESS_VARIABLES](/docs/database/Tables/tables-descr.md#tabela-process_variables) **intid** | 	ID Zmiennej wyjścia	 | 		 |
+| 	variable_id	 | 	int	 | [PROCESS_VARIABLES](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-process_variables) **intid** | 	ID Zmiennej wyjścia	 | 		 |
 
 ## Tabela CUSTOMPROCESSES
 
@@ -554,8 +554,8 @@ sidebar_position: 6
 | 	id	 | 	int	 | 		 | 	Unikalny numer	 | 		 |
 | 	name	 | 	nvarchar(100)	 | 		 | 	Nazwa algorytmu	 | 		 |
 | 	description	 | 	ntext	 | 		 | 	Opis algorytmu	 | 		 |
-| 	classes_id	 | 	int	 | 	[CLASSES](/docs/database/Tables/tables-descr.md#tabela-classes) **id**	 | 	ID Klasy dokumentu	 | 		 |
-| 	organizations_id	 | 	int	 | 	[ORGANIZATIONS](/docs/database/Tables/tables-descr.md#tabela-organizations) **id**	 | 	ID Organizacji	 | 		 |
+| 	classes_id	 | 	int	 | 	[CLASSES](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-classes) **id**	 | 	ID Klasy dokumentu	 | 		 |
+| 	organizations_id	 | 	int	 | 	[ORGANIZATIONS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-organizations) **id**	 | 	ID Organizacji	 | 		 |
 | 	CreatedAt	 | 	datetime	 | 		 | 	Data utworzenia	 | 		 |
 | 	UpdatedAt	 | 	datetime	 | 		 | 	Data ostatniej aktualizacji	 | 		 |
 | 	globalid	 | 	varchar(36)	 | 		 | 	Globalny identyfikator obiektu, niezależny od bazy danych	 | 		 |
@@ -567,8 +567,8 @@ sidebar_position: 6
 
 | 	Pole	 | 	Typ danych	 | 	Odwołanie	 | 	Opis	 | 	Ograniczenia	 |
 | 	---	 | 	---	 | 	---	 | 	---	 | 	---	 |
-| 	dailycorr_id	 | 	int	 | 	[DAILYCORRESPONDENCE](/docs/database/Tables/tables-descr.md#tabela-dailycorrespondence) **id**	 | 	ID Wpisu dziennika korespondencji	 | 		 |
-| 	attribs_id	 | 	int	 | 	[CLASSATTRIBS](/docs/database/Tables/tables-descr.md#tabela-classattribs) **id**	 | 	ID Atrybutu klasy (dziennika koresponencji)	 | 		 |
+| 	dailycorr_id	 | 	int	 | 	[DAILYCORRESPONDENCE](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-dailycorrespondence) **id**	 | 	ID Wpisu dziennika korespondencji	 | 		 |
+| 	attribs_id	 | 	int	 | 	[CLASSATTRIBS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-classattribs) **id**	 | 	ID Atrybutu klasy (dziennika koresponencji)	 | 		 |
 | 	value	 | 	nvarchar(MAX)	 | 		 | 	Przypisana wartość atrybutu	 | 		 |
 
 
@@ -578,9 +578,9 @@ sidebar_position: 6
 
 | 	Pole	 | 	Typ danych	 | 	Odwołanie	 | 	Opis	 | 	Ograniczenia	 |
 | 	---	 | 	---	 | 	---	 | 	---	 | 	---	 |
-| 	dailycorr_id	 | 	int	 | 	[DAILYCORRESPONDENCE](/docs/database/Tables/tables-descr.md#tabela-dailycorrespondence) **id**	 | 	ID Wpisu dziennika korespondencji	 | 		 |
-| 	documents_id	 | 	int	 | 	[DOCUMENTS](/docs/database/Tables/tables-descr.md#tabela-documents) **id**	 | 	ID Dokumentu	 | 		 |
-| 	users_id	 | 	int	 | 	[USERS](/docs/database/Tables/tables-descr.md#tabela-users) **id**	 | 	ID Użytkownika	 | 		 |
+| 	dailycorr_id	 | 	int	 | 	[DAILYCORRESPONDENCE](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-dailycorrespondence) **id**	 | 	ID Wpisu dziennika korespondencji	 | 		 |
+| 	documents_id	 | 	int	 | 	[DOCUMENTS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-documents) **id**	 | 	ID Dokumentu	 | 		 |
+| 	users_id	 | 	int	 | 	[USERS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-users) **id**	 | 	ID Użytkownika	 | 		 |
 | 	linkdate	 | 	datetime	 | 		 | 	Data i godzina utworzenia powiązania	 | 		 |
 
 
@@ -591,7 +591,7 @@ sidebar_position: 6
 | 	Pole	 | 	Typ danych	 | 	Odwołanie	 | 	Opis	 | 	Ograniczenia	 |
 | 	---	 | 	---	 | 	---	 | 	---	 | 	---	 |
 | 	id	 | 	int	 | 		 | 	Unikalny numer dziennika korespondencji	 | 		 |
-| 	organizations_id	 | 	int	 | 	[ORGANIZATIONS](/docs/database/Tables/tables-descr.md#tabela-organizations) **id**	 | 	ID Organizacji	 | 		 |
+| 	organizations_id	 | 	int	 | 	[ORGANIZATIONS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-organizations) **id**	 | 	ID Organizacji	 | 		 |
 | 	name	 | 	nvarchar(100)	 | 		 | 	Nazwa dziennika	 | 		 |
 | 	enabled	 | 	bit	 | 		 | 	Aktywny	 | 0 - Nie, 1 - Tak |
 | 	description	 | 	ntext	 | 		 | 	Opis dziennika 	 | 		 |
@@ -610,9 +610,9 @@ sidebar_position: 6
 | 	Pole	 | 	Typ danych	 | 	Odwołanie	 | 	Opis	 | 	Ograniczenia	 |
 | 	---	 | 	---	 | 	---	 | 	---	 | 	---	 |
 | 	id	 | 	int	 | 		 | 	Unikalny numer wpisu	 | 		 |
-| 	dailycorrclass_id	 | 	int	 | 	[DAILYCORRCLASS](/docs/database/Tables/tables-descr.md#tabela-dailycorrclass) **id**	 | 	ID Klasy dziennika korespondencji	 | 	0 - Raport Nieprzypisane, > 0 ID Dziennika |
-| 	users_id	 | 	int	 | 	[USERS](/docs/database/Tables/tables-descr.md#tabela-users) **id**	 | 	ID Użytkownika - właściciela wpisu	 | 		 |
-| 	companies_id	 | 	int	 | 	[COMPANIES](/docs/database/Tables/tables-descr.md#tabela-companies) **id**	 | 	ID Firmy	 | 		 |
+| 	dailycorrclass_id	 | 	int	 | 	[DAILYCORRCLASS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-dailycorrclass) **id**	 | 	ID Klasy dziennika korespondencji	 | 	0 - Raport Nieprzypisane, > 0 ID Dziennika |
+| 	users_id	 | 	int	 | 	[USERS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-users) **id**	 | 	ID Użytkownika - właściciela wpisu	 | 		 |
+| 	companies_id	 | 	int	 | 	[COMPANIES](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-companies) **id**	 | 	ID Firmy	 | 		 |
 | 	optype	 | 	int	 | 		 | 	Typ operacji 	 | 	0 - Wejście, 1 - Wyjście, 2 - Inna	 |
 | 	opdate	 | 	datetime	 | 		 | 	Data operacji	 | 		 |
 | 	description	 | 	ntext	 | 		 | 	Opis	 | 		 |
@@ -626,7 +626,7 @@ sidebar_position: 6
 | 	totaltol	 | 	numeric(19, 6)	 | 		 | Wartość toleranycjna	(Awizacja) | 		 |
 | 	itemdesc	 | 	nvarchar(128)	 | 		 | 	Nazwa towaru (Awizacja) | 		 |
 | 	removed	 | 	bit	 | 		 | 	Czy usunięta (Awizacja) | 0 - Nie, 1 - Tak |
-| 	base_dailycorr_id	 | 	int	 | [DAILYCORRESPONDENCE](/docs/database/Tables/tables-descr.md#tabela-dailycorrespondence) **id** | ID Bazowego wpisu w dokumentach nieprzypisanych (Awizacja) | 		 |
+| 	base_dailycorr_id	 | 	int	 | [DAILYCORRESPONDENCE](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-dailycorrespondence) **id** | ID Bazowego wpisu w dokumentach nieprzypisanych (Awizacja) | 		 |
 
 
 ## Tabela DASHBOARDS
@@ -690,7 +690,7 @@ sidebar_position: 6
 | 	description	 | 	ntext	 | 		 | 	Opis słownika	 | 		 |
 | 	CreatedAt	 | 	datetime	 | 		 | 	Data utworzenia wpisu	 | 		 |
 | 	UpdatedAt	 | 	datetime	 | 		 | 	Data aktualizacji wpisu	 | 		 |
-| 	organizations_id	 | 	int	 | 	[ORGANIZATIONS](/docs/database/Tables/tables-descr.md#tabela-organizations) **id**	 | 	ID Organizacji	 | 		 |
+| 	organizations_id	 | 	int	 | 	[ORGANIZATIONS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-organizations) **id**	 | 	ID Organizacji	 | 		 |
 | 	globalid	 | 	varchar(36)	 | 		 | 	Globalny identyfikator obiektu, niezależny od bazy danych	 | 		 |
 
 
@@ -701,7 +701,7 @@ sidebar_position: 6
 | 	Pole	 | 	Typ danych	 | 	Odwołanie	 | 	Opis	 | 	Ograniczenia	 |
 | 	---	 | 	---	 | 	---	 | 	---	 | 	---	 |
 | 	objtype	 | 	int	 | 		 | 	Typ obiektu powiązanego | 1 - Słownik statyczny		 |
-| 	objid	 | 	int	 | [DICTIONARIES](/docs/database/Tables/tables-descr.md#tabela-dictionaries) **id**  | 	ID Obiektu powiązanego | 		 |
+| 	objid	 | 	int	 | [DICTIONARIES](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-dictionaries) **id**  | 	ID Obiektu powiązanego | 		 |
 | 	value	 | 	nvarchar(255)	 | 		 | 	Wartość | 		 |
 | 	description	 | 	nvarchar(512)	 | 		 | 	Opis | 		 |
 
@@ -713,8 +713,8 @@ sidebar_position: 6
 | 	Pole	 | 	Typ danych	 | 	Odwołanie	 | 	Opis	 | 	Ograniczenia	 |
 | 	---	 | 	---	 | 	---	 | 	---	 | 	---	 |
 | 	id	 | 	int	 | 		 | 	Unikalny numer dla katalogu	 | 		 |
-| 	companies_id	 | 	int	 | 	[COMPANIES](/docs/database/Tables/tables-descr.md#tabela-companies) **id**	 | 	ID Firmy	 | 		 |
-| 	directories_id	 | 	int	 | 	[DIRECTORIES](/docs/database/Tables/tables-descr.md#tabela-directories) **id**	 | 	ID Katalogu nadrzędnego	 | 		 |
+| 	companies_id	 | 	int	 | 	[COMPANIES](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-companies) **id**	 | 	ID Firmy	 | 		 |
+| 	directories_id	 | 	int	 | 	[DIRECTORIES](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-directories) **id**	 | 	ID Katalogu nadrzędnego	 | 		 |
 | 	name	 | 	nvarchar(100)	 | 		 | 	Nazwa katalogu	 | 		 |
 | 	description	 | 	ntext	 | 		 | 	Opis katalogu	 | 	 |
 | 	icontype	 | 	int	 | 		 | 	Typ ikony katalogu	 | 	0 - Folder |
@@ -730,8 +730,8 @@ sidebar_position: 6
 | 	Pole	 | 	Typ danych	 | 	Odwołanie	 | 	Opis	 | 	Ograniczenia	 |
 | 	---	 | 	---	 | 	---	 | 	---	 | 	---	 |
 | 	id	 | 	int	 | 		 | 	Unikalny numer prośby o dostęp do dokumentu | 		 |
-| 	users_id	 | 	int	 | 	[USERS](/docs/database/Tables/tables-descr.md#tabela-users) **id**	 | 	Id Użytkownika	 | 		 |
-| 	documents_id	 | 	int	 | 	[DOCUMENTS](/docs/database/Tables/tables-descr.md#tabela-documents) **id** | 	ID Dokumentu | 		 |
+| 	users_id	 | 	int	 | 	[USERS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-users) **id**	 | 	Id Użytkownika	 | 		 |
+| 	documents_id	 | 	int	 | 	[DOCUMENTS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-documents) **id** | 	ID Dokumentu | 		 |
 | 	CreatedAt	 | 	datetime	 | 		 | 	Data utowrzenia	 | 		 |
 | 	UpdatedAt	 | 	datetime	 | 		 | 	Data aktualizacji	 | 		 |
 
@@ -742,9 +742,9 @@ sidebar_position: 6
 
 | 	Pole	 | 	Typ danych	 | 	Odwołanie	 | 	Opis	 | 	Ograniczenia	 |
 | 	---	 | 	---	 | 	---	 | 	---	 | 	---	 |
-| 	documentaccess_id	 | 	int	 | 	[DOCUMENTACCESS](/docs/database/Tables/tables-descr.md#tabela-documentaccess) **id**	 | 	ID Prośby o dostęp do dokumentu | 		 |
+| 	documentaccess_id	 | 	int	 | 	[DOCUMENTACCESS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-documentaccess) **id**	 | 	ID Prośby o dostęp do dokumentu | 		 |
 | 	int_id	 | 	int	 | 		 | Kolejny numer wpisu dla danej prośby o dostęp. Przy zmianie decyzji tworzony jest nowy wpis | 		 |
-| 	users_id	 | 	int	 | 	[USERS](/docs/database/Tables/tables-descr.md#tabela-users) **id**	 | 	Id Użytkownika zatwierdzającago	 | 		 |
+| 	users_id	 | 	int	 | 	[USERS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-users) **id**	 | 	Id Użytkownika zatwierdzającago	 | 		 |
 | 	status	 | 	int	 | 		 | 	Status zatwierdzenia | 0 - Oczekuje, 1 - Potwierdzony, 2 - Zabroniony |
 | 	CreatedAt	 | 	datetime	 | 		 | 	Data utworzenia	 | 		 |
 
@@ -756,8 +756,8 @@ sidebar_position: 6
 | 	Pole	 | 	Typ danych	 | 	Odwołanie	 | 	Opis	 | 	Ograniczenia	 |
 | 	---	 | 	---	 | 	---	 | 	---	 | 	---	 |
 | 	id	 | 	int	 | 		 | 	Unikalny numer wpisu dla wyniku rozpoznawania OCR dla dokumentu	 | 		 |
-| 	documents_id	 | 	int	 | 	[DOCUMENTS](/docs/database/Tables/tables-descr.md#tabela-documents) **id**	 | 	ID Dokumentu | 		 |
-| 	schemacode	 | 	nvarchar(100)	 | 	[DIRECTORIES](/docs/database/Tables/tables-descr.md#tabela-directories) **id**	 | 	ID Wybranego schematu rozpoznawania OCR	 | 		 |
+| 	documents_id	 | 	int	 | 	[DOCUMENTS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-documents) **id**	 | 	ID Dokumentu | 		 |
+| 	schemacode	 | 	nvarchar(100)	 | 	[DIRECTORIES](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-directories) **id**	 | 	ID Wybranego schematu rozpoznawania OCR	 | 		 |
 | 	title	 | 	nvarchar(255)	 | 		 | 	Tytuł przypisany z OCR	 | 		 |
 | 	comments	 | 	ntext	 | 		 | Uwagi | 		 |
 | 	marktodel	 | 	bit	 | 		 | 	Pole techniczne wykorzystywane przy transakcjach | 		 |
@@ -770,9 +770,9 @@ sidebar_position: 6
 | 	Pole	 | 	Typ danych	 | 	Odwołanie	 | 	Opis	 | 	Ograniczenia	 |
 | 	---	 | 	---	 | 	---	 | 	---	 | 	---	 |
 | 	id	 | 	int	 | 		 | 	Unikalny numer wpisu dla strony dokumentu	 | 		 |
-| 	documents_id	 | 	int	 | 	[DOCUMENTS](/docs/database/Tables/tables-descr.md#tabela-documents) **id**	 | 	ID Dokumentu	 | 		 |
+| 	documents_id	 | 	int	 | 	[DOCUMENTS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-documents) **id**	 | 	ID Dokumentu	 | 		 |
 | 	pagenum	 | 	int	 | 		 | 	Numer strony dokumentu	 | 		 |
-| 	resources_id	 | 	int	 | 	[RESOURCES](/docs/database/Tables/tables-descr.md#tabela-resources) **id**	 | 	ID Zasobu pliku	 | 		 |
+| 	resources_id	 | 	int	 | 	[RESOURCES](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-resources) **id**	 | 	ID Zasobu pliku	 | 		 |
 | 	resources_pagenum	 | 	int	 | 		 | 	Numer strony w przypisanym zasobie	 | 		 |
 | 	marktodel	 | 	bit	 | 		 | 	Pole techniczne | 		 |
 | 	rotation	 | 	int	 | 		 | 	Obrót strony | 	np: 0 , 90, 180, 270 |
@@ -784,8 +784,8 @@ sidebar_position: 6
 
 | 	Pole	 | 	Typ danych	 | 	Odwołanie	 | 	Opis	 | 	Ograniczenia	 |
 | 	---	 | 	---	 | 	---	 | 	---	 | 	---	 |
-| 	documents_id	 | 	int	 | 	[DOCUMENTS](/docs/database/Tables/tables-descr.md#tabela-documents) **id**	 | 	ID Dokumentu	 | 		 |
-| 	companies_id	 | 	int	 | 	[COMPANIES](/docs/database/Tables/tables-descr.md#tabela-companies) **id**	 | 	ID Firmy	 | 		 |
+| 	documents_id	 | 	int	 | 	[DOCUMENTS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-documents) **id**	 | 	ID Dokumentu	 | 		 |
+| 	companies_id	 | 	int	 | 	[COMPANIES](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-companies) **id**	 | 	ID Firmy	 | 		 |
 | 	objecttype	 | 	varchar(50)	 | 		 | 	Typ obiektu w systemie ERP	 | 		 |
 | 	objectid	 | 	varchar(50)	 | 		 | 	Numerem wewnętrzny dokumentu w systemie ERP	 | 		 |
 | 	bobjecttype	 | 	varchar(50)	 | 		 | 	Typ obiektu bazowego w systemie ERP | 		 |
@@ -801,9 +801,9 @@ sidebar_position: 6
 | 	Pole	 | 	Typ danych	 | 	Odwołanie	 | 	Opis	 | 	Ograniczenia	 |
 | 	---	 | 	---	 | 	---	 | 	---	 | 	---	 |
 | 	id	 | 	int	 | 		 | 	Unikalny numer dokumentu	 | 		 |
-| 	users_id	 | 	int	 | 	[USERS](/docs/database/Tables/tables-descr.md#tabela-users) **id**	 | ID Użytkownika - właściciel dokumentu 	 | 		 |
-| 	classes_id	 | 	int	 | 	[CLASSES](/docs/database/Tables/tables-descr.md#tabela-classes) **id**	 | 	ID Klasy dokumentu	 | 		 |
-| 	companies_id	 | 	int	 | 	[COMPANIES](/docs/database/Tables/tables-descr.md#tabela-companies) **id**	 | 	ID Firmy	 | 		 |
+| 	users_id	 | 	int	 | 	[USERS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-users) **id**	 | ID Użytkownika - właściciel dokumentu 	 | 		 |
+| 	classes_id	 | 	int	 | 	[CLASSES](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-classes) **id**	 | 	ID Klasy dokumentu	 | 		 |
+| 	companies_id	 | 	int	 | 	[COMPANIES](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-companies) **id**	 | 	ID Firmy	 | 		 |
 | 	name	 | 	nvarchar(100)	 | 		 | 	Nazwa dokumentu	 | 		 |
 | 	description	 | 	text	 | 		 | 	Opis dokumentu	 | 		 |
 | 	docdate	 | 	datetime	 | 		 | 	Data dokumentu	 | 		 |
@@ -812,11 +812,11 @@ sidebar_position: 6
 | 	CreatedAt	 | 	datetime	 | 		 | 	Data utworzenia wpisu	 | 		 |
 | 	UpdatedAt	 | 	datetime	 | 		 | 	Data aktualizacji wpisu	 | 		 |
 | 	authstatus	 | 	int	 | 		 | 	Status autoryzacji dokumentu	 | 	0 - Oczekuje, 1 - Zatwierdzony, 2 - Odrzucony	 |
-| 	directories_id	 | 	int	 | 	[DIRECTORIES](/docs/database/Tables/tables-descr.md#tabela-directories) **id**	 | 	ID Katalogu | -1 - Kosz, 0 - Katalog główny, >0 - Katalog zdefiniowany |
+| 	directories_id	 | 	int	 | 	[DIRECTORIES](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-directories) **id**	 | 	ID Katalogu | -1 - Kosz, 0 - Katalog główny, >0 - Katalog zdefiniowany |
 | 	docstatus	 | 	int	 | 		 | 	Status dokumentu	 | 	0 - Wczytany (Przed OCR), 1 - Rozpoznawany (W OCR), 2 - Gotowy (Po OCR) , 3 - W repozytorium (szczegóły authstatus), 4 - Zapisany jako szablon	 |
 | 	reconschemas_code	 | 	varchar(100)	 | 		 | Nieużywane | 		 |
 | 	enterdate	 | 	datetime	 | 		 | 	Data wpływu	 | 		 |
-| 	templates_id	 | 	int	 | 	[DOCUMENTS](/docs/database/Tables/tables-descr.md#tabela-documents) **id**	 | 	Powiązanie z dokumentem typu szablon	 | 		 |
+| 	templates_id	 | 	int	 | 	[DOCUMENTS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-documents) **id**	 | 	Powiązanie z dokumentem typu szablon	 | 		 |
 | 	definition_code	 | 	varchar(100)	 | 		 | Nieużywane | 		 |
 | 	ocr_code	 | 	varchar(100)	 | 		 | 	Unikalny kod wygenerowany przez usługe OCR dla dokumentu	 | 		 |
 | 	headereditmode	 | 	int	 | 		 | 	Uprawnienie do edycji nagłówka dokumentu	 | 	0 - Blokada, 1 - Odblokowane	 |
@@ -827,7 +827,7 @@ sidebar_position: 6
 | 	lineseditmode2	 | 	int	 | 		 | 	Uprawnienie do edycji linii2 dokumentu	 | 	0 - Blokada, 1 - Odblokowane	 |
 | 	canchgres	 | 	bit	 | 		 | 	Uprawnienie do zmiany zasobu dokumentu (zaktualizauj zawartość)	 | 	0 - Blokada, 1 - Odblokowane	 |
 | 	sysdocnum	 | 	int	 | 		 | 	Numer systemowy dokumentu nadany po wysłaniu dokumentu w obieg unikalny w obrębie firmy i klasy	 | 		 |
-| 	rm_users_id	 | 	int	 | 	[USERS](/docs/database/Tables/tables-descr.md#tabela-users) **id** | 	ID Użytkownika prznoszącego dokument do innego katalogu | 		 |
+| 	rm_users_id	 | 	int	 | 	[USERS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-users) **id** | 	ID Użytkownika prznoszącego dokument do innego katalogu | 		 |
 | 	tmpwritemode	 | 	int	 | 		 | 	Uprawnienie do edycji dokumentu typu formularz (Nieużywane)	 | 	0 - Blokada, 1 - Odblokowane	 |
 | 	autopublish	 | 	bit	 | 		 | Pole techniczne używane w automatyzacji KSeF do oznaczenia dokumentu do automatycznej publikacji | 		 |
 | 	grouping	 | 	varchar(MAX)	 | 		 | Nieużywane | 		 |
@@ -838,7 +838,7 @@ sidebar_position: 6
 | 	total	 | 	numeric(19, 6)	 | 		 | Wartość brutto | 		 |
 | 	nettotal	 | 	numeric(19, 6)	 | 		 | 	Wartość netto | 		 |
 | 	paymentmth	 | 	nvarchar(MAX)	 | 		 | Metoda płatności | 		 |
-| 	ocrprofile_id	 | 	int	 | [OCRPROFILES](/docs/database/Tables/tables-descr.md#tabela-ocrprofiles) **id** | ID Profilu OCR | 		 |
+| 	ocrprofile_id	 | 	int	 | [OCRPROFILES](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-ocrprofiles) **id** | ID Profilu OCR | 		 |
 | 	basetype	 | 	int	 | 		 | Typ dokumentu bazowego | 0 - Dokument ZZ, 1 - Dokument PZ |
 | 	pricetype	 | 	int	 | 		 | Definiuj koszt wg | 	0 - Netto, 1 - Brutto |
 | 	currency	 | 	nvarchar(MAX)	 | 		 | Waluta | 		 |
@@ -856,8 +856,8 @@ sidebar_position: 6
 
 | 	Pole	 | 	Typ danych	 | 	Odwołanie	 | 	Opis	 | 	Ograniczenia	 |
 | 	---	 | 	---	 | 	---	 | 	---	 | 	---	 |
-| 	documents_id	 | 	int	 | 	[DOCUMENTS](/docs/database/Tables/tables-descr.md#tabela-documents) **id**	 | 	ID Dokumentu	 | 		 |
-| 	att_documents_id	 | 	int	 | 	[DOCUMENTS](/docs/database/Tables/tables-descr.md#tabela-documents) **id**	 | 	ID Załącznika (Dokumentu)	 | 		 |
+| 	documents_id	 | 	int	 | 	[DOCUMENTS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-documents) **id**	 | 	ID Dokumentu	 | 		 |
+| 	att_documents_id	 | 	int	 | 	[DOCUMENTS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-documents) **id**	 | 	ID Załącznika (Dokumentu)	 | 		 |
 
 
 ## Tabela DOCUMENTS_AUTHLOCKS
@@ -866,8 +866,8 @@ sidebar_position: 6
 
 | 	Pole	 | 	Typ danych	 | 	Odwołanie	 | 	Opis	 | 	Ograniczenia	 |
 | 	---	 | 	---	 | 	---	 | 	---	 | 	---	 |
-| 	documents_authschemas_id	 | 	int	 | 	[DOCUMENTS_AUTHSCHEMA](/docs/database/Tables/tables-descr.md#tabela-documents_authschema) **id**	 | 	ID Autoryzacji przypisanej do dokumentu	 | 		 |
-| 	users_id	 | 	int	 | 	[USERS](/docs/database/Tables/tables-descr.md#tabela-users) **id**	 | 	ID Użytkownika blokującego dokument	 | 		 |
+| 	documents_authschemas_id	 | 	int	 | 	[DOCUMENTS_AUTHSCHEMA](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-documents_authschema) **id**	 | 	ID Autoryzacji przypisanej do dokumentu	 | 		 |
+| 	users_id	 | 	int	 | 	[USERS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-users) **id**	 | 	ID Użytkownika blokującego dokument	 | 		 |
 | 	lockat	 | 	datetime	 | 		 | 	Data zablokowania	 | 		 |
 | 	unlockat	 | 	datetime	 | 		 | 	Data odblokowania	 | 		 |
 
@@ -878,8 +878,8 @@ sidebar_position: 6
 
 | 	Pole	 | 	Typ danych	 | 	Odwołanie	 | 	Opis	 | 	Ograniczenia	 |
 | 	---	 | 	---	 | 	---	 | 	---	 | 	---	 |
-| 	documents_authschemas_id	 | 	int	 | 	[DOCUMENTS_AUTHSCHEMA](/docs/database/Tables/tables-descr.md#tabela-documents_authschema) **id**	 | 	ID Autoryzacji przypisanej do dokumentu	 | 		 |
-| 	objid	 | 	int	 | 	[USERS](/docs/database/Tables/tables-descr.md#tabela-users) **id**,[USERGROUPS](/docs/database/Tables/tables-descr.md#tabela-usergroups) **id**,[AUTHSCHEMAS](/docs/database/Tables/tables-descr.md#tabela-authschemas) **id**	 | 	ID Powiązanego obiektu biorącego udział w obiegu	 | 		 |
+| 	documents_authschemas_id	 | 	int	 | 	[DOCUMENTS_AUTHSCHEMA](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-documents_authschema) **id**	 | 	ID Autoryzacji przypisanej do dokumentu	 | 		 |
+| 	objid	 | 	int	 | 	[USERS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-users) **id**,[USERGROUPS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-usergroups) **id**,[AUTHSCHEMAS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-authschemas) **id**	 | 	ID Powiązanego obiektu biorącego udział w obiegu	 | 		 |
 | 	objtype	 | 	int	 | 		 | 	Typ obiektu 	 | 	0 - Użytkownik, 1 - Grupa użytkowników, 2 - Schemat autoryzacji	 |
 | 	order	 | 	int	 | 		 | 	Kolejność	 | 		 |
 | 	authstatus	 | 	int	 | 		 | 	Status akceptacji danego etapu wartości: 	 | 	0 - Oczekuje, 1 - Zatwierdzony, 2 - Odrzucony	 |
@@ -887,8 +887,8 @@ sidebar_position: 6
 | 	comment	 | 	nvarchar(1024)	 | 		 | 	Dodatkowe informacje	 | 		 |
 | 	visibility	 | 	bit	 | 		 | 	Widoczność | 	0 - Ukryj, 1 - Pokaż	 |
 | 	addinfo	 | 	nvarchar(MAX)	 | 		 | 	Dodatkowe informacje dla użytkownika do etapu zatwierdzania	 | 		 |
-| 	auth_users_id	 | 	int	 | 	[USERS](/docs/database/Tables/tables-descr.md#tabela-users) **id**	 | 	ID Użytkownika, który zautoryzował dany etap	 | 		 |
-| 	srcinsintid	 | 	int	 | 	[AUTHSCHEMA_INSTRUCTIONS](/docs/database/Tables/tables-descr.md#tabela-authschema_instructions) **intid** | 	Źródłowa instanacja schematu autoryzacji	 | 		 |
+| 	auth_users_id	 | 	int	 | 	[USERS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-users) **id**	 | 	ID Użytkownika, który zautoryzował dany etap	 | 		 |
+| 	srcinsintid	 | 	int	 | 	[AUTHSCHEMA_INSTRUCTIONS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-authschema_instructions) **intid** | 	Źródłowa instanacja schematu autoryzacji	 | 		 |
 
 
 ## Tabela DOCUMENTS_AUTHSCHEMA
@@ -898,17 +898,17 @@ sidebar_position: 6
 | 	Pole	 | 	Typ danych	 | 	Odwołanie	 | 	Opis	 | 	Ograniczenia	 |
 | 	---	 | 	---	 | 	---	 | 	---	 | 	---	 |
 | 	id	 | 	int	 | 		 | 	Unikalny numer wpisu	 | 		 |
-| 	documents_id	 | 	int	 | 	[DOCUMENTS](/docs/database/Tables/tables-descr.md#tabela-documents) **id**	 | 	ID Powiązania z dokumentem	 | 		 |
+| 	documents_id	 | 	int	 | 	[DOCUMENTS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-documents) **id**	 | 	ID Powiązania z dokumentem	 | 		 |
 | 	name	 | 	nvarchar(100)	 | 		 | 	Nazwa etapu schematu zatwierdzania	 | 		 |
 | 	authmethodtype	 | 	int	 | 		 | 	Rodzacj schematu	 | 	0 - Wszyscy z, 1 - Jeden z, 2 - (n) z, 3 - proces autoryzacji	 |
 | 	authusrlimit	 | 	int	 | 		 | 	Limit odbiorców dla etapu	 | 		 |
-| 	authschema_id	 | 	int	 | 	[AUTHSCHEMAS](/docs/database/Tables/tables-descr.md#tabela-authschemas) **id**	 | 	ID Powiązanego schematu autoryzacji	 | 		 |
+| 	authschema_id	 | 	int	 | 	[AUTHSCHEMAS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-authschemas) **id**	 | 	ID Powiązanego schematu autoryzacji	 | 		 |
 | 	authstatus	 | 	int	 | 		 | 	Status akceptacji danego etapu wartości	 | 	0 - Oczekuje, 1 - Zatwierdzony, 2 - Odrzucony	 |
 | 	subschema	 | 	bit	 | 		 | 	Czy to podschemat	 | 	0 - nie, 1 - tak	 |
 | 	addinfo	 | 	nvarchar(MAX)	 | 		 | 	Dodatkowe informacje dla użytkownika do etapu zatwierdzania	 | 		 |
 | 	insintid	 | 	int	 | 		 | 	Numer instrukcji w procesie autoryzacji	 | 		 |
 | 	createdat	 | 	datetime	 | 		 | 	Data utworzenia wpisu | 		 |
-| 	user_id	 | 	int	 | 	[USERS](/docs/database/Tables/tables-descr.md#tabela-users) **id** | 	ID Użytkownika wybierającego obieg | 		 |
+| 	user_id	 | 	int	 | 	[USERS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-users) **id** | 	ID Użytkownika wybierającego obieg | 		 |
 
 
 ## Tabela DOCUMENTS_AUTHVAR_BASIC
@@ -917,8 +917,8 @@ sidebar_position: 6
 
 | 	Pole	 | 	Typ danych	 | 	Odwołanie	 | 	Opis	 | 	Ograniczenia	 |
 | 	---	 | 	---	 | 	---	 | 	---	 | 	---	 |
-| 	documents_authschemas_id	 | 	int	 | 	[DOCUMENTS_AUTHSCHEMA](/docs/database/Tables/tables-descr.md#tabela-documents_authschema) **id**	 | 	ID Autoryzacji przypisanej do dokumentu	 | 		 |
-| 	variable_id	 | 	int	 | 	[PROCESS_VARIABLES](/docs/database/Tables/tables-descr.md#tabela-process_variables) **intid** | 	ID Zmiennej w obrębie danego procesu autoryzacji	 | 		 |
+| 	documents_authschemas_id	 | 	int	 | 	[DOCUMENTS_AUTHSCHEMA](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-documents_authschema) **id**	 | 	ID Autoryzacji przypisanej do dokumentu	 | 		 |
+| 	variable_id	 | 	int	 | 	[PROCESS_VARIABLES](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-process_variables) **intid** | 	ID Zmiennej w obrębie danego procesu autoryzacji	 | 		 |
 | 	linenum	 | 	int	 | 		 | 	Numer linii	 | 		 |
 | 	value	 | 	nvarchar(1024)	 | 		 | 	Wartość	 | 		 |
 
@@ -929,8 +929,8 @@ sidebar_position: 6
 
 | 	Pole	 | 	Typ danych	 | 	Odwołanie	 | 	Opis	 | 	Ograniczenia	 |
 | 	---	 | 	---	 | 	---	 | 	---	 | 	---	 |
-| 	documents_authschemas_id	 | 	int	 | 	[DOCUMENTS_AUTHSCHEMA](/docs/database/Tables/tables-descr.md#tabela-documents_authschema) **id**	 | 	ID Autoryzacji przypisanej do dokumentu	 | 		 |
-| 	variable_id	 | 	int	 | 	[PROCESS_VARIABLES](/docs/database/Tables/tables-descr.md#tabela-process_variables) **intid** | 	ID Zmiennej w obrębie danego procesu autoryzacji	 | 		 |
+| 	documents_authschemas_id	 | 	int	 | 	[DOCUMENTS_AUTHSCHEMA](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-documents_authschema) **id**	 | 	ID Autoryzacji przypisanej do dokumentu	 | 		 |
+| 	variable_id	 | 	int	 | 	[PROCESS_VARIABLES](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-process_variables) **intid** | 	ID Zmiennej w obrębie danego procesu autoryzacji	 | 		 |
 | 	authmethodtype	 | 	int	 | 		 | 	Rodzacj schematu	 | 	0 - Wszyscy z, 1 - Jeden z, 2 - (n) z, 3 - Proces autoryzacji	 |
 | 	authusrlimit	 | 	int	 | 		 | 	Limit odbiorcow dla etapu	 | 		 |
 
@@ -941,10 +941,10 @@ sidebar_position: 6
 
 | 	Pole	 | 	Typ danych	 | 	Odwołanie	 | 	Opis	 | 	Ograniczenia	 |
 | 	---	 | 	---	 | 	---	 | 	---	 | 	---	 |
-| 	documents_authschemas_id	 | 	int	 | 	[DOCUMENTS_AUTHSCHEMA](/docs/database/Tables/tables-descr.md#tabela-documents_authschema) **id**	 | 	ID Autoryzacji przypisanej do dokumentu	 | 		 |
-| 	variable_id	 | 	int	 | 	[PROCESS_VARIABLES](/docs/database/Tables/tables-descr.md#tabela-process_variables) **intid** | 	ID Zmiennej w obrębie danego procesu autoryzacji	 | 		 |
+| 	documents_authschemas_id	 | 	int	 | 	[DOCUMENTS_AUTHSCHEMA](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-documents_authschema) **id**	 | 	ID Autoryzacji przypisanej do dokumentu	 | 		 |
+| 	variable_id	 | 	int	 | 	[PROCESS_VARIABLES](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-process_variables) **intid** | 	ID Zmiennej w obrębie danego procesu autoryzacji	 | 		 |
 | 	order	 | 	int	 | 		 | 	Kolejność	 | 		 |
-| 	objid	 | 	int	 | 	[USERS](/docs/database/Tables/tables-descr.md#tabela-users) **id**, [USERGROUPS](/docs/database/Tables/tables-descr.md#tabela-usergroups) **id**, [AUTHSCHEMAS](/docs/database/Tables/tables-descr.md#tabela-authschemas) **id**	 | 	ID Powiązanego obiektu	 | 		 |
+| 	objid	 | 	int	 | 	[USERS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-users) **id**, [USERGROUPS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-usergroups) **id**, [AUTHSCHEMAS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-authschemas) **id**	 | 	ID Powiązanego obiektu	 | 		 |
 | 	objtype	 | 	int	 | 		 | 	Typ obiektu 	 | 	0 - Użytkownik, 1 - Grupa użytkowników, 2 - Schemat autoryzacji	 |
 
 
@@ -954,8 +954,8 @@ sidebar_position: 6
 
 | 	Pole	 | 	Typ danych	 | 	Odwołanie	 | 	Opis	 | 	Ograniczenia	 |
 | 	---	 | 	---	 | 	---	 | 	---	 | 	---	 |
-| 	documents_id	 | 	int	 | 	[DOCUMENTS](/docs/database/Tables/tables-descr.md#tabela-documents) **id**	 | 	ID Dokumentu	 | 		 |
-| 	attribs_id	 | 	int	 | 	[CLASSATTRIBS](/docs/database/Tables/tables-descr.md#tabela-classattribs) **id**	 | 	ID Atrybutu klasy	 | 		 |
+| 	documents_id	 | 	int	 | 	[DOCUMENTS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-documents) **id**	 | 	ID Dokumentu	 | 		 |
+| 	attribs_id	 | 	int	 | 	[CLASSATTRIBS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-classattribs) **id**	 | 	ID Atrybutu klasy	 | 		 |
 | 	linenum	 | 	int	 | 		 | 	Numer linii dokumentu	 | 		 |
 | 	value	 | 	nvarchar(MAX)	 | 		 | 	Przypisana wartość dla atrybutu danej linii dokumentu	 | 		 |
 
@@ -966,9 +966,9 @@ sidebar_position: 6
 
 | 	Pole	 | 	Typ danych	 | 	Odwołanie	 | 	Opis	 | 	Ograniczenia	 |
 | 	---	 | 	---	 | 	---	 | 	---	 | 	---	 |
-| 	documents_id	 | 	int	 | 	[DOCUMENTS](/docs/database/Tables/tables-descr.md#tabela-documents) **id**	 | 	ID Dokumentu	 | 		 |
+| 	documents_id	 | 	int	 | 	[DOCUMENTS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-documents) **id**	 | 	ID Dokumentu	 | 		 |
 | 	linenum	 | 	int	 | 		 | 	Numer linii dokumentu	 | 		 |
-| 	users_id	 | 	int	 | 	[USERS](/docs/database/Tables/tables-descr.md#tabela-users) **id**	 | ID użytkownika - właściciel linii	 | 		 |
+| 	users_id	 | 	int	 | 	[USERS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-users) **id**	 | ID użytkownika - właściciel linii	 | 		 |
 | 	createdat	 | 	datetime	 | 		 | 	Data utworzenia danej linii dokumentu	 | 		 |
 | 	rindex	 | 	nvarchar(MAX)	 | 		 | 	Towar | 		 |
 | 	raccount	 | 	nvarchar(MAX)	 | 		 | Konto | 		 |
@@ -997,17 +997,17 @@ sidebar_position: 6
 
 | 	Pole	 | 	Typ danych	 | 	Odwołanie	 | 	Opis	 | 	Ograniczenia	 |
 | 	---	 | 	---	 | 	---	 | 	---	 | 	---	 |
-| 	documents_id	 | 	int	 | 	[DOCUMENTS](/docs/database/Tables/tables-descr.md#tabela-documents) **id**	 | 	ID Dokumentu	 | 		 |
+| 	documents_id	 | 	int	 | 	[DOCUMENTS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-documents) **id**	 | 	ID Dokumentu	 | 		 |
 | 	linenum	 | 	int	 | 		 | 	Numer linii dokumentu	 | 		 |
-| 	documentocrresults_id	 | 	int	 | 	[DOCUMENTOCRRESULTS](/docs/database/Tables/tables-descr.md#tabela-documentocrresults) **id**	 | 	ID Wyników OCR dla danego dokumentu	 | 		 |
+| 	documentocrresults_id	 | 	int	 | 	[DOCUMENTOCRRESULTS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-documentocrresults) **id**	 | 	ID Wyników OCR dla danego dokumentu	 | 		 |
 | 	ocrlinenum	 | 	int	 | 		 | 	Numer linii odczytany przez OCR	 | 		 |
-| 	attribs_id1	 | 	int	 | 	[CLASSATTRIBS](/docs/database/Tables/tables-descr.md#tabela-classattribs) **id**	 | 	ID Powiązanego atrybutu przypisanego w mapowaniu danych z OCR	 | 		 |
+| 	attribs_id1	 | 	int	 | 	[CLASSATTRIBS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-classattribs) **id**	 | 	ID Powiązanego atrybutu przypisanego w mapowaniu danych z OCR	 | 		 |
 | 	ocrname1	 | 	nvarchar(128)	 | 		 | 	Nazwa kolumny w szablonie OCR	 | 		 |
-| 	attribs_id2	 | 	int	 | 	[CLASSATTRIBS](/docs/database/Tables/tables-descr.md#tabela-classattribs) **id**	 | 	ID Poowiązanego atrybutu przypisanego w mapowaniu danych z OCR	 | 		 |
+| 	attribs_id2	 | 	int	 | 	[CLASSATTRIBS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-classattribs) **id**	 | 	ID Poowiązanego atrybutu przypisanego w mapowaniu danych z OCR	 | 		 |
 | 	ocrname2	 | 	nvarchar(128)	 | 		 | 	Nazwa kolumny w szablonie OCR	 | 		 |
-| 	attribs_id3	 | 	int	 | 	[CLASSATTRIBS](/docs/database/Tables/tables-descr.md#tabela-classattribs) **id**	 | 	ID Poowiązanego atrybutu przypisanego w mapowaniu danych z OCR	 | 		 |
+| 	attribs_id3	 | 	int	 | 	[CLASSATTRIBS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-classattribs) **id**	 | 	ID Poowiązanego atrybutu przypisanego w mapowaniu danych z OCR	 | 		 |
 | 	ocrname3	 | 	nvarchar(128)	 | 		 | 	Nazwa kolumny w szablonie OCR	 | 		 |
-| 	attribs_id4	 | 	int	 | 	[CLASSATTRIBS](/docs/database/Tables/tables-descr.md#tabela-classattribs) **id**	 | 	ID Poowiązanego atrybutu przypisanego w mapowaniu danych z OCR	 | 		 |
+| 	attribs_id4	 | 	int	 | 	[CLASSATTRIBS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-classattribs) **id**	 | 	ID Poowiązanego atrybutu przypisanego w mapowaniu danych z OCR	 | 		 |
 | 	ocrname4	 | 	nvarchar(128)	 | 		 | 	Nazwa kolumny w szablonie OCR	 | 		 |
 
 
@@ -1018,8 +1018,8 @@ sidebar_position: 6
 | 	Pole	 | 	Typ danych	 | 	Odwołanie	 | 	Opis	 | 	Ograniczenia	 |
 | 	---	 | 	---	 | 	---	 | 	---	 | 	---	 |
 | 	id	 | 	int	 | 		 | 	Unikalny numer wpisu	 | 		 |
-| 	documents_id	 | 	int	 | 	[DOCUMENTS](/docs/database/Tables/tables-descr.md#tabela-documents) **id**	 | 	ID Dokumentu | 		 |
-| 	users_id	 | 	int	 | [USERS](/docs/database/Tables/tables-descr.md#tabela-users) **id**	 | 	ID Użytkownika wprowadzającego aktualizację na dokumencie	 | 		 |
+| 	documents_id	 | 	int	 | 	[DOCUMENTS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-documents) **id**	 | 	ID Dokumentu | 		 |
+| 	users_id	 | 	int	 | [USERS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-users) **id**	 | 	ID Użytkownika wprowadzającego aktualizację na dokumencie	 | 		 |
 | 	CreatedAt	 | 	datetime	 | 		 | 	Data utworzenia wpisu | 		 |
 
 
@@ -1029,12 +1029,12 @@ sidebar_position: 6
 
 | 	Pole	 | 	Typ danych	 | 	Odwołanie	 | 	Opis	 | 	Ograniczenia	 |
 | 	---	 | 	---	 | 	---	 | 	---	 | 	---	 |
-| 	documents_id	 | 	int	 | 	[DOCUMENTS](/docs/database/Tables/tables-descr.md#tabela-documents) **id**	 | 	ID Dokumentu	 | 		 |
-| 	class_id	 | 	int	 | 	[CLASSES](/docs/database/Tables/tables-descr.md#tabela-classes) **id**	 |  ID Klasy dokumentu	 | 		 |
+| 	documents_id	 | 	int	 | 	[DOCUMENTS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-documents) **id**	 | 	ID Dokumentu	 | 		 |
+| 	class_id	 | 	int	 | 	[CLASSES](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-classes) **id**	 |  ID Klasy dokumentu	 | 		 |
 | 	cardcode	 | 	nvarchar(128)	 | 		 | 	Kod dostawcy z systemu ERP	 | 		 |
 | 	schemacode	 | 	nvarchar(100)	 | 		 | 	Kod schematu rozpoznawania (wzorca OCR)	 | 		 |
 | 	ocrname	 | 	varchar(100)	 | 		 | 	Nazwa pola OCR zgodna z wzorcem OCR	 | 		 |
-| 	attribs_id	 | 	int	 | 	[CLASSATTRIBS](/docs/database/Tables/tables-descr.md#tabela-classattribs) **id**	 | 	ID Powiązanego atrybutu przypisanego w mapowaniu danych z OCR	 | 		 |
+| 	attribs_id	 | 	int	 | 	[CLASSATTRIBS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-classattribs) **id**	 | 	ID Powiązanego atrybutu przypisanego w mapowaniu danych z OCR	 | 		 |
 | 	maptype	 | 	int	 | 		 | 	Typ mapowania wyników z OCR wartości	 | 	1 - Kopiuj, 2 - Wyszukaj, 3 - Zapamiętaj	 |
 
 
@@ -1044,8 +1044,8 @@ sidebar_position: 6
 
 | 	Pole	 | 	Typ danych	 | 	Odwołanie	 | 	Opis	 | 	Ograniczenia	 |
 | 	---	 | 	---	 | 	---	 | 	---	 | 	---	 |
-| 	documents_id	 | 	int	 | 	[DOCUMENTS](/docs/database/Tables/tables-descr.md#tabela-documents) **id**	 | 	ID Dokumentu	 | 		 |
-| 	attribs_id	 | 	int	 | 	[CLASSATTRIBS](/docs/database/Tables/tables-descr.md#tabela-classattribs) **id**	 | 	ID Atrybutu	 | 		 |
+| 	documents_id	 | 	int	 | 	[DOCUMENTS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-documents) **id**	 | 	ID Dokumentu	 | 		 |
+| 	attribs_id	 | 	int	 | 	[CLASSATTRIBS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-classattribs) **id**	 | 	ID Atrybutu	 | 		 |
 | 	value	 | 	nvarchar(MAX)	 | 		 | 	Przypisana wartośc dla atrybutu	 | 		 |
 
 
@@ -1055,8 +1055,8 @@ sidebar_position: 6
 
 | 	Pole	 | 	Typ danych	 | 	Odwołanie	 | 	Opis	 | 	Ograniczenia	 |
 | 	---	 | 	---	 | 	---	 | 	---	 | 	---	 |
-| 	documents_id	 | 	int	 | 	[DOCUMENTS](/docs/database/Tables/tables-descr.md#tabela-documents) **id**	 | 	ID Dokumentu	 | 		 |
-| 	USERS_id	 | 	int	 | 	[USERS](/docs/database/Tables/tables-descr.md#tabela-users) **id**	 | 	ID Użytkownika	 | 		 |
+| 	documents_id	 | 	int	 | 	[DOCUMENTS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-documents) **id**	 | 	ID Dokumentu	 | 		 |
+| 	USERS_id	 | 	int	 | 	[USERS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-users) **id**	 | 	ID Użytkownika	 | 		 |
 | 	openat	 | 	nvarchar(MAX)	 | 		 | 	Data otwarcia dokumentu	 | 		 |
 
 
@@ -1066,7 +1066,7 @@ sidebar_position: 6
 
 | 	Pole	 | 	Typ danych	 | 	Odwołanie	 | 	Opis	 | 	Ograniczenia	 |
 | 	---	 | 	---	 | 	---	 | 	---	 | 	---	 |
-| 	documents_id	 | 	int	 | 	[DOCUMENTS](/docs/database/Tables/tables-descr.md#tabela-documents) **id**	 | 	ID Dokumentu	 | 		 |
+| 	documents_id	 | 	int	 | 	[DOCUMENTS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-documents) **id**	 | 	ID Dokumentu	 | 		 |
 | 	sourceid	 | 	varchar(255)	 | 		 | 	Powiązanie z np.: id skrzynki POP3, IMAP, numer KSEF	 | 		 |
 | 	foldername	 | 	nvarchar(32)	 | 		 | 	Nazwa katalogu	 | 		 |
 
@@ -1086,7 +1086,7 @@ sidebar_position: 6
 | 	allowcache	 | 	bit	 | 		 | 		 | 0 - Nie, 1 - Tak |
 | 	CreatedAt	 | 	datetime	 | 		 | 	Data utworzenia	 | 		 |
 | 	UpdatedAt	 | 	datetime	 | 		 | 	Data aktualizacji	 | 		 |
-| 	organizations_id	 | 	int	 | 	[ORGANIZATIONS](/docs/database/Tables/tables-descr.md#tabela-organizations) **id**	 | 	ID Organizacji	 | 		 |
+| 	organizations_id	 | 	int	 | 	[ORGANIZATIONS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-organizations) **id**	 | 	ID Organizacji	 | 		 |
 | 	report	 | 	bit	 | 		 | 	Czy raport 	 | 	0 - Nie (słownik), 1 - Tak (raport)	 |
 | 	label	 | 	nvarchar(200)	 | 		 | 	Etykieta	 | 		 |
 | 	visible	 | 	bit	 | 		 | 	Widoczność	 | 	0 - Nie, 1 - Tak	 |
@@ -1150,9 +1150,9 @@ sidebar_position: 6
 
 | 	Pole	 | 	Typ danych	 | 	Odwołanie	 | 	Opis	 | 	Ograniczenia	 |
 | 	---	 | 	---	 | 	---	 | 	---	 | 	---	 |
-| 	profile	 | 	varchar(100)	 | 	[CONFIGURATION](/docs/database/Tables/tables-descr.md#tabela-configuration) **profile** 	 | 	Nazwa profilu konfiguracji	 | 		 |
-| 	SPUMAuserid	 | 	int	 | 	[USERS](/docs/database/Tables/tables-descr.md#tabela-users) **id**	 | 	ID Użytkownika przypisanego do automatyzacji	 | 		 |
-| 	SPUMAcompanyid	 | 	int	 | 	[COMPANIES](/docs/database/Tables/tables-descr.md#tabela-companies) **id**	 | 	ID Firmy	 | 		 |
+| 	profile	 | 	varchar(100)	 | 	[CONFIGURATION](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-configuration) **profile** 	 | 	Nazwa profilu konfiguracji	 | 		 |
+| 	SPUMAuserid	 | 	int	 | 	[USERS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-users) **id**	 | 	ID Użytkownika przypisanego do automatyzacji	 | 		 |
+| 	SPUMAcompanyid	 | 	int	 | 	[COMPANIES](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-companies) **id**	 | 	ID Firmy	 | 		 |
 | 	MailHost	 | 	varchar(100)	 | 		 | 	POP3 Host	 | 		 |
 | 	MailUser	 | 	varchar(100)	 | 		 | 	POP3 Użytkownik	 | 		 |
 | 	MailPass	 | 	varchar(100)	 | 		 | 	POP3 Hasło	 | 		 |
@@ -1160,7 +1160,7 @@ sidebar_position: 6
 | 	UseSSL	 | 	bit	 | 		 | 	POP3 czy SSL	 | 	 0 - Nie, 1 - Tak	 |
 | 	MatchRx	 | 	nvarchar(1024)	 | 		 | 	Wyrażenie regularne użyte do filtrowania treści email	 | 		 |
 | 	docctype	 | 	int	 | 		 | 	Rodzaj dokumentu	 | 	1 - Załączniki jako strony, 2 - Załączniki jako dokumenty	 |
-| 	classes_id	 | 	int	 | 	[CLASSES](/docs/database/Tables/tables-descr.md#tabela-classes) **id**	 | 	ID Klasy załącznika dla docelowego dokumentu powstałego przy tej automatyzacji	 | 		 |
+| 	classes_id	 | 	int	 | 	[CLASSES](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-classes) **id**	 | 	ID Klasy załącznika dla docelowego dokumentu powstałego przy tej automatyzacji	 | 		 |
 | 	allowempty	 | 	bit	 | 		 | 	Dodaj wiadomości bez załączników	 | 	0 - Nie, 1 - Tak	 |
 
 
@@ -1170,8 +1170,8 @@ sidebar_position: 6
 
 | 	Pole	 | 	Typ danych	 | 	Odwołanie	 | 	Opis	 | 	Ograniczenia	 |
 | 	---	 | 	---	 | 	---	 | 	---	 | 	---	 |
-| 	messages_id	 | 	int	 | 	[MESSAGES](/docs/database/Tables/tables-descr.md#tabela-messages) **id**	 | 	ID Powiązanej wiadomości	 | 		 |
-| 	users_id	 | 	int	 | 	[USERS](/docs/database/Tables/tables-descr.md#tabela-users) **id**	 | 	ID Użytkownika, do którego wysyłana wiadomość	 | 		 |
+| 	messages_id	 | 	int	 | 	[MESSAGES](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-messages) **id**	 | 	ID Powiązanej wiadomości	 | 		 |
+| 	users_id	 | 	int	 | 	[USERS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-users) **id**	 | 	ID Użytkownika, do którego wysyłana wiadomość	 | 		 |
 | 	email_adr	 | 	varchar(255)	 | 		 | 	Adres Email odbiorcy wiadomości	 | 		 |
 | 	isread	 | 	bit	 | 		 | 	Czy wiadomość została odczytana	 | 	0 - Nie, 1 - Tak	 |
 
@@ -1183,18 +1183,18 @@ sidebar_position: 6
 | 	Pole	 | 	Typ danych	 | 	Odwołanie	 | 	Opis	 | 	Ograniczenia	 |
 | 	---	 | 	---	 | 	---	 | 	---	 | 	---	 |
 | 	id	 | 	int	 | 		 | 	Unikalny numer wiadomości	 | 		 |
-| 	users_id	 | 	int	 | 	[USERS](/docs/database/Tables/tables-descr.md#tabela-users) **id**	 | 	ID Użytkownik tworzącego wiadomość	 | 		 |
-| 	dst_companies_id	 | 	int	 | 	[COMPANIES](/docs/database/Tables/tables-descr.md#tabela-companies) **id**	 | 	ID Firmy	 | 		 |
-| 	dst_documents_id	 | 	int	 | 	[DOCUMENTS](/docs/database/Tables/tables-descr.md#tabela-documents) **id**	 | 	ID Dokumentu	 | 		 |
+| 	users_id	 | 	int	 | 	[USERS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-users) **id**	 | 	ID Użytkownik tworzącego wiadomość	 | 		 |
+| 	dst_companies_id	 | 	int	 | 	[COMPANIES](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-companies) **id**	 | 	ID Firmy	 | 		 |
+| 	dst_documents_id	 | 	int	 | 	[DOCUMENTS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-documents) **id**	 | 	ID Dokumentu	 | 		 |
 | 	subject	 | 	nvarchar(1024)	 | 		 | 	Temat wiadomości	 | 		 |
 | 	content	 | 	ntext	 | 		 | 	Zawartość wiadomości	 | 		 |
 | 	isread	 | 	bit	 | 		 | 	Czy wiadomość została odczytana 	 | 	0 - Nie, 1 - Tak	 |
 | 	CreatedAt	 | 	datetime	 | 		 | 	Data utworzenia wiadomości	 | 		 |
 | 	UpdatedAt	 | 	datetime	 | 		 | 	Data aktualizacji wiadomości	 | 		 |
 | 	issent	 | 	int	 | 		 | 	Status wysłanej wiadomości	 | 	0 - Oczekuje w kolejce, 1 - Wysłano poprawnie , 2 - Błąd wysyłki	 |
-| 	att_document_id	 | 	int	 | 	[DOCUMENTS](/docs/database/Tables/tables-descr.md#tabela-documents) **id**	 | 	ID Powiązania z dokumentem załącznika	 | 		 |
+| 	att_document_id	 | 	int	 | 	[DOCUMENTS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-documents) **id**	 | 	ID Powiązania z dokumentem załącznika	 | 		 |
 | 	eventtype	 | 	int	 | 		 | 	Rodzaj powiadomienia 	 | 	0 - Wiadomość wewnętrzna, 1 - Prośba o autoryzację , 2 - Autoryzacja dokumentu, 3 - Odrzucenie dokumentu, 4 - Prośba o komentarz, 5 - Skomentowano, 6 - Zmiana na dokumencie obserwowanym, 7 - Zatwierdzenie finalne dokumentu	 |
-| 	dst_documents_authschemas_id	 | 	int	 | 	[DOCUMENTS_AUTHSCHEMA](/docs/database/Tables/tables-descr.md#tabela-documents_authschema) **id**	 | 	ID Schematu autoryzacji powiązanego z docelowym dokumentem	 | 		 |
+| 	dst_documents_authschemas_id	 | 	int	 | 	[DOCUMENTS_AUTHSCHEMA](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-documents_authschema) **id**	 | 	ID Schematu autoryzacji powiązanego z docelowym dokumentem	 | 		 |
 
 
 ## Tabela MODIFICATIONENTRY
@@ -1203,9 +1203,9 @@ sidebar_position: 6
 
 | 	Pole	 | 	Typ danych	 | 	Odwołanie	 | 	Opis	 | 	Ograniczenia	 |
 | 	---	 | 	---	 | 	---	 | 	---	 | 	---	 |
-| 	documentmodifications_id	 | 	int	 | 	[DOCUMENTS_MODIFICATION](/docs/database/Tables/tables-descr.md#tabela-documents_modification) **id**	 | 	ID Modyfikacji zapisanej dla dokumentu	 | 		 |
+| 	documentmodifications_id	 | 	int	 | 	[DOCUMENTS_MODIFICATION](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-documents_modification) **id**	 | 	ID Modyfikacji zapisanej dla dokumentu	 | 		 |
 | 	objtype	 | 	int	 | 		 | 	Typ obiektu	 | 	0 - Nagłówek dokumentu, 1 - Strony dokumentu, 2 - Zmienne systemowe , 5 - Linie dokumentu	 |
-| 	objid	 | 	int	 | 	[DOCUMENTS](/docs/database/Tables/tables-descr.md#tabela-documents) **id**	 | 	ID Dokumentu	 | 		 |
+| 	objid	 | 	int	 | 	[DOCUMENTS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-documents) **id**	 | 	ID Dokumentu	 | 		 |
 | 	fieldcode	 | 	varchar(32)	 | 		 | 	Nazwa pola	 | 		 |
 | 	oldvalue	 | 	nvarchar(1024)	 | 		 | 	Wartość w polu była	 | 		 |
 | 	newvalue	 | 	nvarchar(1024)	 | 		 | 	Zmieniona wartość	 | 		 |
@@ -1246,11 +1246,11 @@ sidebar_position: 6
 | 	Pole	 | 	Typ danych	 | 	Odwołanie	 | 	Opis	 | 	Ograniczenia	 |
 | 	---	 | 	---	 | 	---	 | 	---	 | 	---	 |
 | 	id	 | 	int	 | 		 | 	Unikalny kolejny numer wpisu	 | 		 |
-| 	documentocrresults_id	 | 	int	 | 	[DOCUMENTOCRRESULTS](/docs/database/Tables/tables-descr.md#tabela-documentocrresults) **id**	 | 	ID Przypisanego schematu rozpoznawania dla dokumentu	 | 		 |
+| 	documentocrresults_id	 | 	int	 | 	[DOCUMENTOCRRESULTS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-documentocrresults) **id**	 | 	ID Przypisanego schematu rozpoznawania dla dokumentu	 | 		 |
 | 	name	 | 	varchar(100)	 | 		 | 	Nazwa pola	 | 		 |
 | 	type	 | 	int	 | 		 | 	Typ pola wartości	 | 	0 - Pole tekstowe, 1 - Liczba całkowita, 2 - Data, 3 - Liczba zmienno przecinkowa, 4 - Nazwa bloku z liniami dokumentu	 |
 | 	value	 | 	nvarchar(MAX)	 | 		 | 	Wartość odczytana przez OCR	 | 		 |
-| 	ocrfields_id	 | 	int	 | 	[DOCUMENTOCRRESULTS](/docs/database/Tables/tables-descr.md#tabela-documentocrresults) **id**	 | 	ID Pola OCR nadrzędnego dla bloku z liniami	 | 		 |
+| 	ocrfields_id	 | 	int	 | 	[DOCUMENTOCRRESULTS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-documentocrresults) **id**	 | 	ID Pola OCR nadrzędnego dla bloku z liniami	 | 		 |
 | 	marktodel	 | 	bit	 | 		 | Pole techniczne wykorzystywane przy transakcjach | 		 |
 
 
@@ -1260,7 +1260,7 @@ sidebar_position: 6
 
 | 	Pole	 | 	Typ danych	 | 	Odwołanie	 | 	Opis	 | 	Ograniczenia	 |
 | 	---	 | 	---	 | 	---	 | 	---	 | 	---	 |
-| 	ocrfields_id	 | 	int	 | 	[OCRFIELDS](/docs/database/Tables/tables-descr.md#tabela-ocrfields) **id**	 | 	ID Odczytanego pola OCR	 | 		 |
+| 	ocrfields_id	 | 	int	 | 	[OCRFIELDS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-ocrfields) **id**	 | 	ID Odczytanego pola OCR	 | 		 |
 | 	linenum	 | 	int	 | 		 | 	Numer linii	 | 		 |
 | 	linenum	 | 	nvarchar(max)	 | 		 | Odczytana wartość przez OCR	 | 		 |
 
@@ -1271,7 +1271,7 @@ sidebar_position: 6
 
 | 	Pole	 | 	Typ danych	 | 	Odwołanie	 | 	Opis	 | 	Ograniczenia	 |
 | 	---	 | 	---	 | 	---	 | 	---	 | 	---	 |
-| 	documents_id	 | 	int	 | 	[DOCUMENTS](/docs/database/Tables/tables-descr.md#tabela-documents) **id**	 | 	ID Dokumentu głównego	 | 		 |
+| 	documents_id	 | 	int	 | 	[DOCUMENTS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-documents) **id**	 | 	ID Dokumentu głównego	 | 		 |
 | 	order	 | 	int	 | 		 | 	Kolejnośc komunikatu	 | 		 |
 | 	isread	 | 	bit	 | 		 | 	czy komuikat został odczytany	 | 	0 - Nie, 1 - Tak	 |
 | 	message	 | 	nvarchar(255)	 | 		 | 	Treśc komunikatu błędu	 | 		 |
@@ -1301,7 +1301,7 @@ sidebar_position: 6
 | 	Pole	 | 	Typ danych	 | 	Odwołanie	 | 	Opis	 | 	Ograniczenia	 |
 | 	---	 | 	---	 | 	---	 | 	---	 | 	---	 |
 | 	id	 | 	int	 | 		 | 	Unikalny kolejny numer wpisu	 | 		 |
-| 	documentocrresults_id	 | 	int	 | 	[DOCUMENTOCRRESULTS](/docs/database/Tables/tables-descr.md#tabela-documentocrresults) **id**	 | 	id przypisanego schematu rozpoznawania dla dokumentu	 | 		 |
+| 	documentocrresults_id	 | 	int	 | 	[DOCUMENTOCRRESULTS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-documentocrresults) **id**	 | 	id przypisanego schematu rozpoznawania dla dokumentu	 | 		 |
 | 	pagenum	 | 	int	 | 		 | 	Numer strony	 | 		 |
 | 	type	 | 	int	 | 		 | 	Typ pola	 | 	1 - Strona z liniami , 2 - Standardowa strona , 3 - Strona załącznika do faktury	 |
 | 	marktodel	 | 	bit	 | 		 | Pole techniczne wykorzystywane przy transakcjach | 		 |
@@ -1315,7 +1315,7 @@ sidebar_position: 6
 
 | 	Pole	 | 	Typ danych	 | 	Odwołanie	 | 	Opis	 | 	Ograniczenia	 |
 | 	---	 | 	---	 | 	---	 | 	---	 | 	---	 |
-| 	ocrresultpages_id	 | 	int	 | 	[OCRRESULTPAGES](/docs/database/Tables/tables-descr.md#tabela-ocrresultpages) **id**	 | 	ID Rozpoznanej strony dla dokumentu	 | 		 |
+| 	ocrresultpages_id	 | 	int	 | 	[OCRRESULTPAGES](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-ocrresultpages) **id**	 | 	ID Rozpoznanej strony dla dokumentu	 | 		 |
 | 	text	 | 	ntext	 | 		 | 	Odczytane słowo przez OCR	 | 		 |
 | 	posx	 | 	int	 | 		 | 	Pozycja tekstu w osi x	 | 		 |
 | 	posy	 | 	int	 | 		 | 	Pozycja tekstu w osi y	 | 		 |
@@ -1344,9 +1344,9 @@ sidebar_position: 6
 | 	Pole	 | 	Typ danych	 | 	Odwołanie	 | 	Opis	 | 	Ograniczenia	 |
 | 	---	 | 	---	 | 	---	 | 	---	 | 	---	 |
 | 	id	 | 	int	 | 		 | 	Unikalny kolejny numer wpisu	 | 		 |
-| 	documentpages_id	 | 	int	 | 	[DOCUMENTPAGES](/docs/database/Tables/tables-descr.md#tabela-documentpages) **id**	 | 	ID Strony dokumentu	 | 		 |
+| 	documentpages_id	 | 	int	 | 	[DOCUMENTPAGES](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-documentpages) **id**	 | 	ID Strony dokumentu	 | 		 |
 | 	commnum	 | 	int	 | 		 | 	Kolejny numer komentarza w obrębie strony dokumentu	 | 		 |
-| 	users_id	 | 	int	 | 	[USERS](/docs/database/Tables/tables-descr.md#tabela-users) **id**	 | 	ID Użytkownika tworzącego komentarz	 | 		 |
+| 	users_id	 | 	int	 | 	[USERS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-users) **id**	 | 	ID Użytkownika tworzącego komentarz	 | 		 |
 | 	posx	 | 	float	 | 		 | 	Pozycja komentarza w osi x	 | 		 |
 | 	posy	 | 	float	 | 		 | 	Pozycja komentarza w osi y	 | 		 |
 | 	width	 | 	float	 | 		 | 	Szerokość komentarza	 | 		 |
@@ -1363,15 +1363,15 @@ sidebar_position: 6
 | 	id	 | 	int	 | 		 | 	Unikalny numer wpisu	 | 		 |
 | 	order	 | 	int	 | 		 | 	Kolejność | 		 |
 | 	dst_objtype	 | 	int	 | 		 | Typ obiektu, do którego przypisano uprawnienie| 0 - Uprawnienia firmy, 1 - Uprawnienia klasy dokumentu, 2 - Dokument, 3 - Uprawnienia dzienników , 4 - Uprawnienia raportów |
-| 	dst_objid	 | 	int	 | 	[COMPANIES](/docs/database/Tables/tables-descr.md#tabela-companies) **id**, [CLASSES](/docs/database/Tables/tables-descr.md#tabela-classes) **id**, [DOCUMENTS](/docs/database/Tables/tables-descr.md#tabela-documents) **id**, [DAILYCORRCLASS](/docs/database/Tables/tables-descr.md#tabela-dailycorrclass) **id**, [INTERACTIVEDICTS](/docs/database/Tables/tables-descr.md#tabela-interactivedicts) **id**  | 	ID Obiektu, do którego przypisano uprawnienie | 		 |
+| 	dst_objid	 | 	int	 | 	[COMPANIES](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-companies) **id**, [CLASSES](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-classes) **id**, [DOCUMENTS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-documents) **id**, [DAILYCORRCLASS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-dailycorrclass) **id**, [INTERACTIVEDICTS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-interactivedicts) **id**  | 	ID Obiektu, do którego przypisano uprawnienie | 		 |
 | 	proptype	 | 	int	 | 		 | 	Typ uprawnienia | 	0 - Główne, 1 - Przenaszalność, 5 - Edycja obcych komentarzy, 6 - Edycja pola/kolumny, 7 - Edycja obcych linii, 8 - Dodanie wpisu dziennika, 9 - Usunięcie wpisu dziennika, 10 - Zmiana zasobów, 11 - Edycja referencji, 12 - Tworzenie dok. SAP   |
 | 	permtype	 | 	int	 | 		 | 	Typ edycji | 	0 - Pełne, 1 - Podgląd, 2 - Brak |
 | 	objtype	 | 	int	 | 	 | 	Typ odbiorcy uprawnienia | 0 - Użytkownik, 1 - Grupa użytkowników |
-| 	objid	 | 	int	 | 	[USERS](/docs/database/Tables/tables-descr.md#tabela-users) **id**, [USERGROUPS](/docs/database/Tables/tables-descr.md#tabela-usergroups) **id**  | 	ID Odbiorcy uprawnienia | 		 |
+| 	objid	 | 	int	 | 	[USERS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-users) **id**, [USERGROUPS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-usergroups) **id**  | 	ID Odbiorcy uprawnienia | 		 |
 | 	marktodel	 | 	bit	 | 		 | Pole techniczne wykorzystywane przy transakcjach | 		 |
-| 	classattribs_id	 | 	int	 | 	[ATTRIBDICTS](/docs/database/Tables/tables-descr.md#tabela-attribdicts) **id** | 	Uprawnienie do atrybutu | 		 |
+| 	classattribs_id	 | 	int	 | 	[ATTRIBDICTS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-attribdicts) **id** | 	Uprawnienie do atrybutu | 		 |
 | 	docstate	 | 	int	 | 		 | 	Status dokumentu wartości	 | 	0 - Zatwierdzony, 1 - Odrzucony, 2 - W sekretariacie, 3 - W autoryzacji	 |
-| 	authschemas_id	 | 	int	 | 	[AUTHSCHEMAS](/docs/database/Tables/tables-descr.md#tabela-authschemas) **id**	 | 	ID Powiązanego schematu autoryzacji	 | 		 |
+| 	authschemas_id	 | 	int	 | 	[AUTHSCHEMAS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-authschemas) **id**	 | 	ID Powiązanego schematu autoryzacji	 | 		 |
 
 
 ## Tabela PROCESS_ACTIONS
@@ -1380,10 +1380,10 @@ sidebar_position: 6
 
 | 	Pole	 | 	Typ danych	 | 	Odwołanie	 | 	Opis	 | 	Ograniczenia	 |
 | 	---	 | 	---	 | 	---	 | 	---	 | 	---	 |
-| 	dst_objid	 | 	int	 | [AUTHSCHEMAS](/docs/database/Tables/tables-descr.md#tabela-authschemas) **id**, [CUSTOMPROCESSES](/docs/database/Tables/tables-descr.md#tabela-customprocesses) **id** | ID Powiązanego obiektu | 		 |
+| 	dst_objid	 | 	int	 | [AUTHSCHEMAS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-authschemas) **id**, [CUSTOMPROCESSES](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-customprocesses) **id** | ID Powiązanego obiektu | 		 |
 | 	intid	 | 	int	 | 		 | Kolejny numer akcji | 		 |
-| 	insintid	 | 	int	 | 	[AUTHSCHEMA_INSTRUCTIONS](/docs/database/Tables/tables-descr.md#tabela-authschema_instructions) **intid**, [CUSTOMPROCESS_DIALOGWND](/docs/database/Tables/tables-descr.md#tabela-customprocess_dialogwnd) **intid**, [CUSTOMPROCESS_EXCALLOP](/docs/database/Tables/tables-descr.md#tabela-customprocess_excallop) **intid**, [CUSTOMPROCESS_LINEOP](/docs/database/Tables/tables-descr.md#tabela-customprocess_lineop) **intid**, [CUSTOMPROCESS_SCRIPTOP](/docs/database/Tables/tables-descr.md#tabela-customprocess_scriptop) **intid** | 	ID Etapu, z którego wychodzi przejście | 0,-10 - punkt startu, -13,-1 - punkt końca, pozostałe - ID Etapów |
-| 	insintid2	 | 	int	 | 	[AUTHSCHEMA_INSTRUCTIONS](/docs/database/Tables/tables-descr.md#tabela-authschema_instructions) **intid**, [CUSTOMPROCESS_DIALOGWND](/docs/database/Tables/tables-descr.md#tabela-customprocess_dialogwnd) **intid**, [CUSTOMPROCESS_EXCALLOP](/docs/database/Tables/tables-descr.md#tabela-customprocess_excallop) **intid**, [CUSTOMPROCESS_LINEOP](/docs/database/Tables/tables-descr.md#tabela-customprocess_lineop) **intid**, [CUSTOMPROCESS_SCRIPTOP](/docs/database/Tables/tables-descr.md#tabela-customprocess_scriptop) **intid** | 	ID Etapu, do którego prowadzi przejście | 0,-10 - punkt startu, -13,-1 - punkt końca, pozostałe - ID Etapów |
+| 	insintid	 | 	int	 | 	[AUTHSCHEMA_INSTRUCTIONS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-authschema_instructions) **intid**, [CUSTOMPROCESS_DIALOGWND](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-customprocess_dialogwnd) **intid**, [CUSTOMPROCESS_EXCALLOP](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-customprocess_excallop) **intid**, [CUSTOMPROCESS_LINEOP](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-customprocess_lineop) **intid**, [CUSTOMPROCESS_SCRIPTOP](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-customprocess_scriptop) **intid** | 	ID Etapu, z którego wychodzi przejście | 0,-10 - punkt startu, -13,-1 - punkt końca, pozostałe - ID Etapów |
+| 	insintid2	 | 	int	 | 	[AUTHSCHEMA_INSTRUCTIONS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-authschema_instructions) **intid**, [CUSTOMPROCESS_DIALOGWND](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-customprocess_dialogwnd) **intid**, [CUSTOMPROCESS_EXCALLOP](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-customprocess_excallop) **intid**, [CUSTOMPROCESS_LINEOP](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-customprocess_lineop) **intid**, [CUSTOMPROCESS_SCRIPTOP](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-customprocess_scriptop) **intid** | 	ID Etapu, do którego prowadzi przejście | 0,-10 - punkt startu, -13,-1 - punkt końca, pozostałe - ID Etapów |
 | 	dst_objtype	 | 	int	 | 		 | 	Typ powiązanego obiektu | 0 - Proces autoryzacji, 1 - Algorytm |
 | 	ptype	 | 	int	 | 		 | Typ przejścia | 0 - Przejście po zatwierdzeniu, 1 - Przejście po odrzuceniu |
 
@@ -1394,8 +1394,8 @@ sidebar_position: 6
 
 | 	Pole	 | 	Typ danych	 | 	Odwołanie	 | 	Opis	 | 	Ograniczenia	 |
 | 	---	 | 	---	 | 	---	 | 	---	 | 	---	 |
-| 	dst_objid	 | 	int	 | 	[AUTHSCHEMAS](/docs/database/Tables/tables-descr.md#tabela-authschemas) **id**, [CUSTOMPROCESSES](/docs/database/Tables/tables-descr.md#tabela-customprocesses) **id**  | ID Powiązanego obiektu | 		 |
-| 	actionsintid	 | 	int	 | 	[PROCESS_ACTIONS](/docs/database/Tables/tables-descr.md#tabela-process_actions) **intid* | ID Akcji w obrębie procesu autoryzacji / algorytmu | 		 |
+| 	dst_objid	 | 	int	 | 	[AUTHSCHEMAS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-authschemas) **id**, [CUSTOMPROCESSES](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-customprocesses) **id**  | ID Powiązanego obiektu | 		 |
+| 	actionsintid	 | 	int	 | 	[PROCESS_ACTIONS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-process_actions) **intid* | ID Akcji w obrębie procesu autoryzacji / algorytmu | 		 |
 | 	intid	 | 	int	 | 		 | Kolejny numer warunku / grupy | 		 |
 | 	type	 | 	int	 | 		 | 	Typ | 0 - Warunek, 1 - Grupa |
 | 	lvariable_id	 | 	int	 | 		 | ID Zmiennej w lewym warunku |  |
@@ -1414,7 +1414,7 @@ sidebar_position: 6
 
 | 	Pole	 | 	Typ danych	 | 	Odwołanie	 | 	Opis	 | 	Ograniczenia	 |
 | 	---	 | 	---	 | 	---	 | 	---	 | 	---	 |
-| 	dst_objid	 | 	int	 | 	[CUSTOMPROCESSES](/docs/database/Tables/tables-descr.md#tabela-customprocesses) **id** | ID Powiązanego obiektu | 		 |
+| 	dst_objid	 | 	int	 | 	[CUSTOMPROCESSES](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-customprocesses) **id** | ID Powiązanego obiektu | 		 |
 | 	dst_objtype	 | 	int	 | 		 | 	Typ powiązanego obiektu | 0 - Proces autoryzacji, 1 - Algoytm |
 | 	intid	 | 	int	 | 		 | ID Zmiennej w obrębie danego algorytmu | 		 |
 | 	name	 | 	nvarchar(100)	 | 		 | Nazwa kolumny | 		 |
@@ -1427,7 +1427,7 @@ sidebar_position: 6
 
 | 	Pole	 | 	Typ danych	 | 	Odwołanie	 | 	Opis	 | 	Ograniczenia	 |
 | 	---	 | 	---	 | 	---	 | 	---	 | 	---	 |
-| 	dst_objid	 | 	int	 | [AUTHSCHEMAS](/docs/database/Tables/tables-descr.md#tabela-authschemas) **id**, [CUSTOMPROCESSES](/docs/database/Tables/tables-descr.md#tabela-customprocesses) **id**  | ID Powiązanego obiektu | 		 |
+| 	dst_objid	 | 	int	 | [AUTHSCHEMAS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-authschemas) **id**, [CUSTOMPROCESSES](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-customprocesses) **id**  | ID Powiązanego obiektu | 		 |
 | 	intid	 | 	int	 | 		 | Kolejny numer zmiennej w obrębie danego procesu / algoytmu | 		 |
 | 	name	 | 	nvarchar(100)	 | 		 | Nazwa zmiennej | 		 |
 | 	description	 | 	ntext	 | 		 | 	Opis zmiennej | 		 |
@@ -1458,8 +1458,8 @@ sidebar_position: 6
 
 | 	Pole	 | 	Typ danych	 | 	Odwołanie	 | 	Opis	 | 	Ograniczenia	 |
 | 	---	 | 	---	 | 	---	 | 	---	 | 	---	 |
-| 	users_id	 | 	int	 | [USERS](/docs/database/Tables/tables-descr.md#tabela-users) **id** | ID Użytkownika | 		 |
-| 	documents_id	 | 	int	 | [DOCUMENTS](/docs/database/Tables/tables-descr.md#tabela-documents) **id** | 	ID Dokumentu  | 		 |
+| 	users_id	 | 	int	 | [USERS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-users) **id** | ID Użytkownika | 		 |
+| 	documents_id	 | 	int	 | [DOCUMENTS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-documents) **id** | 	ID Dokumentu  | 		 |
 | 	frac	 | 	float	 | 		 | Dopasowanie wyszukiwania | 		 |
 
 
@@ -1470,8 +1470,8 @@ sidebar_position: 6
 | 	Pole	 | 	Typ danych	 | 	Odwołanie	 | 	Opis	 | 	Ograniczenia	 |
 | 	---	 | 	---	 | 	---	 | 	---	 | 	---	 |
 | 	id	 | 	varchar(32)	 | 		 | 	Numer unikalny dla sygnatury	 | 		 |
-| 	documents_id	 | 	int	 | 	[DOCUMENTS](/docs/database/Tables/tables-descr.md#tabela-documents) **id**	 | 	ID Dokumentu	 | 		 |
-| 	users_id	 | 	int	 | 	[USERS](/docs/database/Tables/tables-descr.md#tabela-users) **id**	 | 	ID Użytkownika	 | 		 |
+| 	documents_id	 | 	int	 | 	[DOCUMENTS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-documents) **id**	 | 	ID Dokumentu	 | 		 |
+| 	users_id	 | 	int	 | 	[USERS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-users) **id**	 | 	ID Użytkownika	 | 		 |
 | 	sighours	 | 	int	 | 		 | 	Okres ważności sygnatury w godzinach	 | 		 |
 | 	CreatedAt	 | 	datetime	 | 		 | 	Data utworzenia wpisu	 | 		 |
 
@@ -1488,7 +1488,7 @@ sidebar_position: 6
 | 	CreatedAt	 | 	datetime	 | 		 | 	Data utworzenia wpisu	 | 		 |
 | 	UpdatedAt	 | 	datetime	 | 		 | 	Data aktualizacji wpisu	 | 		 |
 | 	grouprole	 | 	int	 | 		 | 	Rola dla grupy wartości	 | 	0 - Ogólna, 1 - Twórca, 2 - Administratorzy	 |
-| 	organizations_id	 | 	int	 | 	[ORGANIZATIONS](/docs/database/Tables/tables-descr.md#tabela-organizations) **id**	 | ID Organizacji | 		 |
+| 	organizations_id	 | 	int	 | 	[ORGANIZATIONS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-organizations) **id**	 | ID Organizacji | 		 |
 | 	globalid	 | 	varchar(36)	 | 		 | 	Globalny identyfikator obiektu, niezależny od bazy danych	 | 		 |
 
 
@@ -1498,8 +1498,8 @@ sidebar_position: 6
 
 | 	Pole	 | 	Typ danych	 | 	Odwołanie	 | 	Opis	 | 	Ograniczenia	 |
 | 	---	 | 	---	 | 	---	 | 	---	 | 	---	 |
-| 	usergroups_id	 | 	int	 | 	[USERGROUPS](/docs/database/Tables/tables-descr.md#tabela-usergroups) **id** id	 | 	ID Grupy użytkowników	 | 		 |
-| 	users_id	 | 	int	 | 	[USERS](/docs/database/Tables/tables-descr.md#tabela-users) **id**	 | 	ID Użytkownika	 | 		 |
+| 	usergroups_id	 | 	int	 | 	[USERGROUPS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-usergroups) **id** id	 | 	ID Grupy użytkowników	 | 		 |
+| 	users_id	 | 	int	 | 	[USERS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-users) **id**	 | 	ID Użytkownika	 | 		 |
 
 
 ## Tabela USERS
@@ -1526,15 +1526,15 @@ sidebar_position: 6
 | 	repl	 | 	bit	 | 		 | 	Aktywność zastępstwa (Zastępstwo)	 | 0 - Nie, 1 - Tak |
 | 	replstart	 | 	datetime	 | 		 | 	Od (Zastępstwo)	 | 		 |
 | 	replend	 | 	datetime	 | 		 | 	Do (Zastępstwo)	 | 		 |
-| 	rep_users_id	 | 	int	 | 	[USERS](/docs/database/Tables/tables-descr.md#tabela-users) **id**	 | 	Zastępuje - pierwszy (Zastępwstwo)	 | 		 |
-| 	rep_users_id2	 | 	int	 | 	[USERS](/docs/database/Tables/tables-descr.md#tabela-users) **id**	 | 	Zastępuje - drugi (Zastępwstwo)	 | 		 |
+| 	rep_users_id	 | 	int	 | 	[USERS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-users) **id**	 | 	Zastępuje - pierwszy (Zastępwstwo)	 | 		 |
+| 	rep_users_id2	 | 	int	 | 	[USERS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-users) **id**	 | 	Zastępuje - drugi (Zastępwstwo)	 | 		 |
 | 	islocked	 | 	bit	 | 		 | 	Zablokowany (Ogólne) | 0 - Nie, 1 - Tak |
 | 	visfldtp1	 | 	int	 | 		 | 	Nieużywane | 		 |
 | 	visfldtp2	 | 	int	 | 		 | Nieużywane | 		 |
 | 	visfldtp3	 | 	int	 | 		 | Nieużywane | 		 |
 | 	visfldtp4	 | 	int	 | 		 | 	Nieużywane | 		 |
-| 	organizations_id	 | 	int	 | 	[ORGANIZATIONS](/docs/database/Tables/tables-descr.md#tabela-organizations) **id**	 | 	ID Organizacji	 | 		 |
-| 	dailycorrclass_id	 | 	int	 | 	[DAILYCORRCLASS](/docs/database/Tables/tables-descr.md#tabela-dailycorrclass) **id**	 | 	Domyślny dziennik - ID (Ogólne)	 | 		 |
+| 	organizations_id	 | 	int	 | 	[ORGANIZATIONS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-organizations) **id**	 | 	ID Organizacji	 | 		 |
+| 	dailycorrclass_id	 | 	int	 | 	[DAILYCORRCLASS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-dailycorrclass) **id**	 | 	Domyślny dziennik - ID (Ogólne)	 | 		 |
 | 	signature	 | 	image	 | 		 | 	Podpis	 | 		 |
 | 	globalid	 | 	varchar(36)	 | 		 | 	Globalny identyfikator obiektu, niezależny od bazy danych	 | 		 |
 | 	lang	 | 	int	 | 		 | 	Język UI (Ogólne) | 	0 - Angielski, 1 - Polski |
@@ -1545,7 +1545,7 @@ sidebar_position: 6
 | 	imap_ssl	 | 	bit	 | 		 | 	IMAP - ssl (Email) | 0 - Nie, 1 - Tak |
 | 	imap_vflds	 | 	varchar(255)	 | 		 | 	IMAP - folder (Email) | 		 |
 | 	compact_style	 | 	bit	 | 		 | 	Styl kompaktowy | 0 - Nie, 1 - Tak |
-| 	docacc_usergroups_id	 | 	int	 | [USERGROUPS](/docs/database/Tables/tables-descr.md#tabela-usergroups) **id** | 	Przełożeni - ID Grupy użytkowników (Ogólne) | 		 |
+| 	docacc_usergroups_id	 | 	int	 | [USERGROUPS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-usergroups) **id** | 	Przełożeni - ID Grupy użytkowników (Ogólne) | 		 |
 | 	apikey	 | 	nvarchar(128)	 | 		 | Token (Ogólne) | 		 |
 | 	apiexp	 | 	datetime	 | 		 | 	Data wygaśnięcia tokenu (Ogólne) | 		 |
 | 	apimode	 | 	int	 | 		 | 	Tryb sesji - Token (Ogólne) | 0 - Odczyt, 1 - Odczyt / Zapis |
@@ -1559,10 +1559,10 @@ sidebar_position: 6
 | 	Pole	 | 	Typ danych	 | 	Odwołanie	 | 	Opis	 | 	Ograniczenia	 |
 | 	---	 | 	---	 | 	---	 | 	---	 | 	---	 |
 | 	int_id	 | 	int	 | 		 | 	Numer unikalny integracji w obrębie użytkownika	 | 		 |
-| 	users_id	 | 	int	 | 	[USERS](/docs/database/Tables/tables-descr.md#tabela-users) **id**	 | 	ID Użytkownika	 | 		 |
+| 	users_id	 | 	int	 | 	[USERS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-users) **id**	 | 	ID Użytkownika	 | 		 |
 | 	name	 | 	nvarchar(255)	 | 		 | 	Nazwa integracji	 | 		 |
 | 	type	 | 	int	 | 		 | 	Typ integracji | 	0 - KSeF |
-| 	company_id	 | 	int	 | 	[COMPANIES](/docs/database/Tables/tables-descr.md#tabela-companies) **id**	 | 	ID Firmy	 | 		 |
+| 	company_id	 | 	int	 | 	[COMPANIES](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-companies) **id**	 | 	ID Firmy	 | 		 |
 | 	userid	 | 	nvarchar(128)	 | 		 | 	Użytkownik - login do integracji	 | 		 |
 | 	password	 | 	nvarchar(128)	 | 		 | 	Hasło do integracji	 | 		 |
 | 	synctout	 | 	int	 | 		 | 		 | 	Czas odpytywania (m) |
@@ -1575,7 +1575,7 @@ sidebar_position: 6
 
 | 	Pole	 | 	Typ danych	 | 	Odwołanie	 | 	Opis	 | 	Ograniczenia	 |
 | 	---	 | 	---	 | 	---	 | 	---	 | 	---	 |
-| 	users_id	 | 	int	 | 	[USERS](/docs/database/Tables/tables-descr.md#tabela-users) **id**	 | 	ID Użytkownika	 | 		 |
+| 	users_id	 | 	int	 | 	[USERS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-users) **id**	 | 	ID Użytkownika	 | 		 |
 | 	eventtype	 | 	int	 | 		 | 	Rodzaj powiadomienia	 | 1 - Wymagana autoryzacja, 2 - Zaakceptowano dokument, 3 - Odrzucono, 7 - Zatwierdzono przez wszystkich, 9 - Raport oczekujących |
 | 	restrictiontype	 | 	int	 | 		 | 	Typ wyłączonych powiadomień	 | 	0 - Powiadomienie eMail, 1 - Wiadomości wewnętrzne	 |
 
@@ -1586,8 +1586,8 @@ sidebar_position: 6
 
 | 	Pole	 | 	Typ danych	 | 	Odwołanie	 | 	Opis	 | 	Ograniczenia	 |
 | 	---	 | 	---	 | 	---	 | 	---	 | 	---	 |
-| 	users_id	 | 	int	 | 	[USERS](/docs/database/Tables/tables-descr.md#tabela-users) **id**	 | 	ID Użytkownika	 | 		 |
-| 	documents_id	 | 	int	 | 	[DOCUMENTS](/docs/database/Tables/tables-descr.md#tabela-documents) **id**	 | 	ID Dokumentu	 | 		 |
+| 	users_id	 | 	int	 | 	[USERS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-users) **id**	 | 	ID Użytkownika	 | 		 |
+| 	documents_id	 | 	int	 | 	[DOCUMENTS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-documents) **id**	 | 	ID Dokumentu	 | 		 |
 | 	type	 | 	int	 | 		 | 	Typ	 | 	0 - Ulubiony	 |
 
 
@@ -1597,8 +1597,8 @@ sidebar_position: 6
 
 | 	Pole	 | 	Typ danych	 | 	Odwołanie	 | 	Opis	 | 	Ograniczenia	 |
 | 	---	 | 	---	 | 	---	 | 	---	 | 	---	 |
-| 	users_id	 | 	int	 | 	[USERS](/docs/database/Tables/tables-descr.md#tabela-users) **id**	 | 	ID Użytkownika	 | 		 |
-| 	permvalue	 | 	int	 | 	[COMPANIES](/docs/database/Tables/tables-descr.md#tabela-companies) **id**	 | 	ID Firmy	 | 		 |
+| 	users_id	 | 	int	 | 	[USERS](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-users) **id**	 | 	ID Użytkownika	 | 		 |
+| 	permvalue	 | 	int	 | 	[COMPANIES](/versioned_docs/version-7.7/database/Tables/tables-descr.md#tabela-companies) **id**	 | 	ID Firmy	 | 		 |
 
 
 ## Tabela WHITELIST_CHECKLOG

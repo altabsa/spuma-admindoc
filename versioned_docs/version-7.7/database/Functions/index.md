@@ -10,5 +10,5 @@ Sekcja zawiera listę funckji systemowych wykorzystywanych przez SPUMA.
 
 | Nazwa funkcji | Działanie |
 | --- | --- |
-| [AFN_FIND_DOCUMENTS](/docs/database/Functions/functions-descr.md#funkcja-afn_find_documents) | Wyszukiwanie dokumentów |
+| [AFN_FIND_DOCUMENTS](/versioned_docs/version-7.7/database/Functions/functions-descr.md#funkcja-afn_find_documents) | Wyszukiwanie dokumentów |
 

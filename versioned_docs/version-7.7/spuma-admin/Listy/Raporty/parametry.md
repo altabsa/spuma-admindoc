@@ -24,7 +24,7 @@ Parametry mogą być używane w zapytaniu SQL jako zmienne w formacie `@nazwa`.
 
 - `Widoczność` - Określa, czy parametr jest widoczny w aplikacji WWW.
 
-- `Typ` - Typ danych parametru. Szczegółowy opis dostępnych typów znajduje się w sekcji [**Typy danych**](/docs/spuma-admin/typy-danych.md).
+- `Typ` - Typ danych parametru. Szczegółowy opis dostępnych typów znajduje się w sekcji [**Typy danych**](/versioned_docs/version-7.7/spuma-admin/typy-danych.md).
   
   Dla wybranych typów dostępne są dodatkowe właściwości:
 

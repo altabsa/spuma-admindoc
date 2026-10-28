@@ -1,0 +1,8 @@
+{
+  "label": "Użytkownicy",
+  "position": 7,
+  "key": "users-b",
+  "link": {
+    "type": "generated-index"
+  }
+}

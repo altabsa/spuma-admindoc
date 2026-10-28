@@ -26,7 +26,7 @@ Zalecane jest korzystanie ze standardowych pól dziennika. Dodanie własnych atr
 
 - `Widoczność` - Określa, czy atrybut jest widoczny w aplikacji W&#87;W.
 
-- `Typ` - Typ danych atrybutu. Szczegółowy opis dostępnych typów znajduje się w sekcji [**Typy danych**](/docs/spuma-admin/typy-danych).
+- `Typ` - Typ danych atrybutu. Szczegółowy opis dostępnych typów znajduje się w sekcji [**Typy danych**](/versioned_docs/version-7.7/spuma-admin/typy-danych).
 
 - `Format` - Wyrażenie regularne (regex) używane do walidacji wartości.
 

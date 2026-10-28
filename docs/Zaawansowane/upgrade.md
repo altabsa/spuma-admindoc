@@ -114,7 +114,9 @@ Nie należy nadpisywać poniższych plików konfiguracyjnych:
 - `spuma.ini` w katalogu głównym,
 - `ksef_ocrres.xsl` — jeżeli plik był modyfikowany lokalnie,
 - `config.json` w katalogu `\Admin\assets\`,
-- `config.json` w katalogu `\Client\assets\`.
+- `config.json` w katalogu `\Client\assets\`,
+- `spuma.ini` w katalogu `\SPUMA7_Host\Assemblies\`,
+- `licconf.ini` w katalogu głównym.
 
 #### Dodatkowe zalecenie
 

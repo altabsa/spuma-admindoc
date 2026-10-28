@@ -30,9 +30,9 @@ Nazwa raportu musi być unikatowa w ramach całej bazy. Nie wolno stosować znak
 
 - `DBName` - Nazwa bazy danych dostępna w zapytaniu jako `$DBNAME`.
 
-- `Ciąg połączenia` - Ciąg połączenia z bazą danych. Szczegółowy opis znajduje się w sekcji [**Ciąg połączenia**](/docs/Zaawansowane/ciag-polaczenia.md).
+- `Ciąg połączenia` - Ciąg połączenia z bazą danych. Szczegółowy opis znajduje się w sekcji [**Ciąg połączenia**](/versioned_docs/version-7.7/Zaawansowane/ciag-polaczenia.md).
 
-- `Skrypt` - Zapytanie SQL generujące dane raportu. W zapytaniu można używać parametrów zdefiniowanych w zakładce [**Parametry**](/docs/spuma-admin/Listy/Raporty/parametry.md).
+- `Skrypt` - Zapytanie SQL generujące dane raportu. W zapytaniu można używać parametrów zdefiniowanych w zakładce [**Parametry**](/versioned_docs/version-7.7/spuma-admin/Listy/Raporty/parametry.md).
 
   Kolumny zwracane przez zapytanie mogą być dodatkowo konfigurowane przez nadanie aliasu w formacie:
 

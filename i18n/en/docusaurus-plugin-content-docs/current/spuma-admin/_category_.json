@@ -1,0 +1,8 @@
+{
+  "label": "Aplikacja SPUMA ADMIN",
+  "position": 3,
+    "key": "users-a",
+  "link": {
+    "type": "generated-index"
+  }
+}

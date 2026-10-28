@@ -268,8 +268,8 @@ Dostępne elementy:
 | `CLASSID` | Identyfikator klasy dokumentu. |
 | `USERID` | Identyfikator użytkownika, który wywołał zdarzenie. |
 | `DOCSTATUS` | Status dokumentu w momencie wywołania zdarzenia. |
-| `ITEMCODE` | Kod towaru, którego dotyczy zdarzenie. |
-| `ITEMVALUE` | Nazwa towaru, którego dotyczy zdarzenie. |
+| `ITEMCODE` | Kod pola, którego dotyczy zdarzenie. |
+| `ITEMVALUE` | Wartość pola, którego dotyczy zdarzenie. |
 | `LINEID` | Identyfikator linii dokumentu, której dotyczy zdarzenie. |
 | `CLASSATTRIBS_ID` | Identyfikator atrybutu klasy związanego ze zdarzeniem. |
 
